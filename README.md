@@ -1,6 +1,9 @@
 # Relational Closure Carrier
 
-A minimal computational experiment asking when locally interacting parts become one higher-scale causal individual, and whether body–world history retained in relational placement can alter later repair.
+A minimal computational experiment asking whether body–world history retained
+as changed relational placement can causally alter later repair—without a
+complete-body target register, reward, or online external selection inside the
+modeled loop.
 
 ## Start here
 
@@ -15,6 +18,11 @@ A minimal computational experiment asking when locally interacting parts become 
 > In this prepared digital carrier, past contact with a causally external world is retained as changed relational placement in the body, and that placement changes later repair after world deletion, body-only restart, common washout, and renewed injury.
 
 This is a bounded proof of causal, history-dependent material memory in an engineered arena. It is **not** presented as evidence of basal cognition, a biological model, or a proof that morphogenesis lacks target states.
+
+The open interpretation is whether the prepared closure affordance plus the
+history-bearing relational state should count as a minimal distributed pattern
+memory or homeostatic target, only as a path-dependent attractor, or as both at
+different causal levels.
 
 The graph, an explicit empty upper slot, the A/B return routes, injury, and readout are engineered. The higher-order conducting relation itself is not pre-installed: it appears only after the lower route actually closes, disappears under targeted ablation, and is restored by a new traversal of surviving material. A/B identity is assigned by the harness through one of the prepared routes.
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
-  <title id="title">Causal scale closure and body-world lineage history</title>
-  <desc id="desc">Two linked intervention diagrams. The first shows lower relations closing into one higher-scale act, loss of that act under ablation, and restoration by a new local traversal. The second shows body action changing a world, an earned return leaving A or B history in the body, and a mirrored repair order after world deletion, restart, washout, and a matched cut.</desc>
+  <title id="title">Closure intervention and history-dependent repair</title>
+  <desc id="desc">Two linked intervention diagrams. The first shows loss and restoration of an upper act through a surviving lower route. The second shows the causal sequence from body action through a changed world site and earned return to history-dependent repair after a matched injury.</desc>
   <defs>
     <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#fbfcfd"/>
@@ -28,7 +28,7 @@
 
   <rect x="1" y="1" width="1198" height="618" rx="24" fill="url(#paper)" stroke="#dfe5e9"/>
 
-  <text x="48" y="48" class="section">I · CAUSAL SCALE CLOSURE</text>
+  <text x="48" y="48" class="section">I · CLOSURE, ABLATION, RESTORATION</text>
 
   <g transform="translate(48 78)">
     <rect class="panel" x="0" y="0" width="340" height="202" rx="18"/>
@@ -72,7 +72,7 @@
   </g>
 
   <line x1="48" y1="314" x2="1152" y2="314" stroke="#d7dee3" stroke-width="1.5"/>
-  <text x="48" y="354" class="section">II · BODY–WORLD LINEAGE HISTORY</text>
+  <text x="48" y="354" class="section">II · BODY → CHANGED WORLD → RETURN → REPAIR</text>
 
   <g transform="translate(48 382)">
     <rect class="panel" x="0" y="0" width="230" height="142" rx="18"/>

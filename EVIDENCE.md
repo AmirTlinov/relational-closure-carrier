@@ -51,10 +51,13 @@ The A/B worlds use equal resources and differ only in where an earned world retu
 | `permute` | return enters the other prepared route |
 | `shuffle` | a pre-conducting phase-incompatible world route replaces action-dependent world formation |
 
-Hostile localization:
+Representation-class interventions:
 
 - full node-address relabeling with relations preserved: body and future signature preserved;
 - return-placement shuffle with material and other relations preserved: A/B future difference removed.
+
+This identifies a relation class whose distribution is causally necessary. It
+does not localize memory to a small site.
 
 Scale control:
 
