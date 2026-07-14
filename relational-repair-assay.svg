@@ -61,8 +61,8 @@
     <circle cx="218" cy="151" r="14" class="nodeB"/>
     <circle cx="258" cy="122" r="14" class="nodeA"/>
     <path d="M148 69 l14 -14 m-14 0 l14 14" stroke="#b2443f" stroke-width="4" stroke-linecap="round"/>
-    <path d="M38 158 C115 172 230 170 266 144" class="line" marker-end="url(#arrow)"/>
-    <text x="18" y="190" class="micro">new local traversal restores act</text>
+    <path d="M38 164 C100 173 164 176 214 174 S258 160 282 141" class="line" marker-end="url(#arrow)"/>
+    <text x="18" y="195" class="micro">new local traversal restores act</text>
   </g>
 
   <line x1="48" y1="314" x2="1152" y2="314" stroke="#d7dee3" stroke-width="1.5"/>
