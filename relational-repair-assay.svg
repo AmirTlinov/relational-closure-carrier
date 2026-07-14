@@ -1,11 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
   <title id="title">Closure intervention and history-dependent repair</title>
-  <desc id="desc">Two linked intervention diagrams. The first shows loss and restoration of an upper act through a surviving lower route. The second shows the causal sequence from body action through a changed world site and earned return to history-dependent repair after a matched injury.</desc>
+  <desc id="desc">Two linked intervention diagrams. The first shows loss and restoration of an upper act through a surviving lower route. The second shows the material sequence from body action through a changed world site and earned return to history-dependent repair after a matched injury.</desc>
   <defs>
-    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#fbfcfd"/>
-      <stop offset="1" stop-color="#f3f6f8"/>
-    </linearGradient>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#647381"/>
     </marker>
@@ -25,8 +21,6 @@
       .panel{fill:#fff;stroke:#d6dde2;stroke-width:1.5}
     </style>
   </defs>
-
-  <rect x="1" y="1" width="1198" height="618" rx="12" fill="url(#paper)" stroke="#dfe5e9"/>
 
   <text x="48" y="48" class="section">I · CLOSURE, ABLATION, RESTORATION</text>
 
@@ -67,7 +61,7 @@
     <circle cx="218" cy="151" r="14" class="nodeB"/>
     <circle cx="258" cy="122" r="14" class="nodeA"/>
     <path d="M148 69 l14 -14 m-14 0 l14 14" stroke="#b2443f" stroke-width="4" stroke-linecap="round"/>
-    <path d="M38 176 C115 203 230 199 266 161" class="line" marker-end="url(#arrow)"/>
+    <path d="M38 158 C115 172 230 170 266 144" class="line" marker-end="url(#arrow)"/>
     <text x="18" y="190" class="micro">new local traversal restores act</text>
   </g>
 
@@ -102,14 +96,14 @@
     <path d="M37 72 H165" class="blueLine"/>
     <circle cx="64" cy="72" r="17" class="nodeA"/><text x="58" y="78" class="label">A</text>
     <circle cx="139" cy="72" r="17" class="nodeB"/><text x="133" y="78" class="label">B</text>
-    <text x="20" y="126" class="small">same body · return route A or B</text>
+    <text x="20" y="126" class="small">same BODY · route A/B</text>
   </g>
 
   <path d="M911 453 H964" class="line" marker-end="url(#arrow)"/>
 
   <g transform="translate(980 382)">
     <rect class="panel" x="0" y="0" width="172" height="142" rx="9"/>
-    <text x="18" y="31" class="label" font-weight="600">Later matched cut</text>
+    <text x="18" y="31" class="label" font-weight="600">Matched cut</text>
     <path d="M35 74 H137" class="line"/>
     <path d="M81 61 l14 26 M95 61 L81 87" stroke="#b2443f" stroke-width="3.4" stroke-linecap="round"/>
     <text x="18" y="113" class="micro">AB: A1 · B2</text>
@@ -120,7 +114,8 @@
   <text x="675" y="594" class="micro">delete world · fresh-process restart · common washout</text>
 
   <g transform="translate(48 548)">
-    <rect x="0" y="0" width="585" height="42" rx="6" fill="#fff" stroke="#d6dde2"/>
-    <text x="16" y="26" class="small"><tspan font-weight="650" fill="#20303a">Representation intervention:</tspan> placement shuffle erases A/B · full node relabel preserves it</text>
+    <rect x="0" y="0" width="585" height="46" rx="6" fill="#fff" stroke="#d6dde2"/>
+    <text x="16" y="17" class="micro" font-weight="650" fill="#176b87">RELATIONAL DISTINGUISHABILITY</text>
+    <text x="16" y="37" class="small">placement shuffle erases A/B · full relabel preserves it</text>
   </g>
 </svg>

@@ -1,6 +1,6 @@
-# History-Dependent Repair in a Minimal Non-Neural Carrier
+# Relational Distinguishability in a Minimal Non-Neural Carrier
 
-## A causal test of distributed pattern memory versus path-dependent attractor dynamics
+## An intervention test through history-dependent repair
 
 **Amir Tlinov — Independent Researcher**<br>
 **14 July 2026**<br>
@@ -14,19 +14,39 @@ organization after perturbation, while physiological networks retain history
 not reducible to current anatomy alone [1–4]. I ask a narrower mechanistic
 question:
 
-> Can later repair depend on history retained in the causal organization of the
+> Can later repair depend on history retained in the relational organization of the
 > same substrate that conducts repair—without a separate complete-body target
 > model, global controller, reward signal, or online external selection inside
 > the modeled loop?
 
+### Proposed postulate
+
+The theoretical name guiding this assay is **Relational Distinguishability**:
+
+> **No relation is physically meaningful unless its sides are distinguishable.**
+
+This is a proposed postulate, not a result derived from relativistic physics. It
+is a programmatic continuation of relativity's invariant-based relational
+logic: physical content is sought in relations that survive an admissible
+change of description while the participating sides remain distinguishable.
+The only invariance tested here is preservation under a hostile relabeling of
+storage addresses. That intervention is not a spacetime transformation, a test
+of Lorentz invariance, or a test of relativity.
+
+The carrier tests one bounded operational consequence: two relational histories
+count as physically different only if their difference changes later repair,
+survives relation-preserving address relabeling, and disappears when the
+candidate relational placement is shuffled.
+
 The contribution is a joint intervention assay. One local-rule carrier must
 earn closure through body–world contact, retain the resulting relational history
 after the world is deleted, express that history during a later matched injury,
-and lose the A/B difference when the candidate representation is disrupted.
+and lose the A/B difference when the candidate relational distinction is
+disrupted.
 This is a computational existence test, not a theory of biological regeneration
 or fundamental physics.
 
-### Carrier and causal provenance
+### Operationalizing relational distinguishability
 
 The deterministic carrier contains 1,024 writable relational records. Each
 stores a small local state and explicit handles to available contacts and
@@ -49,7 +69,7 @@ BODY action → changed WORLD site → return to BODY → closure
 ```
 
 Passive contact, a disconnected world change, a phase mismatch, or a prewritten
-conducting route cannot substitute for that sequence.
+conducting route cannot substitute for that material sequence.
 
 ### History-dependent repair assay
 
@@ -60,7 +80,7 @@ recover the full 1,024-record body and the same immediately available
 higher-order conductance.
 
 The original worlds are then deleted. Only each `BODY` file survives. Every body
-is reopened by a fresh process, exposed to the same causal common washout, and
+is reopened by a fresh process, exposed to the same common washout, and
 cut again at the same current relation. Repair is probed in fresh A and B worlds
 in both orders (`AB` and `BA`). The assay asks not whether a log can classify
 history, but whether surviving relational placement is necessary for different
@@ -80,8 +100,8 @@ world formation by a pre-conducting phase-incompatible route. Every control
 separated from matched both in resulting `BODY` bytes and in behavior after a
 further common washout and injury.
 
-Two separate representation-class interventions tested what carries the A/B
-difference:
+Two interventions tested whether the A/B distinction belonged to relational
+organization rather than storage labels:
 
 - complete relabeling of storage addresses while preserving relations preserved
   body organization and future behavior;
@@ -89,8 +109,10 @@ difference:
   future difference while preserving their multiset, material extent, current
   higher-order conductance, and the other relation classes.
 
-Thus the distribution of this relation class is causally necessary in the
-prepared carrier. The intervention does not localize memory to a small site.
+Thus the A/B distinction is materially consequential rather than nominal in the
+prepared carrier: relation-preserving address relabeling preserves its later
+effect, while shuffling the candidate relational placement erases it. The
+intervention does not localize memory to a small site.
 
 A separate closure intervention used one 12-place lower cycle. After that cycle
 had earned an upper relation by closing, removing only that relation changed a
@@ -100,9 +122,9 @@ collision 12 and restored `PASS`.
 
 The bounded result is:
 
-> Past world contact is retained as changed relational placement in this body,
-> and that placement causally changes later repair after world deletion,
-> fresh-process restart, common washout, and renewed injury.
+> A/B histories remain relationally distinguishable after world deletion,
+> fresh-process restart, common washout, and renewed injury; return-relation
+> placement is interventionally necessary for that distinction.
 
 The frozen public source passes 21 tests. The evidence bundle records four
 prespecified deterministic initializations, 112 paired world-continuity
@@ -125,12 +147,12 @@ The ambiguity is the point: the runtime has no separate symbolic model of a
 completed body, yet the prepared topology encodes a closure affordance and the
 history-bearing relational state changes future repair. These may constitute a
 minimal distributed pattern memory or homeostatic target, path-dependent
-attractor dynamics, or both descriptions at different causal levels.
+attractor dynamics, or both descriptions at different levels of organization.
 
 > Would you regard the topology-encoded closure affordance and history-bearing
 > relational state as a minimal distributed pattern memory or homeostatic
 > target, only as a path-dependent attractor, or as both? What single
-> perturbation would best distinguish their causal roles?
+> perturbation would best distinguish their physical roles?
 
 ### References
 

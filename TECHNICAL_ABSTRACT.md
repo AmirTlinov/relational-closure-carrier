@@ -1,4 +1,4 @@
-# Can Repair Arise from Changed Causal Organization Rather Than an Explicit Stored Target?
+# Can Repair Arise from Changed Relational Organization Rather Than an Explicit Stored Target?
 
 ## A minimal non-neural carrier experiment
 
@@ -10,11 +10,23 @@
 
 Work on anatomical homeostasis and basal cognition treats morphogenesis as a form of collective problem-solving in morphospace: a body can reach or recover large-scale organization despite perturbation, while physiological networks retain information that is not reducible to current anatomy alone [1–4]. I am exploring a narrow mechanistic question inside that program:
 
-> Can target-like repair arise from history retained in the causal organization of the same substrate that later conducts repair, without a separate complete-body target model, global controller, reward signal, or online external selection inside the modeled loop?
+> Can target-like repair arise from history retained in the relational organization of the same substrate that later conducts repair, without a separate complete-body target model, global controller, reward signal, or online external selection inside the modeled loop?
 
-The motivating hypothesis is relational. Motion or contact alone need not create an operative unit. When distinguishable states modify one another and remain coupled so that their relation changes later propagation, they form what I call a **held difference**: a group that can act as one causal unit without erasing its internal distinction. At the scale of a body, injury then changes not only a local site but the organization of the surviving whole. Repair need not reproduce the previous component exactly; it may restore a group-level capability by forming a different relation with the surviving material.
+The motivating hypothesis is relational:
 
-This is an experimental heuristic, not a demonstrated account of biological regeneration or a claim about fundamental physics. The computational experiment asks only whether one clean causal fragment of this hypothesis can be realized.
+> **No relation is physically meaningful unless its sides are distinguishable.**<br>
+> **Отношение физически содержательно лишь постольку, поскольку его стороны различимы.**
+
+Motion or contact alone need not create an operative unit. When distinguishable states modify one another and remain coupled so that their relation changes later propagation, they form what I call a **held difference**: a group that can act as one operative relational unit without erasing its internal distinction. At the scale of a body, injury then changes not only a local site but the organization of the surviving whole. Repair need not reproduce the previous component exactly; it may restore a group-level capability by forming a different relation with the surviving material.
+
+This is an experimental heuristic, not a demonstrated account of biological regeneration or a claim about fundamental physics. The computational experiment asks only whether one clean, interventionally testable fragment of this hypothesis can be realized.
+
+The proposed connection to relativity is programmatic: physical description may
+be grounded in relations between distinguishable sides rather than privileged
+absolute labels. No result in relativity is derived here. In particular, the
+tested invariance under hostile address relabeling is invariance to graph
+storage labels, not a spacetime transformation, Lorentz invariance, or general
+covariance.
 
 ### Minimal carrier
 
@@ -23,7 +35,7 @@ The carrier is a deterministic, non-neural computational dynamical system with e
 The same rule can:
 
 1. conduct change through an existing relation;
-2. occupy causally available material;
+2. occupy material available through the current relations;
 3. retract a route that fails to close;
 4. form a higher-order conducting relation only after a lower route physically returns to its origin.
 
@@ -35,13 +47,13 @@ The body contacts a separately created `WORLD` substrate. The same collision rul
 BODY action → changed WORLD site → return to BODY → closure
 ```
 
-Passive contact, a disconnected world change, or a prewritten return state therefore cannot substitute for this causal sequence.
+Passive contact, a disconnected world change, or a prewritten return state therefore cannot substitute for this body–world provenance sequence.
 
 ### History-dependent repair assay
 
 Two lines, A and B, begin from the same injured 513-site body. Their worlds have equal resources and differ only in the physical placement of the earned return into one of two bodily routes. Both lines recover the full 1,024-site body and the same higher-order conducting capacity.
 
-The original worlds are then deleted. Only each `BODY` file survives. Every body is reopened in a fresh process, exposed to the same causal washout, and cut again at the same current relation. Future repair is probed in fresh A and B worlds in both orders (`AB` and `BA`).
+The original worlds are then deleted. Only each `BODY` file survives. Every body is reopened in a fresh process, exposed to the same common washout, and cut again at the same current relation. Future repair is probed in fresh A and B worlds in both orders (`AB` and `BA`).
 
 The question is not whether a log can classify the histories. It is whether the surviving placement of relations inside the body is necessary for different future conduct.
 
@@ -58,11 +70,17 @@ Two hostile interventions localize the memory claim:
 - a complete relabeling of storage addresses, while preserving relations, preserved both body organization and future behavior;
 - shuffling only the placement of the history-bearing return relations erased the A/B future difference while preserving the amount of material and the rest of the relational structure.
 
-A separate scale intervention removed only the higher-order conducting relation. The large-scale act disappeared while the lower route remained. A new causal pass through that surviving route restored the higher-order relation.
+Together these interventions define **Relational Distinguishability** in this
+carrier: changing storage labels preserves the A/B distinction, while changing
+the distribution of the candidate return-relation class removes it. That
+distribution is interventionally necessary for the observed A/B difference;
+the result does not localize memory to a small site.
+
+A separate scale intervention removed only the higher-order conducting relation. The large-scale act disappeared while the lower route remained. A new pass through that surviving route restored the higher-order relation.
 
 The bounded result is therefore:
 
-> In this prepared carrier, past world contact is retained as changed relational placement in the body, and that placement causally changes later repair after world deletion, restart, common washout, and renewed injury.
+> In this prepared carrier, two histories of world contact are retained as different relational placements in the body; they remain distinguishable in later repair after world deletion, restart, common washout, and renewed injury, and the distribution of the tested return-relation class is interventionally necessary for that distinction.
 
 The current source passes 21 tests; the public evidence bundle records four seeds and 112 paired controls.
 

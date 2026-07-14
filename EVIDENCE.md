@@ -2,9 +2,29 @@
 
 ## Claim under test
 
-A past `BODY → WORLD → BODY` contact changes the placement of relations inside `BODY`; after the original `WORLD` is deleted, this placement survives a fresh-process restart and common washout and causally changes the timing of closure after a new injury.
+Two past `BODY → WORLD → BODY` histories change the placement of relations
+inside `BODY`; after the original `WORLD` is deleted, those placements survive
+a fresh-process restart and common washout and remain distinguishable
+in the timing of closure after a new injury.
 
-This is a claim about causal memory and history-dependent repair in a prepared digital carrier. It is not a claim of biological regeneration or basal cognition.
+This is a claim about Relational Distinguishability and history-dependent repair
+in a prepared digital carrier. It is not a claim of biological regeneration or
+basal cognition.
+
+## Relational Distinguishability
+
+> **No relation is physically meaningful unless its sides are distinguishable.**<br>
+> **Отношение физически содержательно лишь постольку, поскольку его стороны различимы.**
+
+The experiment operationalizes this postulate narrowly. A/B histories remain
+distinguishable after world deletion, restart, common washout, and renewed
+injury. Full node-address relabeling preserves that distinction; return-placement
+shuffle removes it. This makes the distribution of the tested relation class
+interventionally necessary for the observed A/B difference.
+
+Any connection to relativity is proposed and programmatic, not derived. The
+tested address-relabel invariance concerns graph storage labels and is not a
+spacetime transformation.
 
 ## Carrier
 
@@ -22,7 +42,7 @@ G0 closure
 → matched history A or B
 → delete WORLD
 → BODY-only fresh-process restart
-→ identical causal common washout
+→ identical common washout
 → cut the resulting current BODY
 → fresh A/B probes in both AB and BA order
 ```
@@ -41,7 +61,7 @@ The A/B worlds use equal resources and differ only in where an earned world retu
 
 ## Controls
 
-| Intervention | Broken causal link |
+| Intervention | Protocol dependency removed |
 |---|---|
 | `no_world` | no external world contact |
 | `passive` | contact without action-dependent world transition |
@@ -56,8 +76,9 @@ Representation-class interventions:
 - full node-address relabeling with relations preserved: body and future signature preserved;
 - return-placement shuffle with material and other relations preserved: A/B future difference removed.
 
-This identifies a relation class whose distribution is causally necessary. It
-does not localize memory to a small site.
+This identifies a relation class whose distribution is interventionally
+necessary for the observed A/B distinction. It does not localize memory to a
+small site.
 
 Scale control:
 
@@ -90,4 +111,5 @@ The compact audits are in `results/`. Full receipts are regenerated locally beca
 - binary local gestures and deterministic transition rule;
 - no metabolism, cells, ion channels, gap junctions, or endogenous bioelectric dynamics;
 - no open-ended discovery of morphology or self-originated goal;
+- address-relabel invariance is not a spacetime symmetry result;
 - no independent replication.
