@@ -24,6 +24,7 @@
       --orange: #a95b2d;
       --orange-soft: #fff1e8;
       --red: #a13d3d;
+      --radius: 1mm;
     }
     * { box-sizing: border-box; }
     html { background: #e9edf0; }
@@ -117,7 +118,7 @@
       margin: 0 0 5mm;
       padding: 3mm;
       border: 1px solid var(--line);
-      border-radius: 2mm;
+      border-radius: var(--radius);
       background: #f7f9fa;
     }
     .figure img {
@@ -165,7 +166,7 @@
     .page-two-head .stamp {
       padding: 4mm;
       border: 1px solid #b9d5de;
-      border-radius: 2mm;
+      border-radius: var(--radius);
       background: var(--blue-soft);
     }
     .stamp .big {
@@ -206,7 +207,7 @@
       min-height: 23mm;
       padding: 3mm;
       border: 1px solid var(--line);
-      border-radius: 1.5mm;
+      border-radius: var(--radius);
       background: #fff;
     }
     .metric b {
@@ -230,7 +231,7 @@
     }
     .scope {
       padding: 4mm;
-      border-radius: 2mm;
+      border-radius: var(--radius);
       border: 1px solid;
     }
     .scope.yes { background: var(--blue-soft); border-color: #bad7e0; }
@@ -245,7 +246,7 @@
       margin: 0 0 5mm;
       padding: 4.5mm;
       border: 1.5px solid #9fc7d3;
-      border-radius: 2mm;
+      border-radius: var(--radius);
       background: #fff;
     }
     .question h2 { margin-top: .5mm; }
