@@ -1,0 +1,114 @@
+{
+  "artifact_kind": "relational_closure_carrier_public_audit",
+  "generated_utc": "2026-07-14T04:14:45.308292+00:00",
+  "claim": "bounded_history_dependent_relational_repair",
+  "tests": {
+    "pytest": "21 passed",
+    "ruff": "passed"
+  },
+  "source_sha256": {
+    ".gitignore": "563b45e6ca1aaf77ae5ed5568de0ca25d84cb491311fa80209dac15696987be8",
+    "README.md": "f06685cfb801a6a41a0597b078f131f178e254189297b04d9ed30a71396e1726",
+    "ABSTRACT.md": "7c27de7de0f1a770301d1a205ec5f39a3b873c989818bfa2ce4ce231a263d197",
+    "ABSTRACT_RU.md": "bcb8d4af3fa20ad79c2d158d94ace6a39c894b093dd39c3fd9b79924d45d5fb9",
+    "ABSTRACT.pdf": "99571be78aad25fe6a48c9a0f3e7889f158188556def252c476ca74377f2feb6",
+    "EVIDENCE.md": "b9e753a971438727c6c88fc8f6f78a86f7eb0831d960717bed6c5300b1ff12f9",
+    "REPRODUCE.md": "c7dc5bbacef12e46011632030fe91b8cb8a86fcaaa7b71902e040d514fe5df54",
+    "growth_carrier.py": "0d32047eecb391f572671a3404eb912fa3cc96ea3a39a44212328d5884d312f7",
+    "run_growth.py": "51fd8929c7df657252959286a94dbcf015dec96c897bccf9773de49c853e2618",
+    "world_lineage.py": "1655fc8aa9f62ae035d50e96b8047c8d4ce4ecc4d1bd0ff56841e0d529a52423",
+    "run_world_lineage.py": "63dacd19ef5051247e9a5c4b579f7ac9aa5f24f65e526537bc9f314428cbcf8f",
+    "tests/test_growth.py": "34413b2ed763a5cd7b870fa91d2394b6668d6e01e38ebb5b71c966b35fa5550a",
+    "tests/test_world_lineage.py": "d43f1988658253762a946299bd77bc35211b36e971ca56a1ed89a948ed5bf46b",
+    "pyproject.toml": "5f65abeb806b9c343ea63e981246d793f572f4a7395f77283b9e64d731b12c5c",
+    "uv.lock": "71926b371e86a634ee45eeba258ba697b0196ab48d52e9f28248929163a4849a"
+  },
+  "growth": {
+    "passed": true,
+    "claim": "completed_scale_fold",
+    "source_hash": "14bafe7b52c42838aa110194802248c836bee1bc832dc2ccce64c661abdfdfad",
+    "address_permutation": {
+      "addresses_were_hostilely_permuted": true,
+      "collision_trace_isomorphic": true,
+      "final_body_isomorphic": true,
+      "closed_route_isomorphic": true,
+      "same_upper_relation_isomorphic": true,
+      "one_top_contact_isomorphic": true
+    },
+    "scale_form": {
+      "upper_conducts_in_one_collision": true,
+      "one_collision_did_not_hide_rewrite": true,
+      "route_down_reveals_closed_form": true,
+      "upper_ablation_removes_large_act": true,
+      "upper_ablation_preserves_route_down": true,
+      "full_lower_pass_restores_upper": true,
+      "restored_upper_conducts_again": true,
+      "route_down_remains_revealable": true
+    }
+  },
+  "world_lineage": {
+    "passed": true,
+    "claim": "serial_world_lineage_carrier",
+    "source_hash": "2ac3304f0a95d8a5e4533401f4727e1a0ee4e4c9e616da3321672866f590c1fd",
+    "kernel_sha256": "0d32047eecb391f572671a3404eb912fa3cc96ea3a39a44212328d5884d312f7",
+    "body_capacity": 1024,
+    "seeds": [
+      17,
+      23,
+      41,
+      59
+    ],
+    "controls_total": 112,
+    "actual_controls_total": 112,
+    "checks": {
+      "immutable_collision_kernel_exact": true,
+      "G0_formed_1024_through_independent_world": true,
+      "external_cut_produced_shared_A_B_snapshot": true,
+      "all_seed_lineage_records_passed": true,
+      "G1_all_controls_passed": true,
+      "G2_all_controls_passed": true,
+      "all_matched_returns_were_earned_by_world_change": true,
+      "passive_never_closed_a_crack": true,
+      "controls_separated_in_BODY_and_future_behavior": true,
+      "every_G2_descended_from_restarted_common_washout_BODY": true,
+      "full_112_control_denominator_present": true,
+      "A_B_lineages_reproducible_and_separated": true,
+      "memory_owner_and_node_relabel_controls_passed": true,
+      "all_world_mmaps_removed": true,
+      "source_unchanged": true
+    },
+    "lineage_analysis": {
+      "features": [
+        "AB_birth_episode",
+        "BA_birth_episode",
+        "AB_birth_collision",
+        "BA_birth_collision",
+        "AB_episode_0_birth",
+        "BA_episode_0_birth",
+        "AB_return_relation_count",
+        "BA_return_relation_count",
+        "AB_coarse_pass",
+        "BA_coarse_pass"
+      ],
+      "max_within_distance": 0.0,
+      "min_between_distance": 2.0,
+      "lineages_reproducible_and_separated": true
+    },
+    "hostile_memory_checks": {
+      "shuffle_preserved_return_multisets": true,
+      "shuffle_preserved_graph_and_current_life": true,
+      "shuffle_destroyed_A_B_future_separation": true,
+      "hostile_bodies_passed_same_common_washout": true,
+      "node_relabel_was_hostile": true,
+      "node_relabel_preserved_physical_body": true,
+      "node_relabel_preserved_future_signatures": true
+    }
+  },
+  "limitations": [
+    "engineered topology and return routes",
+    "experimenter-defined injury and readout",
+    "digital carrier, not a biological model",
+    "no claim of basal cognition"
+  ],
+  "passed": true
+}

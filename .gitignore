@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+*.mmap
+results/bodies/
+results/world_lineage_1024/
+results/growth_receipt.json
+results/world_lineage_1024.json
+.DS_Store
+ABSTRACT.html

@@ -1,0 +1,16 @@
+[project]
+name = "local-growth-fold"
+version = "0.3.0"
+description = "Frozen-kernel relational carrier with independent world and serial A/B lineage"
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1", "ruff==0.14.10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
