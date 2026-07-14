@@ -1,6 +1,6 @@
 {
   "artifact_kind": "relational_closure_carrier_public_audit",
-  "generated_utc": "2026-07-14T06:01:27.346907+00:00",
+  "generated_utc": "2026-07-14T06:29:57.317642+00:00",
   "claim": "bounded_history_dependent_relational_repair",
   "tests": {
     "pytest": "22 passed",
@@ -13,16 +13,20 @@
     "ABSTRACT.pdf": "d945c314458bcdb2f31b4e23cf2b39470a0b9066a8e1a2e5cfdae50671cc1f22",
     "ABSTRACT_RU.md": "3bc5c7b6c1be98e08017597e539fc41e2a1bfa26002c3b4f43a201810adfb345",
     "EVIDENCE.md": "7e4e099184264d320859a5a1f8f43416e4e1eec904098fc8ad8512210972d66d",
-    "README.md": "0063d9b101dcc63e9599b3d2c6c59039589d37d0eb6214332284f8ed960247f1",
+    "README.md": "857490521a7d0b8e0c030e025f4ff9b664c87a5ff3f1abb597a03d23ab704c0b",
     "REPRODUCE.md": "9e69d7286b518ad46d8296edfcabba8c9511e6d879e16c1bb0c3dc507f3cc798",
     "TECHNICAL_ABSTRACT.md": "daabdd0963252fd8b0a7bd5bbc5e337eae0733f0c4fe576ae205d7667068a20e",
     "TECHNICAL_ABSTRACT.pdf": "b8575929aa06623ef5ce5b949821011bffb504104a63ee3f107d32ac8571a63e",
     "TECHNICAL_ABSTRACT_RU.md": "92e48c74b594a2bef8bb1e89fe32f3b68afce89bbc5eab623fa4b2302b86c773",
     "growth_carrier.py": "0d32047eecb391f572671a3404eb912fa3cc96ea3a39a44212328d5884d312f7",
-    "index.html": "4a871c1ed5a1f6c871f1205aeb152c3e5b04d62a975b03b947caac8b08e91304",
+    "index.html": "6c0fb724c0689800b6e4f044b9289a0347a5ad380855b01816389259c952a6ab",
     "preview-page-1.png": "d744681a5df509d2664a33529a64bab1f29a72384508c3d7b04d2b99921eb470",
     "pyproject.toml": "5f65abeb806b9c343ea63e981246d793f572f4a7395f77283b9e64d731b12c5c",
     "relational-repair-assay.svg": "5577993df2e25b23ca1c9896d615b0770689a53224c04b0449f6f69edaa2b69f",
+    "ru/ABSTRACT.pdf": "78857bb8237ca418201b9e1121c9c3558446524a2b94b18dc760e9e810292eec",
+    "ru/index.html": "15f373dc391a280f5ebb5d2e9eccd13a32ba7b9931cdc239c86e1e8b417c7767",
+    "ru/preview-page-1.png": "72d3736bc7a315427109b52a940090b835b5c81939ad101e0bcb1868916cec39",
+    "ru/relational-repair-assay.svg": "8a23f886b53eb5591fed977578fddfdc1c240b97ecefafec1ec1e0886f0d173e",
     "run_growth.py": "51fd8929c7df657252959286a94dbcf015dec96c897bccf9773de49c853e2618",
     "run_world_lineage.py": "e678e51b29b1dcc92f97b20d82f6deefcb2c6e6ac644aaed3b699cb0d164fd51",
     "tests/test_growth.py": "34413b2ed763a5cd7b870fa91d2394b6668d6e01e38ebb5b71c966b35fa5550a",
@@ -170,5 +174,23 @@
     "digital carrier, not a biological model",
     "no claim of basal cognition or a spacetime symmetry result"
   ],
-  "passed": true
+  "passed": true,
+  "publication": {
+    "english": {
+      "html": "index.html",
+      "pdf": "ABSTRACT.pdf"
+    },
+    "russian": {
+      "html": "ru/index.html",
+      "pdf": "ru/ABSTRACT.pdf"
+    },
+    "reciprocal_hreflang": true,
+    "russian_pdf_pages": 2,
+    "russian_pdf_page_size": "A4",
+    "russian_mobile_viewport_css_px": [
+      390,
+      1400
+    ],
+    "russian_mobile_horizontal_document_overflow": false
+  }
 }

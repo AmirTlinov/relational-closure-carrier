@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Публичный двухстраничный абстракт о реляционной различимости, проверяемой через исторически обусловленную починку в минимальном ненейронном носителе.">
+  <meta name="author" content="Амир Тлинов">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Реляционная различимость в минимальном ненейронном носителе">
+  <meta property="og:description" content="Интервенционная проверка через исторически обусловленную починку.">
+  <meta property="og:url" content="https://amirtlinov.github.io/relational-closure-carrier/ru/">
+  <meta property="og:image" content="https://amirtlinov.github.io/relational-closure-carrier/ru/preview-page-1.png">
+  <link rel="canonical" href="https://amirtlinov.github.io/relational-closure-carrier/ru/">
+  <link rel="alternate" hreflang="ru" href="https://amirtlinov.github.io/relational-closure-carrier/ru/">
+  <link rel="alternate" hreflang="en" href="https://amirtlinov.github.io/relational-closure-carrier/">
+  <link rel="alternate" hreflang="x-default" href="https://amirtlinov.github.io/relational-closure-carrier/">
+  <link rel="alternate" type="application/pdf" href="ABSTRACT.pdf" title="Двухстраничный PDF">
+  <title>Реляционная различимость в минимальном ненейронном носителе — Амир Тлинов</title>
+  <style>
+    :root {
+      --ink: #17252e;
+      --muted: #596973;
+      --line: #d8e0e5;
+      --paper: #fbfcfd;
+      --blue: #176b87;
+      --blue-soft: #eaf4f7;
+      --orange: #a95b2d;
+      --orange-soft: #fff1e8;
+      --red: #a13d3d;
+      --radius: 1.33mm;
+    }
+    * { box-sizing: border-box; }
+    html { background: #e9edf0; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 9.1pt;
+      line-height: 1.35;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { padding: 24px 0 48px; }
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto 24px;
+      padding: 13mm 15mm 12mm;
+      background: var(--paper);
+      box-shadow: 0 16px 45px rgba(29, 42, 50, .13);
+      position: relative;
+      overflow: hidden;
+    }
+    .sheet::after {
+      content: attr(data-page);
+      position: absolute;
+      right: 15mm;
+      bottom: 7mm;
+      color: #8a979f;
+      font-size: 7.5pt;
+      letter-spacing: .08em;
+    }
+    .eyebrow {
+      margin: 0 0 4mm;
+      color: var(--blue);
+      font-size: 7.4pt;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 175mm;
+      font-size: 27pt;
+      line-height: 1.02;
+      letter-spacing: -.035em;
+      font-weight: 590;
+    }
+    .subtitle {
+      margin: 3mm 0 0;
+      max-width: 156mm;
+      color: var(--muted);
+      font-size: 12.1pt;
+      line-height: 1.25;
+      font-weight: 430;
+    }
+    .byline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4mm;
+      margin: 5mm 0 7mm;
+      padding-top: 4mm;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 8pt;
+    }
+    .lang-switch {
+      margin-left: auto;
+      font-weight: 650;
+    }
+    h2 {
+      margin: 0 0 2.2mm;
+      color: var(--blue);
+      font-size: 8.8pt;
+      line-height: 1.15;
+      letter-spacing: .075em;
+      text-transform: uppercase;
+    }
+    h3 {
+      margin: 0 0 1.4mm;
+      font-size: 9.8pt;
+      line-height: 1.25;
+      font-weight: 650;
+    }
+    p { margin: 0 0 2.5mm; }
+    strong { font-weight: 650; }
+    .lead {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7mm;
+      margin-bottom: 5mm;
+    }
+    .lead p { margin-bottom: 0; }
+    .figure {
+      margin: 0 0 5mm;
+      padding: 3mm;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #f7f9fa;
+    }
+    .figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    figcaption {
+      margin-top: 2mm;
+      color: var(--muted);
+      font-size: 7.4pt;
+      line-height: 1.32;
+    }
+    .criteria {
+      display: grid;
+      grid-template-columns: 39mm 1fr;
+      gap: 6mm;
+      align-items: start;
+      padding-top: 4mm;
+      border-top: 1px solid var(--line);
+    }
+    .criteria-intro { color: var(--muted); }
+    .criteria ol {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 7mm;
+      row-gap: 1.3mm;
+      margin: 0;
+      padding-left: 5mm;
+    }
+    .criteria li { padding-left: 1mm; }
+    .note {
+      margin-top: 2mm;
+      color: var(--muted);
+      font-size: 7.8pt;
+    }
+    .page-two-head {
+      display: grid;
+      grid-template-columns: 42mm 1fr;
+      gap: 7mm;
+      align-items: start;
+      padding-bottom: 4mm;
+      border-bottom: 1px solid var(--line);
+    }
+    .page-two-head .stamp {
+      padding: 4mm;
+      border: 1px solid #b9d5de;
+      border-radius: var(--radius);
+      background: var(--blue-soft);
+    }
+    .stamp .big {
+      display: block;
+      color: var(--blue);
+      font-size: 18pt;
+      line-height: 1;
+      font-weight: 600;
+      letter-spacing: -.03em;
+    }
+    .stamp .small {
+      display: block;
+      margin-top: 1.8mm;
+      color: var(--muted);
+      font-size: 7.15pt;
+      line-height: 1.32;
+    }
+    .experiments {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7mm;
+      margin: 3.5mm 0;
+    }
+    .experiment {
+      padding-left: 4mm;
+      border-left: 2px solid var(--line);
+    }
+    .experiment:first-child { border-left-color: var(--blue); }
+    .experiment:last-child { border-left-color: var(--orange); }
+    .experiment p { margin-bottom: 0; }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5mm;
+      margin-bottom: 3.2mm;
+    }
+    .metric {
+      min-height: 21mm;
+      padding: 3mm;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .metric b {
+      display: block;
+      margin-bottom: 1mm;
+      color: var(--ink);
+      font-size: 14pt;
+      line-height: 1;
+      font-weight: 620;
+    }
+    .metric span {
+      color: var(--muted);
+      font-size: 7.25pt;
+      line-height: 1.22;
+    }
+    .scope-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5mm;
+      margin-bottom: 3.2mm;
+    }
+    .scope {
+      padding: 3.2mm;
+      border-radius: var(--radius);
+      border: 1px solid;
+    }
+    .scope.yes { background: var(--blue-soft); border-color: #bad7e0; }
+    .scope.no { background: var(--orange-soft); border-color: #efd0bb; }
+    .scope h3 { color: var(--blue); }
+    .scope.no h3 { color: var(--orange); }
+    .scope p:last-child { margin-bottom: 0; }
+    .question {
+      display: grid;
+      grid-template-columns: 36mm 1fr;
+      gap: 5mm;
+      margin: 0 0 3.2mm;
+      padding: 3.2mm;
+      border: 1.5px solid #9fc7d3;
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .question h2 { margin-top: .5mm; }
+    .question p { margin: 0; font-size: 9.7pt; line-height: 1.34; }
+    .refs {
+      display: grid;
+      grid-template-columns: 28mm 1fr;
+      gap: 5mm;
+      padding-top: 2.2mm;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 6.8pt;
+      line-height: 1.18;
+    }
+    .refs ol { margin: 0; padding-left: 4.5mm; }
+    .refs li { margin-bottom: .45mm; }
+    .sheet[data-page="02 / 02"] {
+      padding-top: 11mm;
+      padding-bottom: 9mm;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .9em;
+      color: #34434c;
+    }
+    @media screen and (max-width: 840px) {
+      html { background: var(--paper); }
+      main { padding: 0; }
+      .sheet {
+        width: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: 28px 22px 48px;
+        box-shadow: none;
+        overflow: hidden;
+      }
+      .sheet::after { display: none; }
+      .lead, .criteria, .page-two-head, .experiments, .scope-grid, .question, .refs { grid-template-columns: 1fr; }
+      .criteria ol, .metrics { grid-template-columns: 1fr; }
+      h1 { font-size: 34px; }
+      .figure { margin-left: -10px; margin-right: -10px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .figure img { min-width: 720px; }
+      .byline a { overflow-wrap: anywhere; }
+      .lang-switch { margin-left: 0; }
+    }
+    @media print {
+      @page { size: A4; margin: 0; }
+      html, body { background: #fff; }
+      main { padding: 0; }
+      .sheet {
+        width: 210mm;
+        height: 297mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+        break-after: page;
+        page-break-after: always;
+      }
+      .sheet:last-child { break-after: auto; page-break-after: auto; }
+      .lang-switch { display: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <article class="sheet" data-page="01 / 02">
+    <p class="eyebrow">Публичный абстракт · Реляционная различимость / базальное познание</p>
+    <h1>Реляционная различимость в минимальном ненейронном носителе</h1>
+    <p class="subtitle">Интервенционная проверка через исторически обусловленную починку</p>
+    <div class="byline">
+      <span><strong>Амир Тлинов</strong></span>
+      <span>Независимый исследователь</span>
+      <span>Июль 2026</span>
+      <span><a href="https://github.com/AmirTlinov/relational-closure-carrier">материалы и исходник</a></span>
+      <span><a href="ABSTRACT.pdf">двухстраничный PDF</a></span>
+      <span class="lang-switch"><a href="../" lang="en" hreflang="en">English</a></span>
+    </div>
+
+    <section>
+      <h2>Биологический вопрос и предлагаемый постулат</h2>
+      <div class="lead">
+        <p>Исследования анатомического гомеостаза и базального познания рассматривают морфогенез как коллективное решение задач в пространстве форм: ткань восстанавливает крупную организацию после возмущения, а физиологические сети удерживают историю, не сводимую к текущей анатомии [1–4]. <strong>Может ли последующая починка зависеть от истории в реляционной организации того же носителя, который проводит восстановление?</strong></p>
+        <p><strong>Реляционная различимость (предлагаемый постулат): «Отношение физически содержательно лишь постольку, поскольку его стороны различимы».</strong> Две истории здесь физически различны, только если их разность меняет последующую починку, переживает сохраняющее отношения переименование адресов и исчезает при перемешивании значимого размещения отношений. Связь с теорией относительности программная, а не выводная: проверяется переименование адресов хранения, не преобразование пространства-времени.</p>
+      </div>
+    </section>
+
+    <figure class="figure">
+      <img src="relational-repair-assay.svg" alt="Замыкание, абляция и восстановление, затем единое реляционное поле, в котором разделение, введённое свидетелем, обозначает удержанную группу и временные окружающие записи.">
+      <figcaption><strong>Рисунок 1.</strong> <code>BODY</code> и <code>WORLD</code> — метки свидетеля для двух поверхностей хранения с одной физикой записей; замороженный закон столкновения видит только локальные отношения. Отдельный контроль с одним mmap убирает пространство имён поверхностей и сохраняет все 2 058 событий одного согласованного прохода. Последующий опыт с удалением и перезапуском ещё использует разделение свидетеля.</figcaption>
+    </figure>
+
+    <section class="criteria">
+      <div>
+        <h2>Операциональный критерий</h2>
+        <p class="criteria-intro">Реляционная история должна оставаться различимой в будущем поведении при вмешательстве, а не только классифицировать след.</p>
+        <p class="note">Контур задаёт возможность возврата A/B до исполнения; во время работы он отношение не выбирает.</p>
+      </div>
+      <ol>
+        <li>Одно локальное продолжение пересекает разделение хранения, объявленное свидетелем.</li>
+        <li>Окружающая запись должна измениться до того, как возврат будет заработан.</li>
+        <li>Свидетель удаляет эти записи; удержанная группа перезапускается.</li>
+        <li>Следуют одинаковое воздействие и та же новая рана.</li>
+        <li>Единое поле и переименование должны сохранять различие, перемешивание размещения — стирать.</li>
+      </ol>
+    </section>
+  </article>
+
+  <article class="sheet" data-page="02 / 02">
+    <section class="page-two-head">
+      <div class="stamp">
+        <span class="big">1 правило</span>
+        <span class="small">в одном mmap 2 058 / 2 058 событий<br>ядро столкновения <code>0d32047eecb3…</code></span>
+      </div>
+      <div>
+        <h2>Носитель</h2>
+        <p>Удержанная группа содержит 1 024 изменяемые записи с явными локальными связями. Контур называет постоянную поверхность <code>BODY</code>, а временную поверхность из пяти записей — <code>WORLD</code>; формат и правило столкновения у них одинаковы. В ядре нет предиката body/world: метки поверхностей, их жизненный цикл, рана и чтение принадлежат контуру. A/B фиксируется до запуска. Нет глобального обхода, координатной геометрии, регистра цели, награды, планировщика или зависимого от оценки обновления. <span class="note">Аудит: 22 теста · SHA-256 world-lineage: <code>d3ed74383729…</code></span></p>
+      </div>
+    </section>
+
+    <section class="experiments">
+      <div class="experiment">
+        <h3>Исторически обусловленная починка</h3>
+        <p>A и B начинают из одной повреждённой группы с 513 занятыми записями. Равные по ресурсам окружающие поверхности отличаются лишь местом, куда заработанный возврат входит в один из двух подготовленных маршрутов. Обе линии восстанавливают 1 024 записи и одинаковую верхнюю проводимость. После удаления окружения, перезапуска, одинакового воздействия и той же раны A возвращает верхний вход в первом эпизоде AB и втором BA; B даёт зеркальный рисунок.</p>
+      </div>
+      <div class="experiment">
+        <h3>Вмешательства в реляционную различимость</h3>
+        <p>Переименование адресов с сохранением отношений сохраняет организацию группы и будущее A/B. Перемешивание 257 отношений возврата стирает A/B, сохраняя их мультимножество, материальный объём, верхнюю проводимость и другие классы отношений. В отдельном контроле все 1 029 записей перенесены в один mmap: все 2 058 событий и итоговые записи изоморфны. Удаление верхнего отношения меняет однотактный PASS на HALT; новый проход по пережившему циклу восстанавливает его.</p>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Сводка доказательств">
+      <div class="metric"><b>A1 · B2</b><span>эпизод рождения верхнего входа в AB; зеркально в BA</span></div>
+      <div class="metric"><b>4 / 4</b><span>заранее заданные детерминированные инициализации; не независимые реплики</span></div>
+      <div class="metric"><b>112</b><span>парные контроли непрерывности контакта G1/G2</span></div>
+      <div class="metric"><b>8 + 8</b><span>перемешивание размещения + полное переименование</span></div>
+    </section>
+
+    <section class="scope-grid">
+      <div class="scope yes">
+        <h3>Что поддерживает результат</h3>
+        <p>Истории A/B остаются реляционно различимыми после удаления временной поверхности, перезапуска, одинакового воздействия и новой раны. Размещение отношений возврата необходимо для этой разности, а сохраняющее отношения переименование адресов сохраняет её. Вмешательства выделяют распределённый класс отношений, а не небольшой участок памяти.</p>
+      </div>
+      <div class="scope no">
+        <h3>Что остаётся нерешённым</h3>
+        <p>Разделение свидетеля, топология, замыкание, маршруты, рана и чтение спроектированы. Единое поле проверено для одного прохода, но ещё не для удаления, перезапуска, общего воздействия, контролей и G2. Носитель не создаёт и не защищает собственную границу. Подготовленная организация может быть распределённой целью или аттрактором, зависящим от истории. Это не биологическая модель, независимая репликация или свидетельство базального познания.</p>
+      </div>
+    </section>
+
+    <section class="question">
+      <h2>Биологический вопрос</h2>
+      <p>Сочли бы вы заданные топологией замыкание и реляционную историю <strong>минимальной распределённой памятью формы или гомеостатической целью, только исторически зависимым аттрактором либо и тем и другим?</strong> Какое одно вмешательство лучше всего различило бы их физические роли?</p>
+    </section>
+
+    <section class="refs">
+      <h2>Литература</h2>
+      <ol>
+        <li>Levin, M. (2022). <em>Technological Approach to Mind Everywhere.</em> <a href="https://doi.org/10.3389/fnsys.2022.768201">doi:10.3389/fnsys.2022.768201</a></li>
+        <li>Durant, F., et al. (2017). <em>Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients.</em> <a href="https://pubmed.ncbi.nlm.nih.gov/28538159/">PMID:28538159</a></li>
+        <li>Manicka, S., &amp; Levin, M. (2019). <em>Modeling somatic computation with non-neural bioelectric networks.</em> <a href="https://doi.org/10.1038/s41598-019-54859-8">doi:10.1038/s41598-019-54859-8</a></li>
+        <li>Levin, M. (2023). <em>Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.</em> <a href="https://doi.org/10.1007/s10071-023-01780-3">doi:10.1007/s10071-023-01780-3</a></li>
+      </ol>
+    </section>
+  </article>
+</main>
+</body>
+</html>

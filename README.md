@@ -9,6 +9,7 @@ modeled loop.
 ## Start here
 
 - **[Public visual abstract](https://amirtlinov.github.io/relational-closure-carrier/)** — the primary two-page argument and biological question.
+- **[Русское зеркало](https://amirtlinov.github.io/relational-closure-carrier/ru/)** — тот же компактный абстракт, схема и отдельный двухстраничный PDF на русском.
 - **[Two-page PDF](ABSTRACT.pdf)** / **[English text](ABSTRACT.md)** / **[Russian meaning mirror](ABSTRACT_RU.md)**.
 - **[Technical extended abstract](TECHNICAL_ABSTRACT.md)** — the denser Relational Distinguishability account and full controls narrative.
 - **[Evidence boundary](EVIDENCE.md)** — exact result, interventions, controls, and hashes.
