@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A public two-page abstract on causal scale closure and material lineage memory in a minimal non-neural carrier.">
+  <title>When Do Parts Become a Whole? — Amir Tlinov</title>
+  <style>
+    :root {
+      --ink: #17252e;
+      --muted: #596973;
+      --line: #d8e0e5;
+      --paper: #fbfcfd;
+      --blue: #176b87;
+      --blue-soft: #eaf4f7;
+      --orange: #a95b2d;
+      --orange-soft: #fff1e8;
+      --red: #a13d3d;
+    }
+    * { box-sizing: border-box; }
+    html { background: #e9edf0; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 9.4pt;
+      line-height: 1.39;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { padding: 24px 0 48px; }
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto 24px;
+      padding: 13mm 15mm 12mm;
+      background: var(--paper);
+      box-shadow: 0 16px 45px rgba(29, 42, 50, .13);
+      position: relative;
+      overflow: hidden;
+    }
+    .sheet::after {
+      content: attr(data-page);
+      position: absolute;
+      right: 15mm;
+      bottom: 7mm;
+      color: #8a979f;
+      font-size: 7.5pt;
+      letter-spacing: .08em;
+    }
+    .eyebrow {
+      margin: 0 0 4mm;
+      color: var(--blue);
+      font-size: 7.6pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 165mm;
+      font-size: 28pt;
+      line-height: 1.02;
+      letter-spacing: -.035em;
+      font-weight: 590;
+    }
+    .subtitle {
+      margin: 3mm 0 0;
+      max-width: 156mm;
+      color: var(--muted);
+      font-size: 12.4pt;
+      line-height: 1.25;
+      font-weight: 430;
+    }
+    .byline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4mm;
+      margin: 5mm 0 7mm;
+      padding-top: 4mm;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 8.2pt;
+    }
+    h2 {
+      margin: 0 0 2.2mm;
+      color: var(--blue);
+      font-size: 9pt;
+      line-height: 1.15;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h3 {
+      margin: 0 0 1.4mm;
+      font-size: 10pt;
+      line-height: 1.25;
+      font-weight: 650;
+    }
+    p { margin: 0 0 2.5mm; }
+    strong { font-weight: 650; }
+    .lead {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7mm;
+      margin-bottom: 5mm;
+    }
+    .lead p { margin-bottom: 0; }
+    .figure {
+      margin: 0 0 5mm;
+      padding: 3mm;
+      border: 1px solid var(--line);
+      border-radius: 4mm;
+      background: #f7f9fa;
+    }
+    .figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    figcaption {
+      margin-top: 2mm;
+      color: var(--muted);
+      font-size: 7.6pt;
+      line-height: 1.35;
+    }
+    .criteria {
+      display: grid;
+      grid-template-columns: 39mm 1fr;
+      gap: 6mm;
+      align-items: start;
+      padding-top: 4mm;
+      border-top: 1px solid var(--line);
+    }
+    .criteria-intro { color: var(--muted); }
+    .criteria ol {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 7mm;
+      row-gap: 1.4mm;
+      margin: 0;
+      padding-left: 5mm;
+    }
+    .criteria li { padding-left: 1mm; }
+    .note {
+      margin-top: 2mm;
+      color: var(--muted);
+      font-size: 8pt;
+    }
+    .page-two-head {
+      display: grid;
+      grid-template-columns: 42mm 1fr;
+      gap: 7mm;
+      align-items: start;
+      padding-bottom: 5mm;
+      border-bottom: 1px solid var(--line);
+    }
+    .page-two-head .stamp {
+      padding: 4mm;
+      border: 1px solid #b9d5de;
+      border-radius: 4mm;
+      background: var(--blue-soft);
+    }
+    .stamp .big {
+      display: block;
+      color: var(--blue);
+      font-size: 18pt;
+      line-height: 1;
+      font-weight: 600;
+      letter-spacing: -.03em;
+    }
+    .stamp .small {
+      display: block;
+      margin-top: 1.8mm;
+      color: var(--muted);
+      font-size: 7.3pt;
+      line-height: 1.32;
+    }
+    .experiments {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7mm;
+      margin: 5mm 0;
+    }
+    .experiment {
+      padding-left: 4mm;
+      border-left: 2px solid var(--line);
+    }
+    .experiment:first-child { border-left-color: var(--blue); }
+    .experiment:last-child { border-left-color: var(--orange); }
+    .experiment p { margin-bottom: 0; }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5mm;
+      margin-bottom: 5mm;
+    }
+    .metric {
+      min-height: 23mm;
+      padding: 3mm;
+      border: 1px solid var(--line);
+      border-radius: 3mm;
+      background: #fff;
+    }
+    .metric b {
+      display: block;
+      margin-bottom: 1mm;
+      color: var(--ink);
+      font-size: 14pt;
+      line-height: 1;
+      font-weight: 620;
+    }
+    .metric span {
+      color: var(--muted);
+      font-size: 7.5pt;
+      line-height: 1.25;
+    }
+    .scope-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5mm;
+      margin-bottom: 5mm;
+    }
+    .scope {
+      padding: 4mm;
+      border-radius: 4mm;
+      border: 1px solid;
+    }
+    .scope.yes { background: var(--blue-soft); border-color: #bad7e0; }
+    .scope.no { background: var(--orange-soft); border-color: #efd0bb; }
+    .scope h3 { color: var(--blue); }
+    .scope.no h3 { color: var(--orange); }
+    .scope p:last-child { margin-bottom: 0; }
+    .question {
+      display: grid;
+      grid-template-columns: 36mm 1fr;
+      gap: 5mm;
+      margin: 0 0 5mm;
+      padding: 4.5mm;
+      border: 1.5px solid #9fc7d3;
+      border-radius: 4mm;
+      background: #fff;
+    }
+    .question h2 { margin-top: .5mm; }
+    .question p { margin: 0; font-size: 10pt; line-height: 1.38; }
+    .refs {
+      display: grid;
+      grid-template-columns: 28mm 1fr;
+      gap: 5mm;
+      padding-top: 4mm;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 7.25pt;
+      line-height: 1.32;
+    }
+    .refs ol { margin: 0; padding-left: 4.5mm; }
+    .refs li { margin-bottom: 1mm; }
+    a { color: var(--blue); text-decoration: none; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .9em;
+      color: #34434c;
+    }
+    @media screen and (max-width: 840px) {
+      html { background: var(--paper); }
+      main { padding: 0; }
+      .sheet {
+        width: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: 28px 22px 48px;
+        box-shadow: none;
+        overflow: hidden;
+      }
+      .sheet::after { display: none; }
+      .lead, .criteria, .page-two-head, .experiments, .scope-grid, .question, .refs { grid-template-columns: 1fr; }
+      .criteria ol, .metrics { grid-template-columns: 1fr; }
+      h1 { font-size: 34px; }
+      .figure { margin-left: -10px; margin-right: -10px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .figure img { min-width: 720px; }
+      .byline a { overflow-wrap: anywhere; }
+    }
+    @media print {
+      @page { size: A4; margin: 0; }
+      html, body { background: #fff; }
+      main { padding: 0; }
+      .sheet {
+        width: 210mm;
+        height: 297mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+        break-after: page;
+        page-break-after: always;
+      }
+      .sheet:last-child { break-after: auto; page-break-after: auto; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <article class="sheet" data-page="01 / 02">
+    <p class="eyebrow">Public abstract · Basal cognition / morphogenesis</p>
+    <h1>When Do Parts Become a Whole?</h1>
+    <p class="subtitle">A minimal non-neural test of causal scale closure and material lineage memory</p>
+    <div class="byline">
+      <span><strong>Amir Tlinov</strong></span>
+      <span>Independent research</span>
+      <span>July 2026</span>
+      <span><a href="https://github.com/AmirTlinov/relational-closure-carrier">Code &amp; evidence ↗</a></span>
+    </div>
+
+    <section>
+      <h2>The question and hypothesis</h2>
+      <div class="lead">
+        <p>Regeneration and morphogenesis make an old question experimentally concrete: <strong>when do locally interacting parts become one higher-scale causal individual, rather than merely an aggregate?</strong> Work on bioelectric pattern memory and multiscale competency shows that tissues can retain history, correct anatomical error, and pursue large-scale outcomes despite perturbation [1–3]. This work does not model planarian physiology. It asks for a narrower, substrate-independent minimum that can be built, injured, and falsified.</p>
+        <p><strong>The specific contribution is a joint intervention test:</strong> the same local-rule carrier must acquire a higher-scale act, lose and rebuild it after ablation, and carry an action-earned, harness-routed body–world history into later matched repair. Contact becomes meaningful <em>for a body</em> here only when it leaves a persistent relation in that body and changes what it can do after a later perturbation.</p>
+      </div>
+    </section>
+
+    <figure class="figure">
+      <img src="causal-scale-closure.svg" alt="Diagram of causal scale closure, ablation and restoration, followed by world-mediated A/B relational history and different later repair.">
+      <figcaption><strong>Figure 1.</strong> One carrier must support, lose, and materially restore a higher-scale act; then an action-earned, harness-routed body–world history must survive world removal and alter later matched repair. An explicit empty upper slot and the A/B return routes are prepared in advance; the upper relation itself is not.</figcaption>
+    </figure>
+
+    <section class="criteria">
+      <div>
+        <h2>Operational criterion</h2>
+        <p class="criteria-intro">A bounded causal scale closure must survive interventions, not merely resemble a whole.</p>
+        <p class="note"><strong>Causal octave (<code>1:2</code>)</strong> is the informal name for retained differences acting as one new causal unit without erasing lower causes—not a numerical ratio.</p>
+      </div>
+      <ol>
+        <li>Lower relations remain materially present and traversable.</li>
+        <li>The group supports one act unavailable before closure.</li>
+        <li>Targeted ablation removes the act while preserving the lower route.</li>
+        <li>A new local traversal through surviving material restores it.</li>
+        <li>A world-earned relation survives world removal and changes response to a later matched injury.</li>
+      </ol>
+    </section>
+  </article>
+
+  <article class="sheet" data-page="02 / 02">
+    <section class="page-two-head">
+      <div class="stamp">
+        <span class="big">1 rule</span>
+        <span class="small">collision kernel SHA-256<br><code>0d32047eecb3…</code></span>
+      </div>
+      <div>
+        <h2>The carrier</h2>
+        <p>The model stores persistent local links between fixed records; one immutable collision rule updates one linked encounter at a time. The harness initializes the body, removes a declared link, supplies the world interaction, and measures recovery. An explicit empty upper slot and the A/B return routes are pre-installed; the upper relation itself is not. No reward, target evaluator, planner, learned model, or score-dependent update participates in the carrier’s state transition. <span class="note">Frozen audit: 21 tests · world-lineage executable source SHA-256: <code>2ac3304f0a95…</code></span></p>
+      </div>
+    </section>
+
+    <section class="experiments">
+      <div class="experiment">
+        <h3>Scale closure · ablation · restoration</h3>
+        <p>Closure and restart passed after growth spans <code>1</code>, <code>7</code>, <code>127</code>, and <code>1023</code> (closed cycles: <code>6</code>, <code>12</code>, <code>132</code>, <code>1028</code> places). The full court used one 12-place lower cycle: after the lower route closed, its earned upper relation gave a one-collision <code>PASS</code>; removing only that relation gave <code>HALT</code> while the cycle remained traversable; one new traversal rebuilt the relation at collision 12 and restored <code>PASS</code>. A separate 18-record address-relabel control preserved trace and outcome.</p>
+      </div>
+      <div class="experiment">
+        <h3>World-mediated relational history</h3>
+        <p>A 1024-record body acted through a five-record world using the same record format and rule; return was valid only from a world record changed by that passage. The harness directed the earned final return into prebuilt route A or B. After world deletion, fresh-process restart, identical washout, and the same cut, A restored the upper entry in episode 1 of AB and 2 of BA; B gave the mirror pattern. Shuffling all 257 return-relation placements erased A/B; full node relabel preserved it.</p>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Evidence summary">
+      <div class="metric"><b>A1 · B2</b><span>upper-entry birth episode in AB; mirrored in BA</span></div>
+      <div class="metric"><b>4 / 4</b><span>prespecified deterministic initializations; not independent replicates</span></div>
+      <div class="metric"><b>112</b><span>paired G1/G2 world-continuity controls</span></div>
+      <div class="metric"><b>8 + 8</b><span>separate placement-shuffle + full-relabel interventions</span></div>
+    </section>
+
+    <section class="scope-grid">
+      <div class="scope yes">
+        <h3>What the result supports</h3>
+        <p>A constructive existence result in an engineered carrier: persistent local relations can support a bounded higher-scale act, lose it under targeted injury, rebuild it through surviving material, and retain body–world history that changes later repair. Shuffle versus relabel identifies a distribution-dependent relation class; it does not localize memory to a small site.</p>
+      </div>
+      <div class="scope no">
+        <h3>What it does not support</h3>
+        <p>It is not evidence that natural matter arises from differences, not a model of bioelectric physiology, and not basal cognition. Topology, upper slot, and A/B routes are specified. The five-record world is the same engineered physics, not a distinct material class, and the harness selects its final return route. Pre-arranged repair architecture remains the strongest alternative; a biological analogue must also rule out incomplete washout.</p>
+      </div>
+    </section>
+
+    <section class="question">
+      <h2>Biological question</h2>
+      <p>Would this reveal where lineage history is carried in tissue: impose two bioelectric histories, wash out until a prespecified measurement panel matches, apply the same injury, test for divergent repair, then perturb the candidate state that predicts it? <strong>Which measurement and intervention would best distinguish causally effective lineage memory from incomplete washout or a pre-wired circuit?</strong> This need not oppose a distributed morphogenetic setpoint; it asks which physical relations carry history.</p>
+    </section>
+
+    <section class="refs">
+      <h2>References</h2>
+      <ol>
+        <li>Levin, M. (2023). <em>Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.</em> Animal Cognition 26, 1865–1891. <a href="https://doi.org/10.1007/s10071-023-01780-3">doi:10.1007/s10071-023-01780-3</a></li>
+        <li>Levin, M., Pietak, A. M., &amp; Bischof, J. (2019). <em>Planarian regeneration as a model of anatomical homeostasis.</em> Seminars in Cell &amp; Developmental Biology 87, 125–144. <a href="https://doi.org/10.1016/j.semcdb.2018.04.003">doi:10.1016/j.semcdb.2018.04.003</a></li>
+        <li>Levin, M. (2022). <em>Technological Approach to Mind Everywhere.</em> Frontiers in Systems Neuroscience 16, 768201. <a href="https://doi.org/10.3389/fnsys.2022.768201">doi:10.3389/fnsys.2022.768201</a></li>
+      </ol>
+    </section>
+  </article>
+</main>
+</body>
+</html>

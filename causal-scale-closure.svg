@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Causal scale closure and body-world lineage history</title>
+  <desc id="desc">Two linked intervention diagrams. The first shows lower relations closing into one higher-scale act, loss of that act under ablation, and restoration by a new local traversal. The second shows body action changing a world, an earned return leaving A or B history in the body, and a mirrored repair order after world deletion, restart, washout, and a matched cut.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfcfd"/>
+      <stop offset="1" stop-color="#f3f6f8"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#647381"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#176b87"/>
+    </marker>
+    <style>
+      .label{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:18px;fill:#20303a}
+      .small{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15px;fill:#5b6a74}
+      .micro{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;fill:#5b6a74}
+      .section{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:18px;font-weight:650;letter-spacing:.05em;fill:#176b87}
+      .line{stroke:#647381;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .blueLine{stroke:#176b87;stroke-width:2.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .nodeA{fill:#e7f3f6;stroke:#176b87;stroke-width:2}
+      .nodeB{fill:#fff0e7;stroke:#b96732;stroke-width:2}
+      .neutral{fill:#fff;stroke:#a7b2ba;stroke-width:2}
+      .panel{fill:#fff;stroke:#d6dde2;stroke-width:1.5}
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="618" rx="24" fill="url(#paper)" stroke="#dfe5e9"/>
+
+  <text x="48" y="48" class="section">I · CAUSAL SCALE CLOSURE</text>
+
+  <g transform="translate(48 78)">
+    <rect class="panel" x="0" y="0" width="340" height="202" rx="18"/>
+    <text x="20" y="32" class="label" font-weight="600">Lower relations remain physical</text>
+    <path d="M52 111 C90 63 142 63 180 111 S270 159 305 111" class="blueLine"/>
+    <circle cx="52" cy="111" r="18" class="nodeA"/><text x="46" y="117" class="label">+</text>
+    <circle cx="114" cy="82" r="18" class="nodeB"/><text x="108" y="88" class="label">−</text>
+    <circle cx="180" cy="111" r="18" class="nodeA"/><text x="174" y="117" class="label">+</text>
+    <circle cx="244" cy="140" r="18" class="nodeB"/><text x="238" y="146" class="label">−</text>
+    <circle cx="305" cy="111" r="18" class="nodeA"/><text x="299" y="117" class="label">+</text>
+    <text x="20" y="181" class="small">complete local return · traversable route</text>
+  </g>
+
+  <path d="M405 179 H470" class="line" marker-end="url(#arrow)"/>
+  <text x="407" y="157" class="small">closure</text>
+
+  <g transform="translate(486 78)">
+    <rect class="panel" x="0" y="0" width="280" height="202" rx="18"/>
+    <text x="20" y="32" class="label" font-weight="600">One higher-scale act</text>
+    <circle cx="140" cy="104" r="53" fill="#e7f3f6" stroke="#176b87" stroke-width="3"/>
+    <circle cx="140" cy="104" r="31" fill="#fff" stroke="#176b87" stroke-width="2"/>
+    <path d="M117 104 H158" class="blueLine" marker-end="url(#arrowBlue)"/>
+    <text x="95" y="178" class="small">one ordinary collision</text>
+  </g>
+
+  <path d="M783 179 H839" class="line" marker-end="url(#arrow)"/>
+  <text x="786" y="157" class="small">ablate</text>
+
+  <g transform="translate(854 78)">
+    <rect class="panel" x="0" y="0" width="298" height="202" rx="18"/>
+    <text x="20" y="32" class="label" font-weight="600">Loss, then material repair</text>
+    <path d="M45 122 C82 78 125 78 162 122 S230 160 258 122" class="blueLine"/>
+    <circle cx="45" cy="122" r="14" class="nodeA"/>
+    <circle cx="101" cy="92" r="14" class="nodeB"/>
+    <circle cx="162" cy="122" r="14" class="nodeA"/>
+    <circle cx="218" cy="151" r="14" class="nodeB"/>
+    <circle cx="258" cy="122" r="14" class="nodeA"/>
+    <path d="M148 69 l14 -14 m-14 0 l14 14" stroke="#b2443f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M38 176 C115 203 230 199 266 161" class="line" marker-end="url(#arrow)"/>
+    <text x="18" y="190" class="micro">new local traversal restores act</text>
+  </g>
+
+  <line x1="48" y1="314" x2="1152" y2="314" stroke="#d7dee3" stroke-width="1.5"/>
+  <text x="48" y="354" class="section">II · BODY–WORLD LINEAGE HISTORY</text>
+
+  <g transform="translate(48 382)">
+    <rect class="panel" x="0" y="0" width="230" height="142" rx="18"/>
+    <text x="20" y="31" class="label" font-weight="600">BODY acts</text>
+    <rect x="20" y="55" width="190" height="46" rx="12" fill="#e7f3f6" stroke="#176b87" stroke-width="2"/>
+    <path d="M42 78 H185" class="blueLine" marker-end="url(#arrowBlue)"/>
+    <text x="20" y="126" class="small">one finite local continuation</text>
+  </g>
+
+  <path d="M292 453 H350" class="line" marker-end="url(#arrow)"/>
+
+  <g transform="translate(366 382)">
+    <rect class="panel" x="0" y="0" width="238" height="142" rx="18"/>
+    <text x="20" y="31" class="label" font-weight="600">WORLD changes</text>
+    <circle cx="57" cy="78" r="18" class="neutral"/>
+    <circle cx="118" cy="78" r="18" class="nodeB"/>
+    <circle cx="179" cy="78" r="18" class="neutral"/>
+    <path d="M76 78 H97 M137 78 H158" class="line"/>
+    <text x="20" y="126" class="small">return must be earned here</text>
+  </g>
+
+  <path d="M621 453 H676" class="line" marker-end="url(#arrow)"/>
+
+  <g transform="translate(692 382)">
+    <rect class="panel" x="0" y="0" width="202" height="142" rx="18"/>
+    <text x="20" y="31" class="label" font-weight="600">History enters BODY</text>
+    <path d="M37 72 H165" class="blueLine"/>
+    <circle cx="64" cy="72" r="17" class="nodeA"/><text x="58" y="78" class="label">A</text>
+    <circle cx="139" cy="72" r="17" class="nodeB"/><text x="133" y="78" class="label">B</text>
+    <text x="20" y="126" class="small">same body · return route A or B</text>
+  </g>
+
+  <path d="M911 453 H964" class="line" marker-end="url(#arrow)"/>
+
+  <g transform="translate(980 382)">
+    <rect class="panel" x="0" y="0" width="172" height="142" rx="18"/>
+    <text x="18" y="31" class="label" font-weight="600">Later matched cut</text>
+    <path d="M35 74 H137" class="line"/>
+    <path d="M81 61 l14 26 M95 61 L81 87" stroke="#b2443f" stroke-width="3.4" stroke-linecap="round"/>
+    <text x="18" y="113" class="micro">AB: A1 · B2</text>
+    <text x="18" y="132" class="micro">BA: A2 · B1</text>
+  </g>
+
+  <path d="M792 542 C800 575 1001 578 1059 537" class="line" marker-end="url(#arrow)"/>
+  <text x="675" y="594" class="micro">delete world · fresh-process restart · common washout</text>
+
+  <g transform="translate(48 548)">
+    <rect x="0" y="0" width="585" height="42" rx="12" fill="#fff" stroke="#d6dde2"/>
+    <text x="16" y="26" class="small"><tspan font-weight="650" fill="#20303a">Representation intervention:</tspan> placement shuffle erases A/B · full node relabel preserves it</text>
+  </g>
+</svg>
