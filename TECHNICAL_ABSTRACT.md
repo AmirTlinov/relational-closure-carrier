@@ -30,7 +30,7 @@ covariance.
 
 ### Minimal carrier
 
-The carrier is a deterministic, non-neural computational dynamical system with explicit body–world coupling. Its body contains 1,024 writable relational sites in a memory-mapped file. Each site stores a small local state and explicit handles to available contacts and conducting relations. One finite local collision rule is used throughout. It has no global sweep, coordinate arithmetic, fitness function, symbolic planner, runtime comparison with a completed form, or channel carrying reward.
+The prepared arena is a deterministic, non-neural computational dynamical system over explicit relations. The harness-designated persistent surface contains 1,024 writable relational sites and is called `BODY` for protocol provenance. Each site stores a small local state and explicit handles to available contacts and conducting relations. One finite local collision rule is used throughout. It has no global sweep, coordinate arithmetic, fitness function, symbolic planner, runtime comparison with a completed form, or channel carrying reward.
 
 The same rule can:
 
@@ -39,35 +39,57 @@ The same rule can:
 3. retract a route that fails to close;
 4. form a higher-order conducting relation only after a lower route physically returns to its origin.
 
-The external harness prepares the arena and reads the result, but it does not select a relation during execution.
+The external harness prepares the arena, partitions storage, and reads the result, but it does not select a relation during execution. The local law has no predicate for that witness partition.
 
-The body contacts a separately created `WORLD` substrate. The same collision rule operates across both files. A continuation from `WORLD` back into `BODY` counts as an earned return only if the ongoing bodily action first changed the particular world site from which that return later emerged:
+The temporary five-record surface labeled `WORLD` is another file-backed region of the same `MaterialRecord` physics. One ongoing continuation follows explicit handles across both witness partitions. A return is counted as earned only if that continuation first changes the particular surrounding record from which the return later emerges:
 
 ```text
-BODY action → changed WORLD site → return to BODY → closure
+ongoing continuation → changed surrounding record → earned return → closure
 ```
 
-Passive contact, a disconnected world change, or a prewritten return state therefore cannot substitute for this body–world provenance sequence.
+Passive contact, a disconnected surrounding change, or a prewritten return state therefore cannot substitute for this material provenance sequence.
+
+### Witness boundary and surface flattening
+
+`BODY` and `WORLD` are harness/witness labels for two mmap storage surfaces
+governed by the same `MaterialRecord` format and local collision physics. This
+partition belongs to the experimental architecture: the surface router uses its
+namespace to choose a file, while the frozen `collision` law contains no
+BODY/WORLD predicate and follows only explicit handles.
+
+A dedicated control asked whether that routing namespace is required for the
+local dynamics of one prepared matched passage. The witness copied all 1,024
+former BODY records and five former WORLD records into one direct 1,029-record
+`MmapBody`, removed the surface namespace from every non-sentinel handle, and
+applied a deterministic hostile fixed-point-free permutation to all nodes. The
+ordinary two-surface run and the flat run were then compared through the same
+frozen collision kernel.
+
+All `2,058 / 2,058` collision events were isomorphic in full—kind, current
+place, met place, continuation, and changed-place tuple—and all `1,029 / 1,029`
+final `MaterialRecord` values were isomorphic. Thus the BODY/WORLD namespace is
+not dynamically necessary for this matched trajectory. The witness still
+constructs the mapping and remembers the former labels.
 
 ### History-dependent repair assay
 
-Two lines, A and B, begin from the same injured 513-site body. Their worlds have equal resources and differ only in the physical placement of the earned return into one of two bodily routes. Both lines recover the full 1,024-site body and the same higher-order conducting capacity.
+Two lines, A and B, begin from the same injured 513-site `BODY`-labeled snapshot. Their `WORLD` fixtures have equal resources and differ only in the physical placement of the earned return into one of two prepared routes in that persistent group. Both lines recover the full 1,024-site group and the same higher-order conducting capacity.
 
-The original worlds are then deleted. Only each `BODY` file survives. Every body is reopened in a fresh process, exposed to the same common washout, and cut again at the same current relation. Future repair is probed in fresh A and B worlds in both orders (`AB` and `BA`).
+The harness then deletes the temporary `WORLD` files. Only each persistent `BODY`-labeled snapshot survives. Every snapshot is reopened in a fresh process, exposed to the same common washout, and cut again at the same current relation. Future repair is probed with fresh A and B fixtures in both orders (`AB` and `BA`).
 
-The question is not whether a log can classify the histories. It is whether the surviving placement of relations inside the body is necessary for different future conduct.
+The question is not whether a log can classify the histories. It is whether the surviving placement of relations within the persistent group is necessary for different future conduct.
 
 ### Result
 
-Across seeds 17, 23, 41, and 59, histories A and B produced bodies with the same material extent and the same immediately available large-scale conductance, but with different placements of world-produced return relations. These differences survived deletion of the original world, body-only restart, common washout, and a second injury.
+Across seeds 17, 23, 41, and 59, histories A and B produced persistent groups with the same material extent and the same immediately available large-scale conductance, but with different placements of return relations earned during passage through records labeled `WORLD`. These differences survived deletion of the original temporary file, restart of the persistent snapshot, common washout, and a second injury.
 
 After that injury, line A restored the higher-order relation on the A opportunity and line B on the B opportunity. Reversing probe order changed the episode number but not the line-specific response. Within-line signatures were identical across seeds; A/B signatures remained separated.
 
-The result was tested over two generations with seven paired controls per line and seed, for 112 comparisons. Controls removed the world, made contact passive, disconnected world change from bodily action, mismatched the continuation phase, delayed return under the same finite collision budget, redirected the return to the other prepared route, or replaced action-dependent world formation with a pre-conducting phase-incompatible route. All 112 controls separated from the matched condition both in the resulting `BODY` bytes and in behavior after a further common washout and injury.
+The result was tested over two generations with seven paired controls per line and seed, for 112 comparisons. Controls removed the `WORLD` fixture, made contact passive, disconnected change of the surrounding record from the ongoing continuation, mismatched the continuation phase, delayed return under the same finite collision budget, redirected the return to the other prepared route, or replaced continuation-dependent formation in `WORLD`-labeled records with a pre-conducting phase-incompatible route. All 112 controls separated from the matched condition both in the resulting `BODY` bytes and in behavior after a further common washout and injury.
 
 Two hostile interventions localize the memory claim:
 
-- a complete relabeling of storage addresses, while preserving relations, preserved both body organization and future behavior;
+- a complete relabeling of storage addresses, while preserving relations, preserved both `BODY`-labeled relational organization and future behavior;
 - shuffling only the placement of the history-bearing return relations erased the A/B future difference while preserving the amount of material and the rest of the relational structure.
 
 Together these interventions define **Relational Distinguishability** in this
@@ -80,13 +102,20 @@ A separate scale intervention removed only the higher-order conducting relation.
 
 The bounded result is therefore:
 
-> In this prepared carrier, two histories of world contact are retained as different relational placements in the body; they remain distinguishable in later repair after world deletion, restart, common washout, and renewed injury, and the distribution of the tested return-relation class is interventionally necessary for that distinction.
+> In this prepared carrier, two histories of contact across witness-labeled partitions are retained as different relational placements within the persistent group; they remain distinguishable in later repair after temporary-file deletion, restart, common washout, and renewed injury, and the distribution of the tested return-relation class is interventionally necessary for that distinction.
 
-The current source passes 21 tests; the public evidence bundle records four seeds and 112 paired controls.
+The current source passes 22 tests; the public evidence bundle records four seeds, 112 paired controls, and the single-mmap isomorphism receipt. World-lineage executable source SHA-256: `d3ed7438372973ef17b61b01659569372bb8c9faf61c48b334ded6bedca962e8`.
 
 ### Limits and the question I am asking
 
-The topology is engineered. The experimenter specifies the available contacts, the higher-order closure affordance, the two return routes, the injury, and the readout. The carrier does not originate its own boundary, discover an open-ended morphology, maintain metabolism, or establish its own goals. It is digital, uses a small state vocabulary, and is not a model of ion channels, gap junctions, or biological tissue. It has not been independently replicated. I do **not** present it as evidence of basal cognition or as an explanation of morphogenesis.
+The topology and witness partition are engineered. The experimenter specifies the available contacts, the higher-order closure affordance, the two return routes, the injury, and the readout. No organism/environment or BODY/WORLD predicate is available to the local law. Calling the held `BODY`-labeled relational group an organism is a proposed interpretation: in this assay it remains a witness-selected group among other records of the same physics, not a demonstrated self-born boundary. The carrier does not discover an open-ended morphology, maintain metabolism, or establish its own goals. It is digital, uses a small state vocabulary, and is not a model of ion channels, gap junctions, or biological tissue. It has not been independently replicated. I do **not** present it as evidence of basal cognition or as an explanation of morphogenesis.
+
+The flattening result is deliberately narrower than the serial assay. It covers
+one prepared matched passage only; deletion of the temporary `WORLD` file,
+restart of the persistent `BODY`-labeled snapshot, common washout, G2, and the
+paired control family have not been reproduced in the flat field. It therefore
+does not show a self-born boundary or establish that every use of the
+BODY/WORLD witness partition can be eliminated from the full protocol.
 
 Its intended value is narrower: it probes the boundary between **history-dependent self-organization** and **anatomical homeostasis**. The runtime contains no separate symbolic target register or model of a completed body. However, the history-bearing relational placement is readable through future repair and rewritable by intervention, while the prepared higher-order slot and return routes encode a closure affordance. Together, these may already constitute a rudimentary distributed pattern memory or homeostatic target rather than its absence.
 

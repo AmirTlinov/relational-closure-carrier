@@ -1,34 +1,34 @@
 {
   "artifact_kind": "relational_closure_carrier_public_audit",
-  "generated_utc": "2026-07-14T05:39:19.348286+00:00",
+  "generated_utc": "2026-07-14T06:01:27.346907+00:00",
   "claim": "bounded_history_dependent_relational_repair",
   "tests": {
-    "pytest": "21 passed",
+    "pytest": "22 passed",
     "ruff": "passed"
   },
   "source_sha256": {
     ".gitignore": "563b45e6ca1aaf77ae5ed5568de0ca25d84cb491311fa80209dac15696987be8",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "ABSTRACT.md": "4014e612b773d0349203a3fd21666425c55982cebbd15a7fdb0470fbb76a0e71",
-    "ABSTRACT.pdf": "3f4b2ef6d0f3df9efc8f77bd8ac22294cf088a3b608efa806dcf47860e2945df",
-    "ABSTRACT_RU.md": "d41c6942b1d68915888b77d23cd0f2d77bb7459160691bfba8cdbad3c9df60fa",
-    "EVIDENCE.md": "38c936e56f6400c0ba7fb4b175842ba908d3e090446b61ddf801c59a15c1ae4f",
-    "README.md": "79d714166182c61f9ebfe3e377c7a515d27289fbb12d1128ebd7ea64ae160a7c",
-    "REPRODUCE.md": "c7dc5bbacef12e46011632030fe91b8cb8a86fcaaa7b71902e040d514fe5df54",
-    "TECHNICAL_ABSTRACT.md": "36a2d062bd21c32807ea610e7bca821ac1e70c17680279bce014166cd75e40e2",
-    "TECHNICAL_ABSTRACT.pdf": "070f77b0476fdf99df2495cb40b8aed52841a2c55a9b939859970eeef39981cc",
-    "TECHNICAL_ABSTRACT_RU.md": "65680d7e3fa4cc120db2746d54b78014b9bbd6cf07ce6ebd246782ea8c0113ee",
+    "ABSTRACT.md": "824e1b3cd4a731b2014bf1159480ddb934ef6895a47e57f1f904c3ce40a23e42",
+    "ABSTRACT.pdf": "d945c314458bcdb2f31b4e23cf2b39470a0b9066a8e1a2e5cfdae50671cc1f22",
+    "ABSTRACT_RU.md": "3bc5c7b6c1be98e08017597e539fc41e2a1bfa26002c3b4f43a201810adfb345",
+    "EVIDENCE.md": "7e4e099184264d320859a5a1f8f43416e4e1eec904098fc8ad8512210972d66d",
+    "README.md": "0063d9b101dcc63e9599b3d2c6c59039589d37d0eb6214332284f8ed960247f1",
+    "REPRODUCE.md": "9e69d7286b518ad46d8296edfcabba8c9511e6d879e16c1bb0c3dc507f3cc798",
+    "TECHNICAL_ABSTRACT.md": "daabdd0963252fd8b0a7bd5bbc5e337eae0733f0c4fe576ae205d7667068a20e",
+    "TECHNICAL_ABSTRACT.pdf": "b8575929aa06623ef5ce5b949821011bffb504104a63ee3f107d32ac8571a63e",
+    "TECHNICAL_ABSTRACT_RU.md": "92e48c74b594a2bef8bb1e89fe32f3b68afce89bbc5eab623fa4b2302b86c773",
     "growth_carrier.py": "0d32047eecb391f572671a3404eb912fa3cc96ea3a39a44212328d5884d312f7",
-    "index.html": "2544258a19c5c56681c768780e34e742d8ae20bab1d9ecd6ba5efa283620deb2",
-    "preview-page-1.png": "3f9a013ba72c3f282bcbbe074158b14a96574fb747ef7cc2ec9bc88d5cd7ae01",
+    "index.html": "4a871c1ed5a1f6c871f1205aeb152c3e5b04d62a975b03b947caac8b08e91304",
+    "preview-page-1.png": "d744681a5df509d2664a33529a64bab1f29a72384508c3d7b04d2b99921eb470",
     "pyproject.toml": "5f65abeb806b9c343ea63e981246d793f572f4a7395f77283b9e64d731b12c5c",
-    "relational-repair-assay.svg": "1fe8d0623e678932e70679013393a31760b6c09a49eb3c90823a13496038021f",
+    "relational-repair-assay.svg": "5577993df2e25b23ca1c9896d615b0770689a53224c04b0449f6f69edaa2b69f",
     "run_growth.py": "51fd8929c7df657252959286a94dbcf015dec96c897bccf9773de49c853e2618",
-    "run_world_lineage.py": "63dacd19ef5051247e9a5c4b579f7ac9aa5f24f65e526537bc9f314428cbcf8f",
+    "run_world_lineage.py": "e678e51b29b1dcc92f97b20d82f6deefcb2c6e6ac644aaed3b699cb0d164fd51",
     "tests/test_growth.py": "34413b2ed763a5cd7b870fa91d2394b6668d6e01e38ebb5b71c966b35fa5550a",
-    "tests/test_world_lineage.py": "d43f1988658253762a946299bd77bc35211b36e971ca56a1ed89a948ed5bf46b",
+    "tests/test_world_lineage.py": "cacb29478f69cf79ac36de3d0044d8e216c9e8c4c2e5fd53a35282e95b8bd48a",
     "uv.lock": "71926b371e86a634ee45eeba258ba697b0196ab48d52e9f28248929163a4849a",
-    "world_lineage.py": "1655fc8aa9f62ae035d50e96b8047c8d4ce4ecc4d1bd0ff56841e0d529a52423"
+    "world_lineage.py": "470de1a8d62ac511ddcbacc0c80f1b6265fa012b4ed4bb508af59e78ee864587"
   },
   "growth": {
     "passed": true,
@@ -56,7 +56,7 @@
   "world_lineage": {
     "passed": true,
     "claim": "serial_world_lineage_carrier",
-    "source_hash": "2ac3304f0a95d8a5e4533401f4727e1a0ee4e4c9e616da3321672866f590c1fd",
+    "source_hash": "d3ed7438372973ef17b61b01659569372bb8c9faf61c48b334ded6bedca962e8",
     "kernel_sha256": "0d32047eecb391f572671a3404eb912fa3cc96ea3a39a44212328d5884d312f7",
     "body_capacity": 1024,
     "seeds": [
@@ -81,6 +81,7 @@
       "full_112_control_denominator_present": true,
       "A_B_lineages_reproducible_and_separated": true,
       "memory_owner_and_node_relabel_controls_passed": true,
+      "matched_pass_survives_single_mmap_flattening": true,
       "all_world_mmaps_removed": true,
       "source_unchanged": true
     },
@@ -109,13 +110,65 @@
       "node_relabel_was_hostile": true,
       "node_relabel_preserved_physical_body": true,
       "node_relabel_preserved_future_signatures": true
+    },
+    "single_mmap_flattening": {
+      "artifact_kind": "single_mmap_surface_flattening_control",
+      "claim": "matched_pass_isomorphic_without_surface_namespace",
+      "line": "A",
+      "seed": 17,
+      "kernel_sha256": "0d32047eecb391f572671a3404eb912fa3cc96ea3a39a44212328d5884d312f7",
+      "flat_capacity": 1029,
+      "node_counts": {
+        "former_BODY": 1024,
+        "former_WORLD": 5
+      },
+      "permutation": {
+        "kind": "affine_fixed_point_free",
+        "multiplier": 100,
+        "offset": 1,
+        "former_WORLD_flat_addresses": [
+          530,
+          630,
+          730,
+          830,
+          930
+        ]
+      },
+      "collision_counts": {
+        "two_surface": 2058,
+        "flat_single_mmap": 2058
+      },
+      "two_surface_crossings": {
+        "BODY_to_WORLD": 3,
+        "WORLD_to_BODY": 2
+      },
+      "final_record_count": 1029,
+      "checks": {
+        "frozen_collision_kernel_exact": true,
+        "one_flat_MmapBody_used_directly": true,
+        "all_1029_nodes_permuted_once": true,
+        "every_node_moved_from_canonical_address": true,
+        "former_BODY_and_WORLD_nodes_mixed": true,
+        "initial_records_isomorphic": true,
+        "matched_crossed_BODY_to_WORLD": true,
+        "matched_returned_WORLD_to_BODY": true,
+        "matched_return_was_earned": true,
+        "entire_collision_trace_isomorphic": true,
+        "lane_stop_isomorphic": true,
+        "all_final_MaterialRecords_isomorphic": true,
+        "all_flat_handles_within_capacity": true,
+        "no_surface_namespace_in_flat_handles": true
+      },
+      "passed": true
     }
   },
   "limitations": [
-    "engineered topology and return routes",
+    "engineered topology, witness partition, and prepared return routes",
     "experimenter-defined injury and readout",
+    "single-mmap flattening covers one prepared matched passage, not the full serial assay",
+    "flattening is witness-constructed and does not establish a self-born or defended boundary",
     "digital carrier, not a biological model",
-    "no claim of basal cognition"
+    "no claim of basal cognition or a spacetime symmetry result"
   ],
   "passed": true
 }

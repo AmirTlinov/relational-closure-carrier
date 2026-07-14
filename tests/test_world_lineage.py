@@ -16,6 +16,7 @@ from world_lineage import (
     run_branch,
     run_paired_conditions,
     shuffle_return_placement,
+    single_mmap_flattening_control,
 )
 
 
@@ -42,6 +43,33 @@ def test_one_cpu_continuation_changes_independent_world_and_returns(tmp_path):
     assert result["world_deleted"]
     assert result["upper_born"] and result["coarse_pass"]
     assert result["body_material_count"] == BODY_CAPACITY
+
+
+def test_matched_pass_isomorphic_in_one_hostilely_permuted_mmap(tmp_path):
+    result = single_mmap_flattening_control(tmp_path / "flat_control")
+
+    assert result["passed"]
+    assert result["flat_capacity"] == 1029
+    assert result["node_counts"] == {"former_BODY": 1024, "former_WORLD": 5}
+    assert result["permutation"]["former_WORLD_flat_addresses"] == [
+        530,
+        630,
+        730,
+        830,
+        930,
+    ]
+    assert result["collision_counts"]["two_surface"] > 0
+    assert (
+        result["collision_counts"]["two_surface"]
+        == result["collision_counts"]["flat_single_mmap"]
+    )
+    assert result["two_surface_crossings"]["BODY_to_WORLD"] > 0
+    assert result["two_surface_crossings"]["WORLD_to_BODY"] > 0
+    assert result["checks"]["entire_collision_trace_isomorphic"]
+    assert result["checks"]["all_final_MaterialRecords_isomorphic"]
+    assert result["checks"]["all_flat_handles_within_capacity"]
+    assert result["checks"]["no_surface_namespace_in_flat_handles"]
+    assert all(result["checks"].values())
 
 
 def test_passive_world_contact_cannot_create_return_or_close_crack(tmp_path):
@@ -240,6 +268,8 @@ def test_full_1024_serial_lineage_cli_has_all_112_controls(tmp_path):
     assert result["controls_total"] == result["actual_controls_total"] == 112
     assert result["lineage_analysis"]["lineages_reproducible_and_separated"]
     assert result["hostile_memory"]["passed"]
+    assert result["single_mmap_flattening"]["passed"]
+    assert result["checks"]["matched_pass_survives_single_mmap_flattening"]
     assert result["kernel_sha256"] == IMMUTABLE_KERNEL_SHA256
     for record in result["records"]:
         for line in ("A", "B"):

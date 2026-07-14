@@ -39,33 +39,43 @@ survives relation-preserving address relabeling, and disappears when the
 candidate relational placement is shuffled.
 
 The contribution is a joint intervention assay. One local-rule carrier must
-earn closure through body–world contact, retain the resulting relational history
-after the world is deleted, express that history during a later matched injury,
-and lose the A/B difference when the candidate relational distinction is
-disrupted.
+earn closure through contact across a witness-defined storage partition, retain the
+resulting relational history after the temporary surrounding records are
+removed, express that history during a later matched injury, and lose the A/B
+difference when the candidate relational distinction is disrupted.
 This is a computational existence test, not a theory of biological regeneration
 or fundamental physics.
 
 ### Operationalizing relational distinguishability
 
-The deterministic carrier contains 1,024 writable relational records. Each
-stores a small local state and explicit handles to available contacts and
-conducting relations. One immutable collision rule updates one linked encounter
-at a time. It has no global sweep, coordinate arithmetic, fitness function,
+The prepared arena implements one record-level physics, defined by
+`MaterialRecord`, across two file-backed storage surfaces. The harness/witness
+labels the persistent 1,024-record surface `BODY` and a temporary five-record
+surface `WORLD` solely to track experimental provenance and lifecycle. These
+labels are not record types or material classes.
+
+Every record stores a small local state and explicit handles to available
+contacts and conducting relations. The frozen local collision law updates one
+linked encounter at a time. It contains no `body`/`world` predicate and does not
+branch on the surface namespace; it follows handles resolved by the experimental
+arena. It has no global sweep, coordinate arithmetic, fitness function,
 symbolic planner, runtime target register, or reward channel.
 
-The external harness prepares the topology, declared injury, worlds, and
-readout. It fixes whether the earned return opportunity is A or B before a run;
-it does not select a relation online during execution. The prepared upper slot
-and two return routes are explicit limitations.
+The external harness prepares the topology, declared injury, storage surfaces,
+and readout. Encoding the surface namespace, creating and deleting the temporary
+`WORLD` file, and retaining a `BODY`-only snapshot belong to the experimental
+architecture and witness protocol. The harness fixes whether the earned return
+opportunity is A or B before a run; it does not select a relation online during
+execution. The prepared upper slot and two return routes are explicit
+limitations.
 
-The body acts through a separately created five-record `WORLD` using the same
-record format and collision rule as `BODY`. A return counts as earned only if
-the ongoing bodily passage first changes the particular world record from which
-the continuation later returns:
+Across the two witness-labeled surfaces, one continuation follows handles from
+records labeled `BODY` into records labeled `WORLD` and back. A return counts as
+earned only if the ongoing passage first changes the particular record from
+which the continuation later returns:
 
 ```text
-BODY action → changed WORLD site → return to BODY → closure
+ongoing continuation → changed surrounding record → earned return → closure
 ```
 
 Passive contact, a disconnected world change, a phase mismatch, or a prewritten
@@ -73,14 +83,15 @@ conducting route cannot substitute for that material sequence.
 
 ### History-dependent repair assay
 
-Lines A and B begin from the same injured body containing 513 occupied records.
-Their worlds have equal resources and differ only in the physical placement of
-the earned final return into one of two prepared bodily routes. Both lines
-recover the full 1,024-record body and the same immediately available
-higher-order conductance.
+Lines A and B begin from the same injured witness-retained group containing 513
+occupied records. Their temporary surrounding surfaces have equal resources and
+differ only in the physical placement of the earned final return into one of two
+prepared routes in that group. Both lines recover the full 1,024-record group
+and the same immediately available higher-order conductance.
 
-The original worlds are then deleted. Only each `BODY` file survives. Every body
-is reopened by a fresh process, exposed to the same common washout, and
+The harness then deletes the original temporary `WORLD` files and retains only
+each persistent `BODY`-labeled snapshot. Every snapshot is reopened by a fresh
+process, exposed to the same common washout, and
 cut again at the same current relation. Repair is probed in fresh A and B worlds
 in both orders (`AB` and `BA`). The assay asks not whether a log can classify
 history, but whether surviving relational placement is necessary for different
@@ -114,6 +125,18 @@ prepared carrier: relation-preserving address relabeling preserves its later
 effect, while shuffling the candidate relational placement erases it. The
 intervention does not localize memory to a small site.
 
+A separate flat-representation control tested whether the witness-owned
+`BODY`/`WORLD` storage split was dynamically required for one prepared matched
+passage. That passage was transferred from two surfaces into a single
+1,029-record `MmapBody` with no surface bits and subjected to a fixed-point-free
+hostile address permutation. The executions were isomorphic across all 2,058
+collision events, and all 1,029 final `MaterialRecord`s corresponded
+isomorphically. Thus the surface namespace and two-file split are dynamically
+unnecessary for this matched passage. The witness still constructs and checks
+the isomorphism; world deletion, fresh-process restart, common washout, and G2
+were not flattened. This control does not establish equivalence of the full
+serial assay.
+
 A separate closure intervention used one 12-place lower cycle. After that cycle
 had earned an upper relation by closing, removing only that relation changed a
 one-collision `PASS` to `HALT` while the lower cycle remained traversable. One
@@ -126,22 +149,31 @@ The bounded result is:
 > fresh-process restart, common washout, and renewed injury; return-relation
 > placement is interventionally necessary for that distinction.
 
-The frozen public source passes 21 tests. The evidence bundle records four
+The frozen public source passes 22 tests. The evidence bundle records four
 prespecified deterministic initializations, 112 paired world-continuity
-controls, eight placement shuffles, and eight full node relabelings. Collision
-kernel SHA-256: `0d32047eecb3…`; world-lineage executable source SHA-256:
-`2ac3304f0a95…`.
+controls, eight placement shuffles, eight full node relabelings, and one bounded
+matched-passage flat-isomorphism control. Collision kernel SHA-256:
+`0d32047eecb3…`; world-lineage executable source SHA-256: `d3ed74383729…`.
 
 ### Limits and requested interpretation
 
-The topology, closure affordance, two return routes, injury, and readout are
-engineered. `WORLD` is a second instance of the same digital physics, not a
-distinct material class, and the harness chooses A/B return placement before
-execution. The carrier does not originate its boundary, discover a morphology,
-maintain metabolism, or form its own goals. It is not a model of cells, ion
-channels, gap junctions, or endogenous bioelectric dynamics; it has not been
-independently replicated. I do not present it as evidence of basal cognition or
-as evidence that morphogenesis lacks target states.
+The topology, closure affordance, two return routes, surface namespace, file
+lifecycle, injury, and readout are engineered. `WORLD` is a second storage
+surface of the same digital physics, not a distinct material class, and the
+harness chooses A/B return placement before execution. No `BODY`/`WORLD`
+boundary is available as a predicate to the frozen collision law. The assay does
+not demonstrate a self-born organismal boundary, discovery of a morphology,
+metabolism, or self-formed goals. It is not a model of cells, ion channels, gap
+junctions, or endogenous bioelectric dynamics; it has not been independently
+replicated. I do not present it as evidence of basal cognition or as evidence
+that morphogenesis lacks target states.
+
+A proposed interpretation—not a result established by this assay—is to call a
+held relational group among other records an organism. On that reading, `BODY`
+is a witness-selected candidate group within one relational material, not a
+different kind of thing from records labeled `WORLD`. The present assay tests
+persistence and repair of a prepared group; it does not show a group discovering
+or maintaining a boundary of its own.
 
 The ambiguity is the point: the runtime has no separate symbolic model of a
 completed body, yet the prepared topology encodes a closure affordance and the

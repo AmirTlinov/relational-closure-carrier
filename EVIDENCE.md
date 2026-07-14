@@ -2,10 +2,11 @@
 
 ## Claim under test
 
-Two past `BODY → WORLD → BODY` histories change the placement of relations
-inside `BODY`; after the original `WORLD` is deleted, those placements survive
-a fresh-process restart and common washout and remain distinguishable
-in the timing of closure after a new injury.
+Two past passages across the witness labels `BODY → WORLD → BODY` change the
+placement of relations inside the persistent group. After the temporary
+`WORLD` records are removed, those placements survive a fresh-process restart
+and common washout and remain distinguishable in the timing of closure after a
+new injury.
 
 This is a claim about Relational Distinguishability and history-dependent repair
 in a prepared digital carrier. It is not a claim of biological regeneration or
@@ -32,7 +33,36 @@ spacetime transformation.
 - One higher-order entry, one common relation, a 510-site action route, and two 256-site return routes.
 - One immutable local collision kernel (`growth_carrier.py`).
 - Explicit relation handles; storage address is not treated as geometry.
-- A separately created `WORLD` file with independent state.
+- A separately allocated temporary `WORLD` storage surface with independent
+  state but the same record physics.
+
+`BODY` and `WORLD` are harness labels for two mmap surfaces of the same record
+physics. `MultiMmapArena` routes a handle to one file or the other; the frozen
+local `collision` predicate does not inspect a BODY/WORLD type.
+
+## Single-mmap flattening control
+
+One prepared matched passage was executed twice:
+
+1. in the normal 1,024-record BODY plus five-record WORLD arrangement;
+2. in one direct 1,029-record `MmapBody` with no surface namespace in any
+   non-sentinel handle.
+
+The witness constructed a deterministic hostile fixed-point-free permutation of
+all 1,029 nodes, mixing former BODY and WORLD records in one address field. The
+receipt establishes:
+
+- `2,058 / 2,058` collision events are isomorphic in full, including event kind,
+  current place, met place, continuation, and changed-place tuple;
+- `1,029 / 1,029` final `MaterialRecord` values are isomorphic;
+- all flat non-sentinel handles are plain addresses `< 1,029` and carry no
+  surface bits;
+- the standard passage crosses BODY → WORLD and WORLD → BODY and earns its
+  return before comparison.
+
+This removes the two-file surface namespace as a necessary ingredient of that
+one matched local trajectory. It does not remove the witness: the witness knows
+the former surfaces and constructs the isomorphism.
 
 ## Serial assay
 
@@ -88,7 +118,7 @@ Scale control:
 ## Fresh verification
 
 ```text
-pytest: 21 passed
+pytest: 22 passed
 ruff:   passed
 ```
 
@@ -99,7 +129,7 @@ collision kernel SHA-256:
 0d32047eecb391f572671a3404eb912fa3cc96ea3a39a44212328d5884d312f7
 
 world-lineage source SHA-256:
-2ac3304f0a95d8a5e4533401f4727e1a0ee4e4c9e616da3321672866f590c1fd
+d3ed7438372973ef17b61b01659569372bb8c9faf61c48b334ded6bedca962e8
 ```
 
 The compact audits are in `results/`. Full receipts are regenerated locally because their ephemeral file paths are intentionally not published.
@@ -112,4 +142,8 @@ The compact audits are in `results/`. Full receipts are regenerated locally beca
 - no metabolism, cells, ion channels, gap junctions, or endogenous bioelectric dynamics;
 - no open-ended discovery of morphology or self-originated goal;
 - address-relabel invariance is not a spacetime symmetry result;
+- the single-mmap control covers one prepared matched passage, not world deletion,
+  body-only restart, common washout, G2, or the paired control family;
+- the flattening map is witness-constructed; a self-born BODY/WORLD boundary is
+  not demonstrated;
 - no independent replication.

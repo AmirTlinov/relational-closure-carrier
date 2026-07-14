@@ -542,6 +542,273 @@ def run_branch(
     return result
 
 
+def _flat_node_keys() -> tuple[tuple[int, int], ...]:
+    return tuple(
+        [(BODY_SURFACE, local) for local in range(BODY_CAPACITY)]
+        + [(WORLD_SURFACE, local) for local in range(WORLD_SIZE)]
+    )
+
+
+def _hostile_flat_permutation(
+    nodes: tuple[tuple[int, int], ...],
+) -> dict[tuple[int, int], int]:
+    """Mix both former surfaces into one deterministic, fixed-point-free field."""
+    capacity = len(nodes)
+    multiplier = 100
+    offset = 1
+    if math.gcd(multiplier, capacity) != 1:
+        raise AssertionError("flat permutation multiplier must be invertible")
+    permutation = {
+        node: (multiplier * canonical + offset) % capacity
+        for canonical, node in enumerate(nodes)
+    }
+    if sorted(permutation.values()) != list(range(capacity)):
+        raise AssertionError("flat permutation must cover every address exactly once")
+    if any(permutation[node] == canonical for canonical, node in enumerate(nodes)):
+        raise AssertionError("flat permutation must move every material node")
+    return permutation
+
+
+def _remap_surface_handle(
+    handle: int,
+    permutation: dict[tuple[int, int], int],
+) -> int:
+    if handle == NO_HANDLE:
+        return NO_HANDLE
+    return permutation[decode_handle(handle)]
+
+
+def _flatten_record(
+    record: MaterialRecord,
+    permutation: dict[tuple[int, int], int],
+) -> MaterialRecord:
+    return MaterialRecord(
+        gesture=record.gesture,
+        contact_handle=_remap_surface_handle(record.contact_handle, permutation),
+        port_handle=_remap_surface_handle(record.port_handle, permutation),
+        birth_handle=_remap_surface_handle(record.birth_handle, permutation),
+        return_handle=_remap_surface_handle(record.return_handle, permutation),
+        upper_handle=_remap_surface_handle(record.upper_handle, permutation),
+    )
+
+
+def _flatten_place(
+    place: Place | None,
+    permutation: dict[tuple[int, int], int],
+) -> Place | None:
+    if place is None:
+        return None
+    return Place(permutation[decode_handle(place.address)])
+
+
+def _flatten_collision(
+    event: Collision,
+    permutation: dict[tuple[int, int], int],
+) -> Collision:
+    current = _flatten_place(event.current, permutation)
+    if current is None:
+        raise AssertionError("a collision must have a current place")
+    return Collision(
+        kind=event.kind,
+        current=current,
+        met=_flatten_place(event.met, permutation),
+        continuation=_flatten_place(event.continuation, permutation),
+        changed=tuple(
+            mapped
+            for place in event.changed
+            if (mapped := _flatten_place(place, permutation)) is not None
+        ),
+    )
+
+
+def _surface_record(
+    body: MmapBody,
+    world: MmapBody,
+    node: tuple[int, int],
+) -> MaterialRecord:
+    surface, local = node
+    if surface == BODY_SURFACE:
+        return body.read(local)
+    if surface == WORLD_SURFACE:
+        return world.read(local)
+    raise AssertionError(f"unknown material surface {surface}")
+
+
+def _record_handles(record: MaterialRecord) -> tuple[int, ...]:
+    return (
+        record.contact_handle,
+        record.port_handle,
+        record.birth_handle,
+        record.return_handle,
+        record.upper_handle,
+    )
+
+
+def single_mmap_flattening_control(
+    root: Path,
+    *,
+    line: str = "A",
+    seed: int = 17,
+) -> dict:
+    """Replay one matched two-surface passage in one hostilely permuted mmap.
+
+    The witness retains the former surface identity only to construct and audit
+    the isomorphism.  The flat execution runs the frozen ``collision`` directly
+    over one ``MmapBody`` whose handles are ordinary local addresses.
+    """
+    assert_immutable_kernel()
+    root.mkdir(parents=True, exist_ok=True)
+    body_path = root / "two_surface_BODY.mmap"
+    world_path = root / "two_surface_WORLD.mmap"
+    flat_path = root / "flat_single_MATERIAL.mmap"
+    body, layout = create_damaged_body(body_path)
+    world: MmapBody | None = None
+    flat: MmapBody | None = None
+    try:
+        world, arena, _order = create_world(
+            body,
+            world_path,
+            layout,
+            line=line,
+            seed=seed,
+            condition="matched",
+        )
+        nodes = _flat_node_keys()
+        flat_capacity = len(nodes)
+        permutation = _hostile_flat_permutation(nodes)
+        flat = MmapBody.create(flat_path, flat_capacity)
+
+        for node in nodes:
+            flat._store(
+                permutation[node],
+                _flatten_record(_surface_record(body, world, node), permutation),
+            )
+        flat.flush()
+
+        initial_records_isomorphic = all(
+            _flatten_record(_surface_record(body, world, node), permutation)
+            == flat.read(permutation[node])
+            for node in nodes
+        )
+        initial_flat_handles = tuple(
+            handle
+            for address in range(flat_capacity)
+            for handle in _record_handles(flat.read(address))
+            if handle != NO_HANDLE
+        )
+        standard = execute_lane(
+            arena,
+            layout.origin,
+            COLLISION_BUDGET,
+            capture_trace=True,
+        )
+        flat_origin = _flatten_place(layout.origin, permutation)
+        if flat_origin is None:
+            raise AssertionError("flat origin cannot be absent")
+        flattened = execute_lane(
+            flat,
+            flat_origin,
+            COLLISION_BUDGET,
+            capture_trace=True,
+        )
+
+        mapped_standard_trace = tuple(
+            _flatten_collision(event, permutation) for event in standard.trace
+        )
+        trace_isomorphic = mapped_standard_trace == flattened.trace
+        stop_isomorphic = (
+            _flatten_place(standard.stop.start, permutation) == flattened.stop.start
+            and _flatten_place(standard.stop.final, permutation) == flattened.stop.final
+            and standard.stop.collisions == flattened.stop.collisions
+            and standard.stop.halted == flattened.stop.halted
+        )
+        final_records_isomorphic = all(
+            _flatten_record(_surface_record(body, world, node), permutation)
+            == flat.read(permutation[node])
+            for node in nodes
+        )
+
+        flat_records = tuple(flat.read(address) for address in range(flat_capacity))
+        flat_handles = tuple(
+            handle
+            for record in flat_records
+            for handle in _record_handles(record)
+            if handle != NO_HANDLE
+        )
+        every_flat_handle = initial_flat_handles + flat_handles
+        standard_summary = trace_summary(standard.trace)
+        world_flat_addresses = tuple(
+            permutation[(WORLD_SURFACE, local)] for local in range(WORLD_SIZE)
+        )
+        body_flat_addresses = tuple(
+            permutation[(BODY_SURFACE, local)] for local in range(BODY_CAPACITY)
+        )
+        checks = {
+            "frozen_collision_kernel_exact": kernel_sha256()
+            == IMMUTABLE_KERNEL_SHA256,
+            "one_flat_MmapBody_used_directly": type(flat) is MmapBody,
+            "all_1029_nodes_permuted_once": sorted(permutation.values())
+            == list(range(flat_capacity)),
+            "every_node_moved_from_canonical_address": all(
+                permutation[node] != canonical
+                for canonical, node in enumerate(nodes)
+            ),
+            "former_BODY_and_WORLD_nodes_mixed": any(
+                address < BODY_CAPACITY for address in world_flat_addresses
+            )
+            and any(address >= BODY_CAPACITY for address in body_flat_addresses)
+            and max(world_flat_addresses) - min(world_flat_addresses) > WORLD_SIZE,
+            "initial_records_isomorphic": initial_records_isomorphic,
+            "matched_crossed_BODY_to_WORLD": standard_summary["body_to_world"] > 0,
+            "matched_returned_WORLD_to_BODY": standard_summary["world_to_body"] > 0,
+            "matched_return_was_earned": world_return_was_earned(standard.trace),
+            "entire_collision_trace_isomorphic": trace_isomorphic,
+            "lane_stop_isomorphic": stop_isomorphic,
+            "all_final_MaterialRecords_isomorphic": final_records_isomorphic,
+            "all_flat_handles_within_capacity": all(
+                0 <= handle < flat_capacity for handle in every_flat_handle
+            ),
+            "no_surface_namespace_in_flat_handles": all(
+                handle >> SURFACE_SHIFT == 0 for handle in every_flat_handle
+            ),
+        }
+        return {
+            "artifact_kind": "single_mmap_surface_flattening_control",
+            "claim": "matched_pass_isomorphic_without_surface_namespace",
+            "line": line,
+            "seed": seed,
+            "kernel_sha256": kernel_sha256(),
+            "flat_capacity": flat_capacity,
+            "node_counts": {
+                "former_BODY": BODY_CAPACITY,
+                "former_WORLD": WORLD_SIZE,
+            },
+            "permutation": {
+                "kind": "affine_fixed_point_free",
+                "multiplier": 100,
+                "offset": 1,
+                "former_WORLD_flat_addresses": list(world_flat_addresses),
+            },
+            "collision_counts": {
+                "two_surface": len(standard.trace),
+                "flat_single_mmap": len(flattened.trace),
+            },
+            "two_surface_crossings": {
+                "BODY_to_WORLD": standard_summary["body_to_world"],
+                "WORLD_to_BODY": standard_summary["world_to_body"],
+            },
+            "final_record_count": flat_capacity,
+            "checks": checks,
+            "passed": all(checks.values()),
+        }
+    finally:
+        if flat is not None:
+            flat.close()
+        if world is not None:
+            world.close()
+        body.close()
+
+
 FUTURE_BEHAVIOR_FIELDS = (
     "washout_body_changed",
     "washout_upper_birth_collision",

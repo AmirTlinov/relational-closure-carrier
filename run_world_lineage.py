@@ -33,6 +33,7 @@ from world_lineage import (
     run_branch,
     run_paired_conditions,
     shuffle_return_placement,
+    single_mmap_flattening_control,
 )
 
 
@@ -418,6 +419,11 @@ def main() -> int:
         layout,
     )
     shared_damaged = Path(shared_cut["body_path"])
+    flat_field = single_mmap_flattening_control(
+        args.workdir / "single_mmap_flattening",
+        line="A",
+        seed=args.seeds[0],
+    )
 
     records = []
     g1_control_records = []
@@ -485,6 +491,7 @@ def main() -> int:
             "lineages_reproducible_and_separated"
         ],
         "memory_owner_and_node_relabel_controls_passed": hostile["passed"],
+        "matched_pass_survives_single_mmap_flattening": flat_field["passed"],
         "all_world_mmaps_removed": g1_controls["all_worlds_deleted"]
         and g2_controls["all_worlds_deleted"]
         and not any(args.workdir.rglob("WORLD.mmap")),
@@ -507,6 +514,7 @@ def main() -> int:
         "records": records,
         "lineage_analysis": lineage,
         "hostile_memory": hostile,
+        "single_mmap_flattening": flat_field,
         "G1_controls": g1_controls,
         "G2_controls": g2_controls,
         "controls_total": controls_total,
@@ -526,6 +534,7 @@ def main() -> int:
                 "checks": checks,
                 "lineage_analysis": lineage,
                 "hostile_memory_checks": hostile["checks"],
+                "single_mmap_flattening_checks": flat_field["checks"],
                 "controls_total": controls_total,
             },
             ensure_ascii=False,
