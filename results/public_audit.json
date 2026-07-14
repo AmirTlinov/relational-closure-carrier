@@ -1,6 +1,6 @@
 {
   "artifact_kind": "relational_closure_carrier_public_audit",
-  "generated_utc": "2026-07-14T05:20:03.388084+00:00",
+  "generated_utc": "2026-07-14T05:27:17.199478+00:00",
   "claim": "bounded_history_dependent_relational_repair",
   "tests": {
     "pytest": "21 passed",
@@ -10,7 +10,7 @@
     ".gitignore": "563b45e6ca1aaf77ae5ed5568de0ca25d84cb491311fa80209dac15696987be8",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "ABSTRACT.md": "4014e612b773d0349203a3fd21666425c55982cebbd15a7fdb0470fbb76a0e71",
-    "ABSTRACT.pdf": "5b2b28eaead83c15e24086a26d569ee3d27376ebd91acc75fed911f1b78783a4",
+    "ABSTRACT.pdf": "fe34ff34b5e544e5a90d29927d926a9a5cadc895857aca361b09dcca94b4df6a",
     "ABSTRACT_RU.md": "d41c6942b1d68915888b77d23cd0f2d77bb7459160691bfba8cdbad3c9df60fa",
     "EVIDENCE.md": "38c936e56f6400c0ba7fb4b175842ba908d3e090446b61ddf801c59a15c1ae4f",
     "README.md": "79d714166182c61f9ebfe3e377c7a515d27289fbb12d1128ebd7ea64ae160a7c",
@@ -20,9 +20,9 @@
     "TECHNICAL_ABSTRACT_RU.md": "65680d7e3fa4cc120db2746d54b78014b9bbd6cf07ce6ebd246782ea8c0113ee",
     "growth_carrier.py": "0d32047eecb391f572671a3404eb912fa3cc96ea3a39a44212328d5884d312f7",
     "index.html": "9bb1ee7ca1a406ed6e0675b94617d1e4b231f7ab8caeea1c7a0b7b1b946a04d9",
-    "preview-page-1.png": "96605d3edd76f10134d526efa3b820194a431ce09ff89c63fc245ecf7403ac98",
+    "preview-page-1.png": "b186ac52bd053b970f018dc61d7de361e25a75b6bcb28fdb947f59d1fbd73432",
     "pyproject.toml": "5f65abeb806b9c343ea63e981246d793f572f4a7395f77283b9e64d731b12c5c",
-    "relational-repair-assay.svg": "cef18e225426bb7584f953e593f94f0c066dd6bf880516c263437b5ac0bc3ac3",
+    "relational-repair-assay.svg": "dcd2765c73c1b3d8ce3f17ddd20e746e5d38937f5590fff6884ba304ee5e2ec7",
     "run_growth.py": "51fd8929c7df657252959286a94dbcf015dec96c897bccf9773de49c853e2618",
     "run_world_lineage.py": "63dacd19ef5051247e9a5c4b579f7ac9aa5f24f65e526537bc9f314428cbcf8f",
     "tests/test_growth.py": "34413b2ed763a5cd7b870fa91d2394b6668d6e01e38ebb5b71c966b35fa5550a",

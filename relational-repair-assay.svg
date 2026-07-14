@@ -114,7 +114,7 @@
   <text x="675" y="594" class="micro">delete world · fresh-process restart · common washout</text>
 
   <g transform="translate(48 548)">
-    <rect x="0" y="0" width="585" height="46" rx="6" fill="#fff" stroke="#d6dde2"/>
+    <rect x="0" y="0" width="410" height="46" rx="6" fill="#fff" stroke="#d6dde2"/>
     <text x="16" y="17" class="micro" font-weight="650" fill="#176b87">RELATIONAL DISTINGUISHABILITY</text>
     <text x="16" y="37" class="small">placement shuffle erases A/B · full relabel preserves it</text>
   </g>
