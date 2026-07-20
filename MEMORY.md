@@ -32,8 +32,12 @@ contact -> retained local change -> world return -> reentry
 `index.html` and `ru/index.html` are the editable visual-abstract sources.
 They begin one step before named objects without declaring that everything is
 difference, treat measurement as physical contact without claiming a quantum
-measurement theory, use planarian regeneration as a bounded interpretation,
-and end with the falsifiable material-carrier experiment.
+measurement theory, and define a whole as a stable class of future
+continuations rather than an inventory or drawn network. A new scale is earned
+only when later contact meets a closure as one whole; injury opens an unresolved
+continuation whose outcomes include familiar closure, another form, division,
+or collapse. Planarian regeneration remains a bounded interpretation, and the
+narrative ends with the falsifiable material-carrier experiment.
 
 The supported status is an operational research principle plus falsifiable
 carrier tests, not basal cognition or a new physical theory.

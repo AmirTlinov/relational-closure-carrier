@@ -30,6 +30,12 @@ The carrier hypothesis is stricter:
 > **A useful distinction becomes memory only when contact changes the same
 > substrate that later conducts a changed continuation.**
 
+In the broader hypothesis, a whole is a temporarily stable class of future
+continuations, not an inventory of parts or a declared diagram. A new scale is
+earned only when later contact encounters that closure as one whole. Injury
+opens an unresolved continuation; repair may recover the previous class,
+stabilize another, support new wholes, or fail into collapse.
+
 ## Reproducible claim of this repository
 
 > In this prepared digital carrier, two histories of continuation through separately stored surrounding records are retained as different relational placements in the persistent group; they remain distinguishable in later repair after those temporary records are removed, the persistent snapshot alone is restarted, and an identical washout and injury are applied.

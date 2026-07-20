@@ -72,20 +72,36 @@ memory only after it survives return and changes a future contact. The witness
 may measure that consequence, but may not select it online, reward it, or feed
 the carrier its desired answer.
 
+### Closure, injury, and a new scale
+
+In this hypothesis, a whole is not an inventory of parts or a drawn network. It
+is a temporarily stable class of future continuations maintained by recurrent
+mutual change in the substrate. A new organizational scale is earned, not
+declared: a closure becomes a distinction at the next scale only when later
+contacts can encounter and perturb it as one whole without erasing its internal
+alternatives.
+
+Injury does not merely empty a slot in a stored blueprint. It changes that
+class of possible continuations and leaves the surviving organization with an
+unresolved continuation. Later reentry may recover a familiar response class,
+stabilize another form, support division into new wholes, or fail into collapse.
+The outcome must arise from the carrier's dynamics, not be supplied by the
+witness.
+
 ### Why regeneration is the biological bridge
 
 A cut planarian is a useful challenge to object-first language. Each fragment
 is not merely a smaller copy of a completed animal. It is a living but unsettled
-organization carrying part of a distributed physiological history. Repair can
-return toward a familiar anatomy, while perturbation of bioelectric state can
-bias regeneration toward another stable morphology. The closure reached after
-injury therefore need not be a literal replay of the body before the cut.
+organization carrying part of a distributed physiological history. The cut
+leaves not an empty blueprint slot but an unresolved continuation in that
+surviving organization. Repair may recover familiar anatomy, while perturbation
+of bioelectric state can bias another stable morphology.
 
-In the language proposed here, the cut interrupts a previously maintained
-closure. Surviving distinctions constrain what each fragment can become; later
-contacts and internal dynamics complete a new distinguishable whole. This is an
-interpretation of the regenerative phenomena, not a molecular explanation of
-them and not evidence that the present computational carriers are organisms.
+On the proposed reading, regeneration is the formation of a new closure
+constrained, but not uniquely dictated, by what survived. It is not insertion
+of a stored part or necessarily a literal replay of the previous body. This is
+an interpretation of the regenerative phenomena, not a molecular explanation
+of them and not evidence that the present computational carriers are organisms.
 
 ### Two computational steps
 
@@ -152,11 +168,11 @@ invariant under irrelevant address relabeling, and change a later passage. It
 also exposes the next missing owner—the physical law by which matter itself,
 rather than software references, chooses and changes the path.
 
-It does not yet establish a self-maintaining boundary, endogenous goals,
-biological relevance, basal cognition, or a new physical theory. Claims about
-matter, particles, space, time, light, or gravity remain open hypotheses outside
-this assay. The current formal result is an operational research principle and
-a sequence of falsifiable carrier tests.
+It does not yet establish a self-maintaining boundary, self-born organizational
+scales, endogenous goals, biological relevance, basal cognition, or a new
+physical theory. Claims about matter, particles, space, time, light, or gravity
+remain open hypotheses outside this assay. The current formal result is an
+operational research principle and a sequence of falsifiable carrier tests.
 
 ### Question for biological interpretation
 

@@ -24,13 +24,14 @@ The motivating carrier hypothesis is stricter:
 > **A useful distinction becomes memory only when contact changes the same
 > substrate that later conducts a changed continuation.**
 
-When distinguishable states modify one another and remain coupled so that their
-history changes later conduct, they form what I call a **held difference**: a
-group that can act as one operative unit without erasing its internal
-distinctions. At the scale of a body, injury then changes not only a local site
-but the organization of the surviving whole. Repair need not reproduce the
-previous component exactly; it may restore a group-level capability through a
-different relation with surviving material.
+In this hypothesis, a whole is neither an inventory of parts nor a drawn graph.
+It is a temporarily stable class of future continuations maintained by
+recurrent mutual change in the substrate. A new scale is earned only when such
+a closure later enters contact as one operative unit without erasing its
+internal alternatives. Injury changes that continuation class rather than
+merely emptying a blueprint slot. Repair may recover the prior class, stabilize
+another, support division into new wholes, or fail into collapse; the witness
+may read the outcome but must not choose it.
 
 This technical note covers the public explicit-topology predecessor only. It is
 an experimental heuristic, not a demonstrated account of biological
