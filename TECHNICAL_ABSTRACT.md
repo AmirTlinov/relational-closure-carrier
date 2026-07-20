@@ -8,9 +8,9 @@
 
 ### Claim and biological question
 
-The starting physical claim is that differences precede distinguishability. A
-difference may exist before one contact makes it operative in a shared outcome;
-absence of distinguishability in that contact is therefore not absence of
+The starting physical claim is that differences precede distinguishability:
+differences exist before a contact in which they can become distinguishable.
+Absence of distinguishability in that contact is therefore not absence of
 differences. Operationally, retained histories A and B become physically
 distinguishable when substituting one for the other changes an admissible later
 contact. `D+` measures the strongest such future difference over the declared

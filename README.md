@@ -18,8 +18,8 @@ external selection.
 
 ## Differences, distinguishability, and memory
 
-A difference may exist before one contact makes it distinguishable. Within a
-declared continuation domain, two retained histories are physically
+Differences exist before a contact in which they can become distinguishable.
+Within a declared continuation domain, two retained histories are physically
 distinguishable when substituting one for the other changes an admissible later
 contact. The formal `D+` witness measures that future difference.
 

@@ -10,9 +10,10 @@
 
 This work begins from a physical conjecture: before the finished object there
 are differences—ways in which one possible state can change another otherwise.
-A difference need not already be distinguishable to an observer. **Absence of
-distinguishability in one contact is not absence of differences.** It means that
-this contact has not yet made them part of one physical fate.
+**Differences exist before a contact in which they can become distinguishable.**
+Absence of distinguishability in one contact is therefore not absence of
+differences. It means that this contact has not yet made them part of one
+physical fate.
 
 Even counting begins with distinguishability: one jug can be told from two, two
 from four. Mathematics works with stable classes of distinguishability with

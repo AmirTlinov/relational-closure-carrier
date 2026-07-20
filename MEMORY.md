@@ -30,17 +30,18 @@ contact -> retained local change -> world return -> reentry
 ## Public narrative
 
 `index.html` and `ru/index.html` are the editable visual-abstract sources.
-They state the positive thesis before its evidence boundary: differences
-precede distinguishability; contact closes them into a shared physical
-consequence; memory is changed future conduct retained by the changed carrier;
-a stable closure is distinguishability at one scale and a new difference at the
-next. A distinguishable body is a temporarily stable balance of mutually
-sustaining differences, not an inventory or drawn network. Injury opens a
-deficit whose reclosure can restore, transform, divide, or collapse form.
-Planarian regeneration and measurement are developed from this thesis. The
-scientific boundary appears once, at the end: the public assay proves one causal
-computational slice, while carrier-owned physical contact remains the decisive
-falsifiable test.
+They state the positive thesis before its evidence boundary. The canonical
+claim is: **differences exist before a contact in which they can become
+distinguishable**. Contact does not create differences; it lets already-existing
+differences enter a shared physical consequence. Memory is changed future
+conduct retained by the changed carrier; a stable closure is distinguishability
+at one scale and a new difference at the next. A distinguishable body is a
+temporarily stable balance of mutually sustaining differences, not an inventory
+or drawn network. Injury opens a deficit whose reclosure can restore, transform,
+divide, or collapse form. Planarian regeneration and measurement are developed
+from this thesis. The scientific boundary appears once, at the end: the public
+assay proves one causal computational slice, while carrier-owned physical
+contact remains the decisive falsifiable test.
 
 ## Sorting analogy boundary
 
