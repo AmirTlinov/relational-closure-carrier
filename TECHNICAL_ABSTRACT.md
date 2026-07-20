@@ -2,8 +2,8 @@
 
 ## A minimal non-neural carrier experiment
 
-**Amir Tlinov — Independent Researcher**  
-**14 July 2026**  
+**Amir Tlinov — Independent Researcher**<br>
+**20 July 2026**<br>
 **Materials:** [github.com/AmirTlinov/relational-closure-carrier](https://github.com/AmirTlinov/relational-closure-carrier)
 
 ### Biological boundary
@@ -12,21 +12,31 @@ Work on anatomical homeostasis and basal cognition treats morphogenesis as a for
 
 > Can target-like repair arise from history retained in the relational organization of the same substrate that later conducts repair, without a separate complete-body target model, global controller, reward signal, or online external selection inside the modeled loop?
 
-The motivating hypothesis is relational:
+The operational criterion is narrower than an ontology: two retained histories
+count as physically distinguishable within a declared experimental domain only
+when substituting one for the other changes an admissible later contact. A
+difference hidden from one probe may still matter after another continuation.
+The formal `D+` witness reads that future consequence; it does not choose a
+route or create the carrier's memory.
 
-> **No relation is physically meaningful unless its sides are distinguishable.**<br>
-> **Отношение физически содержательно лишь постольку, поскольку его стороны различимы.**
+The motivating carrier hypothesis is stricter:
 
-Motion or contact alone need not create an operative unit. When distinguishable states modify one another and remain coupled so that their relation changes later propagation, they form what I call a **held difference**: a group that can act as one operative relational unit without erasing its internal distinction. At the scale of a body, injury then changes not only a local site but the organization of the surviving whole. Repair need not reproduce the previous component exactly; it may restore a group-level capability by forming a different relation with the surviving material.
+> **A useful distinction becomes memory only when contact changes the same
+> substrate that later conducts a changed continuation.**
 
-This is an experimental heuristic, not a demonstrated account of biological regeneration or a claim about fundamental physics. The computational experiment asks only whether one clean, interventionally testable fragment of this hypothesis can be realized.
+When distinguishable states modify one another and remain coupled so that their
+history changes later conduct, they form what I call a **held difference**: a
+group that can act as one operative unit without erasing its internal
+distinctions. At the scale of a body, injury then changes not only a local site
+but the organization of the surviving whole. Repair need not reproduce the
+previous component exactly; it may restore a group-level capability through a
+different relation with surviving material.
 
-The proposed connection to relativity is programmatic: physical description may
-be grounded in relations between distinguishable sides rather than privileged
-absolute labels. No result in relativity is derived here. In particular, the
-tested invariance under hostile address relabeling is invariance to graph
-storage labels, not a spacetime transformation, Lorentz invariance, or general
-covariance.
+This technical note covers the public explicit-topology predecessor only. It is
+an experimental heuristic, not a demonstrated account of biological
+regeneration or a claim about fundamental physics. The address-relabel
+intervention below tests storage-label invariance in a prepared graph—not
+spacetime symmetry, relativity, or a self-born material topology.
 
 ### Minimal carrier
 
@@ -121,7 +131,10 @@ Its intended value is narrower: it probes the boundary between **history-depende
 
 My main question is:
 
-> Would you regard the topology-encoded closure affordance and history-bearing relational state as a minimal distributed pattern memory or homeostatic target, or only as a path-dependent attractor? What single perturbation would best distinguish those interpretations?
+> Given two tissues matched in present anatomy and immediate behavior but
+> differing only in causal repair history, what perturbation would best
+> distinguish a distributed homeostatic target from ordinary path-dependent
+> hysteresis—without supplying the desired anatomy from outside?
 
 ### References
 

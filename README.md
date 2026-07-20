@@ -1,30 +1,40 @@
 # Relational Closure Carrier
 
-A minimal computational experiment asking whether two histories of contact
-across witness-labeled regions of one relational material, retained as changed
-relational placement, remain distinguishable in later repair—without a
-complete-body target register, reward, or online external selection inside the
-modeled loop.
+This repository is the first reproducible computational step in a broader
+question: when does a difference exposed by contact become persistent memory in
+the same non-neural substrate that later conducts repair? The public abstract
+places this explicit-topology assay beside the later passage-based PC carrier
+and the still-open physical carrier test. The code here remains deliberately
+bounded: it tests whether retained relational placement can change later repair
+without a complete-body target register, reward, or online external selection.
 
 ## Start here
 
-- **[Public visual abstract](https://amirtlinov.github.io/relational-closure-carrier/)** — the primary two-page argument and biological question.
+- **[Public visual abstract](https://amirtlinov.github.io/relational-closure-carrier/)** — the two-page research argument from difference through contact, reentry, and repair.
 - **[Русское зеркало](https://amirtlinov.github.io/relational-closure-carrier/ru/)** — тот же компактный абстракт, схема и отдельный двухстраничный PDF на русском.
 - **[Two-page PDF](ABSTRACT.pdf)** / **[English text](ABSTRACT.md)** / **[Russian meaning mirror](ABSTRACT_RU.md)**.
 - **[Technical extended abstract](TECHNICAL_ABSTRACT.md)** — the denser Relational Distinguishability account and full controls narrative.
 - **[Evidence boundary](EVIDENCE.md)** — exact result, interventions, controls, and hashes.
 - **[Reproduce](REPRODUCE.md)** — clean commands for tests and both experiments.
 
-## Current claim
+## Operational criterion and carrier hypothesis
+
+An unexposed difference is not yet an experimentally established distinction.
+Within a declared continuation domain, two retained histories count as
+physically distinguishable only when substituting one for the other changes an
+admissible later contact. The formal `D+` witness reads that consequence; it is
+not a scheduler, memory selector, or routing law.
+
+The carrier hypothesis is stricter:
+
+> **A useful distinction becomes memory only when contact changes the same
+> substrate that later conducts a changed continuation.**
+
+## Reproducible claim of this repository
 
 > In this prepared digital carrier, two histories of continuation through separately stored surrounding records are retained as different relational placements in the persistent group; they remain distinguishable in later repair after those temporary records are removed, the persistent snapshot alone is restarted, and an identical washout and injury are applied.
 
-The governing postulate is:
-
-> **No relation is physically meaningful unless its sides are distinguishable.**<br>
-> **Отношение физически содержательно лишь постольку, поскольку его стороны различимы.**
-
-Here **Relational Distinguishability** has a narrow operational meaning: full
+Here **relational distinguishability** has a narrow operational meaning: full
 address relabeling preserves the A/B distinction, while shuffling the placement
 of the candidate return-relation class erases it. The placement of that relation
 class is therefore interventionally necessary for the observed A/B difference.
@@ -33,10 +43,9 @@ This is a bounded intervention result for history-dependent material memory in
 an engineered arena. It is **not** presented as evidence of basal cognition, a
 biological model, or a proof that morphogenesis lacks target states.
 
-The open interpretation is whether the prepared closure affordance plus the
-history-bearing relational state should count as a minimal distributed pattern
-memory or homeostatic target, only as a path-dependent attractor, or as both at
-different organizational levels.
+The open biological question is how to distinguish a distributed homeostatic
+target from ordinary path-dependent hysteresis when present anatomy and
+immediate behavior are matched but causal repair history differs.
 
 The graph, an explicit empty upper slot, the A/B return routes, injury, and readout are engineered. The higher-order conducting relation itself is not pre-installed: it appears only after the lower route actually closes, disappears under targeted ablation, and is restored by a new traversal of surviving material. A/B identity is assigned by the harness through one of the prepared routes.
 
@@ -77,12 +86,6 @@ This proves that the two-surface namespace is dynamically unnecessary for that
 one matched passage. It does **not** flatten world deletion, body-only restart,
 common washout, G2, or the paired controls. The witness constructs the mapping;
 the carrier has not been shown to originate its own BODY/WORLD boundary.
-
-The connection to relativity is **proposed and programmatic**, not derived: both
-directions emphasize description through relations rather than privileged
-absolute labels. The tested address-relabel invariance is invariance to graph
-storage labels; it is **not** a spacetime transformation, Lorentz invariance, or
-general covariance.
 
 ## Snapshot
 

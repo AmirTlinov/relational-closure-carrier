@@ -24,6 +24,24 @@ Expected test result:
 22 passed
 ```
 
+## Rebuild the public abstract
+
+The English and Russian pages are the editable publication sources. Rebuild
+their two-page A4 PDFs and first-page previews with:
+
+```bash
+./scripts/build_public_abstract.sh
+```
+
+After the publication files and all checks are final, refresh the compact
+publication hashes:
+
+```bash
+./scripts/refresh_public_audit.py
+```
+
+Run the audit refresh last: it records the exact bytes of the public bundle.
+
 To run only the single-mmap flattening control test:
 
 ```bash

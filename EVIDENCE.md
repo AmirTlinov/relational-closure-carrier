@@ -1,5 +1,10 @@
 # Evidence boundary
 
+> **Scope.** This document covers only the public, reproducible
+> explicit-topology assay in this repository. The later `one to two` PC carrier
+> discussed in the public abstract is locally verified but is not part of this
+> repository or its frozen evidence bundle.
+
 ## Claim under test
 
 Two past passages across the witness labels `BODY → WORLD → BODY` change the
@@ -14,18 +19,19 @@ basal cognition.
 
 ## Relational Distinguishability
 
-> **No relation is physically meaningful unless its sides are distinguishable.**<br>
-> **Отношение физически содержательно лишь постольку, поскольку его стороны различимы.**
+Within this declared assay, two retained histories count as distinguishable
+only when substituting one for the other changes an admitted later contact.
+Failure of one probe to separate them would not establish equivalence under
+every possible continuation.
 
-The experiment operationalizes this postulate narrowly. A/B histories remain
+The experiment applies this criterion narrowly. A/B histories remain
 distinguishable after world deletion, restart, common washout, and renewed
 injury. Full node-address relabeling preserves that distinction; return-placement
 shuffle removes it. This makes the distribution of the tested relation class
 interventionally necessary for the observed A/B difference.
 
-Any connection to relativity is proposed and programmatic, not derived. The
-tested address-relabel invariance concerns graph storage labels and is not a
-spacetime transformation.
+The tested address-relabel invariance concerns storage labels, not a spacetime
+transformation. No claim about relativity is tested here.
 
 ## Carrier
 

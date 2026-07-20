@@ -1,194 +1,175 @@
-# Relational Distinguishability in a Minimal Non-Neural Carrier
+# From Difference to Memory in a Minimal Non-Neural Carrier
 
-## An intervention test through history-dependent repair
+## How contact can leave a trace in the same substrate that later conducts repair
 
 **Amir Tlinov — Independent Researcher**<br>
-**14 July 2026**<br>
-**Materials:** [github.com/AmirTlinov/relational-closure-carrier](https://github.com/AmirTlinov/relational-closure-carrier)
+**20 July 2026**<br>
+**Public materials:** [github.com/AmirTlinov/relational-closure-carrier](https://github.com/AmirTlinov/relational-closure-carrier)
 
-### Biological question
+### A step before objects
 
-Work on anatomical homeostasis and basal cognition treats morphogenesis as
-collective problem-solving in morphospace: tissues can recover large-scale
-organization after perturbation, while physiological networks retain history
-not reducible to current anatomy alone [1–4]. I ask a narrower mechanistic
-question:
+Physics, biology, and computation usually begin with named things—particles,
+cells, networks, agents—and then describe relations among them. This project
+tries a narrower reversal. Instead of declaring that *everything is difference*,
+it asks what can be learned by beginning one step earlier than the finished
+object: with alternatives in a substrate, and with the contacts through which
+an alternative can matter to what happens next.
 
-> Can later repair depend on history retained in the relational organization of the
-> same substrate that conducts repair—without a separate complete-body target
-> model, global controller, reward signal, or online external selection inside
-> the modeled loop?
+The word *difference* is not offered as a replacement for physics or biology.
+It is a methodological restraint. A coordinate system, particle description,
+cell label, graph, or measurement record may be indispensable, but the tool of
+description should not silently become the process being described. A stable
+object can remain a perfectly useful physical description while its identity is
+treated as something maintained through change rather than assumed in advance.
 
-### Proposed postulate
+Michael Levin's work on basal cognition motivates this move. Capacities divided
+among the vocabularies of physics, physiology, development, and behavior can
+reappear across scale when a system is studied through what it can sense,
+retain, pursue, and repair. The question here is not whether everything is
+cognitive. It is whether persistent form can be recognized before neurons or a
+symbolic model—in the causal work done by a substrate's own retained history.
 
-The theoretical name guiding this assay is **Relational Distinguishability**:
+### Contact turns a difference into distinguishability
 
-> **No relation is physically meaningful unless its sides are distinguishable.**
+A difference may exist without being exposed by a particular contact. Failure
+to distinguish two alternatives with one probe does not establish that they are
+equivalent under every possible continuation. Conversely, measurement is
+itself a physical contact: the registered outcome belongs to the newly coupled
+history of system and apparatus, not to a view from outside the interaction.
+This observation does not solve quantum measurement or replace quantum theory.
+It only cautions against reading the measured pattern as a photograph of
+untouched alternatives.
 
-This is a proposed postulate, not a result derived from relativistic physics. It
-is a programmatic continuation of relativity's invariant-based relational
-logic: physical content is sought in relations that survive an admissible
-change of description while the participating sides remain distinguishable.
-The only invariance tested here is preservation under a hostile relabeling of
-storage addresses. That intervention is not a spacetime transformation, a test
-of Lorentz invariance, or a test of relativity.
+The operational criterion used here is deliberately modest:
 
-The carrier tests one bounded operational consequence: two relational histories
-count as physically different only if their difference changes later repair,
-survives relation-preserving address relabeling, and disappears when the
-candidate relational placement is shuffled.
+> Two retained histories count as physically distinguishable within a declared
+> experimental domain only if substituting one for the other changes some
+> admissible later contact.
 
-The contribution is a joint intervention assay. One local-rule carrier must
-earn closure through contact across a witness-defined storage partition, retain the
-resulting relational history after the temporary surrounding records are
-removed, express that history during a later matched injury, and lose the A/B
-difference when the candidate relational distinction is disrupted.
-This is a computational existence test, not a theory of biological regeneration
-or fundamental physics.
+The formal quantity \(D^+\) expresses the strongest such future difference over
+the continuations and contacts admitted by an experiment. It is an external
+witness, not an organ of the carrier: it does not choose a route, create a
+memory, calculate a geometry, or tell the substrate what to do.
 
-### Operationalizing relational distinguishability
+### The carrier hypothesis
 
-The prepared arena implements one record-level physics, defined by
-`MaterialRecord`, across two file-backed storage surfaces. The harness/witness
-labels the persistent 1,024-record surface `BODY` and a temporary five-record
-surface `WORLD` solely to track experimental provenance and lifecycle. These
-labels are not record types or material classes.
+The stricter hypothesis is about where memory lives:
 
-Every record stores a small local state and explicit handles to available
-contacts and conducting relations. The frozen local collision law updates one
-linked encounter at a time. It contains no `body`/`world` predicate and does not
-branch on the surface namespace; it follows handles resolved by the experimental
-arena. It has no global sweep, coordinate arithmetic, fitness function,
-symbolic planner, runtime target register, or reward channel.
+> **A useful distinction becomes memory only when contact changes the same
+> substrate that later conducts a changed continuation.**
 
-The external harness prepares the topology, declared injury, storage surfaces,
-and readout. Encoding the surface namespace, creating and deleting the temporary
-`WORLD` file, and retaining a `BODY`-only snapshot belong to the experimental
-architecture and witness protocol. The harness fixes whether the earned return
-opportunity is A or B before a run; it does not select a relation online during
-execution. The prepared upper slot and two return routes are explicit
-limitations.
-
-Across the two witness-labeled surfaces, one continuation follows handles from
-records labeled `BODY` into records labeled `WORLD` and back. A return counts as
-earned only if the ongoing passage first changes the particular record from
-which the continuation later returns:
+The required lifecycle is therefore not `input -> score -> stored answer` but:
 
 ```text
-ongoing continuation → changed surrounding record → earned return → closure
+contact -> passage through existing material -> unresolved local change
+        -> action -> world return -> reentry through the changed material
+        -> changed next contact
 ```
 
-Passive contact, a disconnected world change, a phase mismatch, or a prewritten
-conducting route cannot substitute for that material sequence.
+A compatible form should reuse the same persistent places. Only an unresolved
+part of a real passage should open new conductance. An update earns the name
+memory only after it survives return and changes a future contact. The witness
+may measure that consequence, but may not select it online, reward it, or feed
+the carrier its desired answer.
 
-### History-dependent repair assay
+### Why regeneration is the biological bridge
 
-Lines A and B begin from the same injured witness-retained group containing 513
-occupied records. Their temporary surrounding surfaces have equal resources and
-differ only in the physical placement of the earned final return into one of two
-prepared routes in that group. Both lines recover the full 1,024-record group
-and the same immediately available higher-order conductance.
+A cut planarian is a useful challenge to object-first language. Each fragment
+is not merely a smaller copy of a completed animal. It is a living but unsettled
+organization carrying part of a distributed physiological history. Repair can
+return toward a familiar anatomy, while perturbation of bioelectric state can
+bias regeneration toward another stable morphology. The closure reached after
+injury therefore need not be a literal replay of the body before the cut.
 
-The harness then deletes the original temporary `WORLD` files and retains only
-each persistent `BODY`-labeled snapshot. Every snapshot is reopened by a fresh
-process, exposed to the same common washout, and
-cut again at the same current relation. Repair is probed in fresh A and B worlds
-in both orders (`AB` and `BA`). The assay asks not whether a log can classify
-history, but whether surviving relational placement is necessary for different
-future conduct.
+In the language proposed here, the cut interrupts a previously maintained
+closure. Surviving distinctions constrain what each fragment can become; later
+contacts and internal dynamics complete a new distinguishable whole. This is an
+interpretation of the regenerative phenomena, not a molecular explanation of
+them and not evidence that the present computational carriers are organisms.
 
-### Result and interventions
+### Two computational steps
 
-Line A restored the upper entry in episode 1 of `AB` and episode 2 of `BA`;
-line B gave the mirror result—episode 2 of `AB` and episode 1 of `BA`. The exact
-pattern repeated in four prespecified deterministic initializations (`17`,
-`23`, `41`, `59`); these are not independent experimental replicates.
+#### 1. A reproducible explicit-topology assay
 
-Across G1 and G2, 112 paired controls varied world absence, passivity,
-connectivity, continuation phase, delay under the same finite collision budget,
-choice of the other prepared return route, or replacement of action-dependent
-world formation by a pre-conducting phase-incompatible route. Every control
-separated from matched both in resulting `BODY` bytes and in behavior after a
-further common washout and injury.
+The public `relational-closure-carrier` is the bounded predecessor. It uses one
+frozen local collision rule, file-backed records, explicit local relation
+handles, and an engineered closure affordance. A and B histories recover the
+same current extent and conductance, yet later repair differently after removal
+of the temporary surrounding records, fresh-process restart, common washout,
+and the same renewed injury.
 
-Two interventions tested whether the A/B distinction belonged to relational
-organization rather than storage labels:
+Relation-preserving address relabeling preserves the A/B effect. Shuffling the
+placement of the candidate return relations erases it while preserving their
+multiset, extent, and current higher-order conductance. A one-mmap control
+preserves all 2,058 events of a matched passage after hostile address
+permutation. The result shows that retained relational placement can be
+causally necessary for later repair. It does **not** show a self-born topology,
+boundary, goal, or organism.
 
-- complete relabeling of storage addresses while preserving relations preserved
-  body organization and future behavior;
-- shuffling the placement of all 257 candidate return relations erased the A/B
-  future difference while preserving their multiset, material extent, current
-  higher-order conductance, and the other relation classes.
+#### 2. Passage itself becomes persistent
 
-Thus the A/B distinction is materially consequential rather than nominal in the
-prepared carrier: relation-preserving address relabeling preserves its later
-effect, while shuffling the candidate relational placement erases it. The
-intervention does not localize memory to a small site.
+A later PC implementation, `one to two`, moves the invariant into one writable
+file-backed mmap body conducted by a local Metal law. Exact forms enter the same
+persistent place without an embedding search; three distinct events conduct
+through the same sixteen material relations. A mismatched world return changes
+their common relation `R*`; the next matched and mismatched passages diverge,
+and the effect persists after closing and reopening the body. A severed
+conducting relation can grow a new incarnation from surviving context.
 
-A separate flat-representation control tested whether the witness-owned
-`BODY`/`WORLD` storage split was dynamically required for one prepared matched
-passage. That passage was transferred from two surfaces into a single
-1,029-record `MmapBody` with no surface bits and subjected to a fixed-point-free
-hostile address permutation. The executions were isomorphic across all 2,058
-collision events, and all 1,029 final `MaterialRecord`s corresponded
-isomorphically. Thus the surface namespace and two-file split are dynamically
-unnecessary for this matched passage. The witness still constructs and checks
-the isomorphism; world deletion, fresh-process restart, common washout, and G2
-were not flattened. This control does not establish equivalence of the full
-serial assay.
+This is stronger software evidence for `contact -> return -> changed future`,
+but its physical meaning remains bounded. `ORoute`, `OForm`, `OSynapse`, and
+`ORef` still express a programmed topology, and ordinary PC memory does not
+route a signal by its content—the CPU, GPU, operating system, and memory
+controller do. The result is a causal software carrier, not yet a material
+demonstration that the substrate itself owns the path. Its frozen public proof
+bundle remains to be released; the fully reproducible result in this repository
+is the first assay above.
 
-A separate closure intervention used one 12-place lower cycle. After that cycle
-had earned an upper relation by closing, removing only that relation changed a
-one-collision `PASS` to `HALT` while the lower cycle remained traversable. One
-new pass through the surviving cycle rematerialized the upper relation at
-collision 12 and restored `PASS`.
+### The physical test and its falsifier
 
-The bounded result is:
+The next honest carrier is not another address calculation but a
+history-dependent material: for example, a random memristive nanowire or
+atomic-switch network whose conductance, heating, and hysteresis alter the
+paths available to later boundary pulses.
 
-> A/B histories remain relationally distinguishable after world deletion,
-> fresh-process restart, common washout, and renewed injury; return-relation
-> placement is interventionally necessary for that distinction.
+The experiment fixes parameters on a calibration set A, freezes the protocol,
+and predicts a held-out set B without refitting. After damage and selective
+reentry, the `live` material must show a more stable change in a hidden next
+boundary contact than three matched controls: `freeze` (below switching
+threshold), `blocked` (the alternate physical path removed), and `shuffle`
+(equal exposure with contact order broken).
 
-The frozen public source passes 22 tests. The evidence bundle records four
-prespecified deterministic initializations, 112 paired world-continuity
-controls, eight placement shuffles, eight full node relabelings, and one bounded
-matched-passage flat-isomorphism control. Collision kernel SHA-256:
-`0d32047eecb3…`; world-lineage executable source SHA-256: `d3ed74383729…`.
+The hypothesis loses if the live advantage does not survive held-out testing,
+power removal, and reentry; if it is no larger than the controls; if only a log
+but not the next contact changes; or if an external algorithm still has to
+choose the successful route.
 
-### Limits and requested interpretation
+### What this program currently supports
 
-The topology, closure affordance, two return routes, surface namespace, file
-lifecycle, injury, and readout are engineered. `WORLD` is a second storage
-surface of the same digital physics, not a distinct material class, and the
-harness chooses A/B return placement before execution. No `BODY`/`WORLD`
-boundary is available as a predicate to the frozen collision law. The assay does
-not demonstrate a self-born organismal boundary, discovery of a morphology,
-metabolism, or self-formed goals. It is not a model of cells, ion channels, gap
-junctions, or endogenous bioelectric dynamics; it has not been independently
-replicated. I do not present it as evidence of basal cognition or as evidence
-that morphogenesis lacks target states.
+The computational work establishes a bounded causal fact: in engineered
+carriers, retained history can survive restart and renewed injury, remain
+invariant under irrelevant address relabeling, and change a later passage. It
+also exposes the next missing owner—the physical law by which matter itself,
+rather than software references, chooses and changes the path.
 
-A proposed interpretation—not a result established by this assay—is to call a
-held relational group among other records an organism. On that reading, `BODY`
-is a witness-selected candidate group within one relational material, not a
-different kind of thing from records labeled `WORLD`. The present assay tests
-persistence and repair of a prepared group; it does not show a group discovering
-or maintaining a boundary of its own.
+It does not yet establish a self-maintaining boundary, endogenous goals,
+biological relevance, basal cognition, or a new physical theory. Claims about
+matter, particles, space, time, light, or gravity remain open hypotheses outside
+this assay. The current formal result is an operational research principle and
+a sequence of falsifiable carrier tests.
 
-The ambiguity is the point: the runtime has no separate symbolic model of a
-completed body, yet the prepared topology encodes a closure affordance and the
-history-bearing relational state changes future repair. These may constitute a
-minimal distributed pattern memory or homeostatic target, path-dependent
-attractor dynamics, or both descriptions at different levels of organization.
+### Question for biological interpretation
 
-> Would you regard the topology-encoded closure affordance and history-bearing
-> relational state as a minimal distributed pattern memory or homeostatic
-> target, only as a path-dependent attractor, or as both? What single
-> perturbation would best distinguish their physical roles?
+> Given two tissues matched in present anatomy and immediate behavior but
+> differing only in their causal repair history, what perturbation would best
+> distinguish a distributed homeostatic target from ordinary path-dependent
+> hysteresis—without supplying the desired anatomy from outside?
 
 ### References
 
 1. Levin M. [Technological Approach to Mind Everywhere](https://doi.org/10.3389/fnsys.2022.768201). *Frontiers in Systems Neuroscience*. 2022.
 2. Durant F, et al. [Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients](https://pubmed.ncbi.nlm.nih.gov/28538159/). *Biophysical Journal*. 2017.
-3. Manicka S, Levin M. [Modeling somatic computation with non-neural bioelectric networks](https://doi.org/10.1038/s41598-019-54859-8). *Scientific Reports*. 2019.
-4. Levin M. [Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind](https://doi.org/10.1007/s10071-023-01780-3). *Animal Cognition*. 2023.
+3. Emmons-Bell M, et al. [Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies in Genetically Wild-Type *Girardia dorotocephala* Flatworms](https://doi.org/10.3390/ijms161126065). *International Journal of Molecular Sciences*. 2015.
+4. Manicka S, Levin M. [Modeling somatic computation with non-neural bioelectric networks](https://doi.org/10.1038/s41598-019-54859-8). *Scientific Reports*. 2019.
+5. Levin M. [Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind](https://doi.org/10.1007/s10071-023-01780-3). *Animal Cognition*. 2023.
+6. Schlosshauer M. [Decoherence, the measurement problem, and interpretations of quantum mechanics](https://doi.org/10.1103/RevModPhys.76.1267). *Reviews of Modern Physics*. 2005.

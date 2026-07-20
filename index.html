@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A public two-page abstract on Relational Distinguishability tested through history-dependent repair in a minimal non-neural carrier.">
+  <meta name="description" content="A public two-page research abstract on how contact can become persistent memory in a minimal non-neural carrier.">
   <meta name="author" content="Amir Tlinov">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Relational Distinguishability in a Minimal Non-Neural Carrier">
-  <meta property="og:description" content="An intervention test through history-dependent repair.">
+  <meta property="og:title" content="From Difference to Memory in a Minimal Non-Neural Carrier">
+  <meta property="og:description" content="How contact can leave a trace in the same substrate that later conducts repair.">
   <meta property="og:url" content="https://amirtlinov.github.io/relational-closure-carrier/">
   <meta property="og:image" content="https://amirtlinov.github.io/relational-closure-carrier/preview-page-1.png">
   <meta property="og:locale" content="en_US">
@@ -17,7 +17,7 @@
   <link rel="alternate" hreflang="ru" href="https://amirtlinov.github.io/relational-closure-carrier/ru/">
   <link rel="alternate" hreflang="x-default" href="https://amirtlinov.github.io/relational-closure-carrier/">
   <link rel="alternate" type="application/pdf" href="ABSTRACT.pdf" title="Two-page PDF">
-  <title>Relational Distinguishability in a Minimal Non-Neural Carrier — Amir Tlinov</title>
+  <title>From Difference to Memory in a Minimal Non-Neural Carrier — Amir Tlinov</title>
   <style>
     :root {
       --ink: #17252e;
@@ -47,7 +47,7 @@
       width: 210mm;
       min-height: 297mm;
       margin: 0 auto 24px;
-      padding: 13mm 15mm 12mm;
+      padding: 11mm 15mm 12mm;
       background: var(--paper);
       box-shadow: 0 16px 45px rgba(29, 42, 50, .13);
       position: relative;
@@ -63,7 +63,7 @@
       letter-spacing: .08em;
     }
     .eyebrow {
-      margin: 0 0 4mm;
+      margin: 0 0 3mm;
       color: var(--blue);
       font-size: 7.6pt;
       font-weight: 700;
@@ -90,8 +90,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 4mm;
-      margin: 5mm 0 7mm;
-      padding-top: 4mm;
+      margin: 4mm 0 5mm;
+      padding-top: 3mm;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 8.2pt;
@@ -120,12 +120,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 7mm;
-      margin-bottom: 5mm;
+      margin-bottom: 4mm;
     }
     .lead p { margin-bottom: 0; }
     .figure {
-      margin: 0 0 5mm;
-      padding: 3mm;
+      margin: 0 0 4mm;
+      padding: 2.5mm;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: #f7f9fa;
@@ -134,6 +134,11 @@
       display: block;
       width: 100%;
       height: auto;
+    }
+    .figure-scroll-hint { display: none; }
+    .figure-scroll:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 2px;
     }
     figcaption {
       margin-top: 2mm;
@@ -293,7 +298,14 @@
       .lead, .criteria, .page-two-head, .experiments, .scope-grid, .question, .refs { grid-template-columns: 1fr; }
       .criteria ol, .metrics { grid-template-columns: 1fr; }
       h1 { font-size: 34px; }
-      .figure { margin-left: -10px; margin-right: -10px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .figure { margin-left: -10px; margin-right: -10px; }
+      .figure-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .figure-scroll-hint {
+        display: block;
+        margin: 0 0 8px;
+        color: var(--muted);
+        font-size: 12px;
+      }
       .figure img { min-width: 720px; }
       .byline a { overflow-wrap: anywhere; }
       .lang-switch { margin-left: 0; }
@@ -320,43 +332,53 @@
 <body>
 <main>
   <article class="sheet" data-page="01 / 02">
-    <p class="eyebrow">Public abstract · Relational distinguishability / basal cognition</p>
-    <h1>Relational Distinguishability in a Minimal Non-Neural Carrier</h1>
-    <p class="subtitle">An intervention test through history-dependent repair</p>
+    <p class="eyebrow">Public research abstract · basal cognition / material memory</p>
+    <h1>From Difference to Memory in a Minimal Non-Neural Carrier</h1>
+    <p class="subtitle">How contact can leave a trace in the same substrate that later conducts repair</p>
     <div class="byline">
       <span><strong>Amir Tlinov</strong></span>
       <span>Independent research</span>
-      <span>July 2026</span>
+      <span>20 July 2026</span>
       <span><a href="https://github.com/AmirTlinov/relational-closure-carrier">materials &amp; source</a></span>
       <span><a href="ABSTRACT.pdf">two-page PDF</a></span>
       <span class="lang-switch"><a href="ru/" lang="ru" hreflang="ru">Русская версия</a></span>
     </div>
 
     <section>
-      <h2>The biological question and proposed postulate</h2>
+      <h2>A step before the finished object</h2>
       <div class="lead">
-        <p>Work on anatomical homeostasis and basal cognition treats morphogenesis as collective problem-solving in morphospace: tissues can recover large-scale organization after perturbation, while physiological networks retain history not reducible to current anatomy alone [1–4]. <strong>Can later repair depend on history retained in the relational organization of the same substrate that conducts repair?</strong></p>
-        <p><strong>Relational Distinguishability (proposed postulate): “No relation is physically meaningful unless its sides are distinguishable.”</strong> Here, two histories count as physically different only if their difference changes later repair, survives relation-preserving address relabeling, and disappears when the relevant relational placement is shuffled. The link to relativity is programmatic, not a derivation: the tested invariance is storage-address relabeling, not a spacetime transformation.</p>
+        <p>Physics, biology, and computation usually begin with named things—particles, cells, networks, agents—and then describe relations among them. This project tries a narrower reversal. Rather than declare that <em>everything is difference</em>, it begins one step earlier than the finished object: with alternatives in a substrate, and with the contacts through which an alternative can matter to what happens next.</p>
+        <p><em>Difference</em> is not offered as a replacement for physics. It is a restraint against letting coordinates, particles, graphs, or readouts silently become the process being described. Levin’s work on basal cognition motivates a related move across scale: ask what a system can sense, retain, pursue, and repair before deciding which disciplinary category owns the phenomenon.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact makes a difference accessible</h2>
+      <div class="lead">
+        <p>A difference may exist without being exposed by one contact. A blind probe does not establish equivalence across every possible continuation. Conversely, measurement is itself physical contact: a registered outcome belongs to the coupled history of system and apparatus, not to a view from outside. This does not solve quantum measurement; it only refuses to treat an observed pattern as a photograph of untouched alternatives.</p>
+        <p>Operationally, two retained histories count as distinguishable only if replacing one with the other changes some admissible later contact. The formal quantity <code>D+</code> witnesses the strongest such future difference. It is not an organ of the carrier: it never chooses a route, creates a memory, computes a geometry, or tells the substrate what to do.</p>
       </div>
     </section>
 
     <figure class="figure">
-      <img src="relational-repair-assay.svg" alt="Closure, ablation and restoration followed by one relational field in which a witness-defined partition labels a retained group and temporary surrounding records.">
-      <figcaption><strong>Figure 1.</strong> <code>BODY</code> and <code>WORLD</code> are witness labels for two storage surfaces of one record physics; the frozen collision law consults only local relations. A separate one-mmap control removes the surface namespace and preserves all 2,058 events of one matched passage. The later deletion/restart court still uses the witness partition.</figcaption>
+      <span class="figure-scroll-hint" aria-hidden="true">Follow the loop horizontally →</span>
+      <div class="figure-scroll" role="region" aria-label="Causal carrier diagram; scroll horizontally on a narrow screen" tabindex="0">
+        <img src="distinction-reentry.svg" alt="Contact enters a shared material passage, an unresolved mismatch changes local conductance, world return reenters the changed material, and the next contact diverges. Freeze and shuffle controls interrupt the same causal loop.">
+      </div>
+      <figcaption><strong>Figure 1.</strong> A useful distinction earns the name memory only after the same changed substrate conducts a changed future contact. The external witness reads this consequence; it does not produce it.</figcaption>
     </figure>
 
     <section class="criteria">
       <div>
-        <h2>Operational criterion</h2>
-        <p class="criteria-intro">A relational history must remain distinguishable in future conduct under intervention—not merely classify a trace.</p>
-        <p class="note">The harness fixes the A/B return opportunity before execution; it does not select a relation online.</p>
+        <h2>The carrier hypothesis</h2>
+        <p class="criteria-intro"><strong>Contact must change the same substrate that later conducts a changed continuation.</strong></p>
       </div>
       <ol>
-        <li>One local continuation crosses a witness-declared storage partition.</li>
-        <li>A surrounding record must change before return can be earned.</li>
-        <li>The witness removes those records; the retained group restarts.</li>
-        <li>Matched washout and the same new injury follow.</li>
-        <li>Flat/relabel controls must preserve; placement shuffle must erase.</li>
+        <li>A compatible form reuses the same persistent places.</li>
+        <li>Only an unresolved real passage opens new conductance.</li>
+        <li>Action must change the world before return can be earned.</li>
+        <li>Reentry must change a later contact and survive restart.</li>
+        <li><code>freeze / blocked / shuffle</code> must break that exact gain.</li>
       </ol>
     </section>
   </article>
@@ -364,56 +386,55 @@
   <article class="sheet" data-page="02 / 02">
     <section class="page-two-head">
       <div class="stamp">
-        <span class="big">1 rule</span>
-        <span class="small">flat trace 2,058 / 2,058<br>collision kernel <code>0d32047eecb3…</code></span>
+        <span class="big">1 loop</span>
+        <span class="small">contact → return → reentry<br>changed future is the receipt</span>
       </div>
       <div>
-        <h2>The carrier</h2>
-        <p>The retained group contains 1,024 writable records with explicit local relation handles. The harness calls this storage surface <code>BODY</code> and a temporary five-record surrounding surface <code>WORLD</code>; both use the same record format and collision rule. The frozen kernel has no body/world predicate: surface namespace, lifecycle, injury, and readout belong to the harness. A/B placement is fixed before the run. There is no global sweep, coordinate geometry, target register, reward, planner, or score-dependent update. <span class="note">Frozen audit: 22 tests · world-lineage source SHA-256: <code>d3ed74383729…</code></span></p>
+        <h2>What exists now</h2>
+        <p>The program has passed through two computational forms. The first makes history-dependent repair reproducible under intervention. The second moves memory from an outcome table into the passage itself. Neither is presented as biology or fundamental physics; together they expose the precise missing owner—a material law by which the substrate itself chooses and changes the path.</p>
       </div>
     </section>
 
     <section class="experiments">
       <div class="experiment">
-        <h3>History-dependent repair</h3>
-        <p>A and B start from the same injured 513-record retained group. Equal-resource surrounding surfaces differ only in where an earned final return enters two prepared routes. Both recover 1,024 records and the same current upper conductance. After witness removal of the surrounding records, fresh-process restart, identical washout, and the same cut, A restores the upper entry in episode 1 of AB and 2 of BA; B gives the mirror pattern.</p>
+        <h3>1 · Public bounded assay</h3>
+        <p><code>relational-closure-carrier</code> uses explicit local handles and a prepared closure affordance. A/B histories later repair differently after temporary-world deletion, fresh-process restart, common washout, and the same renewed injury. Relation-preserving address relabeling preserves the effect; placement shuffle erases it. This proves causal relational history in the prepared carrier—not self-born topology, boundary, or goals.</p>
       </div>
       <div class="experiment">
-        <h3>Interventions on relational distinguishability</h3>
-        <p>Full address relabeling with relations preserved retains the group’s relational organization and future A/B behavior. Shuffling all 257 candidate return-relation placements erases A/B while preserving their multiset, material extent, current upper conductance, and other relation classes. A separate control moves all 1,029 records into one direct mmap with plain, hostilely permuted handles: all 2,058 matched events and all final records remain isomorphic. Separately, upper-relation ablation changes one-collision PASS to HALT; one surviving-cycle traversal rebuilds it.</p>
+        <h3>2 · Passage becomes persistent</h3>
+        <p>The later <code>one to two</code> PC carrier is one writable mmap body with a local Metal law. Three events reuse the same sixteen conducting relations; a mismatched world return changes their common <code>R*</code>, changes the next passage, and survives reopen. Severed conductance can regrow from surviving context. Yet programmed <code>ORef</code> relations and the computer still route the material. Its frozen public proof bundle is not yet released.</p>
       </div>
     </section>
 
     <section class="metrics" aria-label="Evidence summary">
-      <div class="metric"><b>A1 · B2</b><span>upper-entry birth episode in AB; mirrored in BA</span></div>
-      <div class="metric"><b>4 / 4</b><span>prespecified deterministic initializations; not independent replicates</span></div>
-      <div class="metric"><b>112</b><span>paired G1/G2 world-continuity controls</span></div>
-      <div class="metric"><b>8 + 8</b><span>placement-shuffle + full-relabel interventions</span></div>
+      <div class="metric"><b>22 / 22</b><span>public explicit-topology assay tests pass</span></div>
+      <div class="metric"><b>2,058</b><span>matched events preserved by hostile relabeling</span></div>
+      <div class="metric"><b>1 R* / 3</b><span>one shared relation across three PC events</span></div>
+      <div class="metric"><b>reopen</b><span>changed future remains after restart</span></div>
     </section>
 
     <section class="scope-grid">
       <div class="scope yes">
-        <h3>What the result supports</h3>
-        <p>A bounded constructive result: A/B histories remain relationally distinguishable after removal of the temporary surface, restart, matched washout, and renewed injury. Return-relation placement is interventionally necessary for that distinction, while relation-preserving address relabeling preserves it. The interventions identify a distribution-dependent relation class, not a small memory locus.</p>
+        <h3>Why regeneration is the bridge</h3>
+        <p>A planarian fragment is not simply a smaller copy of a completed animal. It is a living but unsettled organization carrying part of a distributed physiological history. Repair may return toward familiar anatomy, while bioelectric perturbation can bias another stable morphology. On the proposed reading, a cut interrupts maintained closure; surviving distinctions constrain, but do not uniquely dictate, the next whole. This is an interpretation—not a molecular explanation.</p>
       </div>
       <div class="scope no">
-        <h3>What remains unresolved</h3>
-        <p>The witness partition, topology, closure affordance, routes, injury, and readout are engineered. The flat control covers one matched passage, not deletion, restart, washout, controls, or G2 in one mmap. The carrier does not originate, maintain, or defend its own boundary. The prepared organization may be a rudimentary distributed target or only a path-dependent attractor. This is not a biological model, independent replication, or evidence of basal cognition.</p>
+        <h3>The physical test that can fail</h3>
+        <p>A random memristive nanowire network would let conductance, heat, and hysteresis alter later physical paths. Parameters are fixed on A and predict held-out B. After damage and reentry, <code>live</code> must change a hidden next contact more than <code>freeze</code>, <code>blocked</code>, and <code>shuffle</code>. No held-out advantage, no survival after power loss, or an externally chosen route defeats the carrier hypothesis.</p>
       </div>
     </section>
 
     <section class="question">
-      <h2>Biological question</h2>
-      <p>Would you regard the topology-encoded closure affordance and history-bearing relational state as a <strong>minimal distributed pattern memory or homeostatic target, only a path-dependent attractor, or as both?</strong> What single perturbation would best distinguish their physical roles?</p>
+      <h2>Question for biology</h2>
+      <p>Given two tissues matched in present anatomy and immediate behavior but differing only in causal repair history, <strong>what perturbation would best distinguish a distributed homeostatic target from ordinary path-dependent hysteresis</strong>—without supplying the desired anatomy from outside?</p>
     </section>
 
     <section class="refs">
-      <h2>References</h2>
+      <h2>Scope &amp; references</h2>
       <ol>
-        <li>Levin, M. (2022). <em>Technological Approach to Mind Everywhere.</em> <a href="https://doi.org/10.3389/fnsys.2022.768201">doi:10.3389/fnsys.2022.768201</a></li>
-        <li>Durant, F., et al. (2017). <em>Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients.</em> <a href="https://pubmed.ncbi.nlm.nih.gov/28538159/">PMID:28538159</a></li>
-        <li>Manicka, S., &amp; Levin, M. (2019). <em>Modeling somatic computation with non-neural bioelectric networks.</em> <a href="https://doi.org/10.1038/s41598-019-54859-8">doi:10.1038/s41598-019-54859-8</a></li>
-        <li>Levin, M. (2023). <em>Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.</em> <a href="https://doi.org/10.1007/s10071-023-01780-3">doi:10.1007/s10071-023-01780-3</a></li>
+        <li><strong>Supported:</strong> retained history can survive restart and renewed injury, remain invariant under irrelevant relabeling, and change a later passage in engineered carriers. <strong>Open:</strong> autonomous boundaries, goals, biological relevance, basal cognition, carrier-owned physical routing, and any claims about matter, space, light, or gravity.</li>
+        <li>Levin (2022), <a href="https://doi.org/10.3389/fnsys.2022.768201"><em>Technological Approach to Mind Everywhere</em></a>; Durant et al. (2017), <a href="https://pubmed.ncbi.nlm.nih.gov/28538159/">long-term editing of regenerative anatomy</a>; Emmons-Bell et al. (2015), <a href="https://doi.org/10.3390/ijms161126065">bioelectric induction of alternative planarian head anatomies</a>.</li>
+        <li>Manicka &amp; Levin (2019), <a href="https://doi.org/10.1038/s41598-019-54859-8">somatic computation in non-neural bioelectric networks</a>; Levin (2023), <a href="https://doi.org/10.1007/s10071-023-01780-3">bioelectric networks across scales</a>; Schlosshauer (2005), <a href="https://doi.org/10.1103/RevModPhys.76.1267">decoherence and quantum measurement</a>.</li>
       </ol>
     </section>
   </article>
