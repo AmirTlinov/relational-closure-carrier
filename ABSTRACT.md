@@ -1,191 +1,200 @@
-# From Difference to Memory in a Minimal Non-Neural Carrier
+# From Differences to Distinguishability
 
-## How contact can leave a trace in the same substrate that later conducts repair
+## How contact becomes memory and stable closure becomes form in a minimal non-neural carrier
 
 **Amir Tlinov — Independent Researcher**<br>
 **20 July 2026**<br>
 **Public materials:** [github.com/AmirTlinov/relational-closure-carrier](https://github.com/AmirTlinov/relational-closure-carrier)
 
-### A step before objects
+### Starting claim
 
-Physics, biology, and computation usually begin with named things—particles,
-cells, networks, agents—and then describe relations among them. This project
-tries a narrower reversal. Instead of declaring that *everything is difference*,
-it asks what can be learned by beginning one step earlier than the finished
-object: with alternatives in a substrate, and with the contacts through which
-an alternative can matter to what happens next.
+This work begins from a physical conjecture: before the finished object there
+are differences—ways in which one possible state can change another otherwise.
+A difference need not already be distinguishable to an observer. **Absence of
+distinguishability in one contact is not absence of differences.** It means that
+this contact has not yet made them part of one physical fate.
 
-The word *difference* is not offered as a replacement for physics or biology.
-It is a methodological restraint. A coordinate system, particle description,
-cell label, graph, or measurement record may be indispensable, but the tool of
-description should not silently become the process being described. A stable
-object can remain a perfectly useful physical description while its identity is
-treated as something maintained through change rather than assumed in advance.
+Even counting begins with distinguishability: one jug can be told from two, two
+from four. Mathematics works with stable classes of distinguishability with
+extraordinary precision without needing to expose the differences from which
+those classes arose. Air likewise need not stand out to vision in order to
+participate in almost every process in a room.
 
-Michael Levin's work on basal cognition motivates this move. Capacities divided
-among the vocabularies of physics, physiology, development, and behavior can
-reappear across scale when a system is studied through what it can sense,
-retain, pursue, and repair. The question here is not whether everything is
-cognitive. It is whether persistent form can be recognized before neurons or a
-symbolic model—in the causal work done by a substrate's own retained history.
+A particle or object is therefore not taken here as the final brick of reality.
+The stronger working hypothesis is that what is later called a particle, body,
+or material form is a persistent concentration of differences—a closure that
+retains its own distinguishability across further contacts.
 
-### Contact turns a difference into distinguishability
+### Contact produces distinguishability
 
-A difference may exist without being exposed by a particular contact. Failure
-to distinguish two alternatives with one probe does not establish that they are
-equivalent under every possible continuation. Conversely, measurement is
-itself a physical contact: the registered outcome belongs to the newly coupled
-history of system and apparatus, not to a view from outside the interaction.
-This observation does not solve quantum measurement or replace quantum theory.
-It only cautions against reading the measured pattern as a photograph of
-untouched alternatives.
+Differences become distinguishability when their meeting acquires a physical
+consequence: substituting one alternative for another changes the distribution
+of a possible later contact. This has an exact operational form:
 
-The operational criterion used here is deliberately modest:
+\[
+D^+(A,B)=\sup_{C,M}\operatorname{TV}
+\left(P(\cdot\mid M\circ C[A]),P(\cdot\mid M\circ C[B])\right).
+\]
 
-> Two retained histories count as physically distinguishable within a declared
-> experimental domain only if substituting one for the other changes some
-> admissible later contact.
+If \(D^+(A,B)>0\), histories A and B are physically distinguishable within the
+declared continuation domain. A zero result from one probe does not establish
+\(D^+(A,B)=0\): not distinguished by this contact is not the same as
+indistinguishable in every future contact.
 
-The formal quantity \(D^+\) expresses the strongest such future difference over
-the continuations and contacts admitted by an experiment. It is an external
-witness, not an organ of the carrier: it does not choose a route, create a
-memory, calculate a geometry, or tell the substrate what to do.
+Measurement, in this language, is not a photograph of an untouched thing. It is
+a contact that participates in which differences close into the registered
+distinguishability. The observed outcome belongs to the joint continuation of
+system and apparatus. This is also the project's route into quantum
+measurement: ask not first what the particle secretly was, but which differences
+became distinguishable through the measuring contact.
 
-### The carrier hypothesis
+### Memory is changed conduct
 
-The stricter hypothesis is about where memory lives:
-
-> **A useful distinction becomes memory only when contact changes the same
-> substrate that later conducts a changed continuation.**
-
-The required lifecycle is therefore not `input -> score -> stored answer` but:
+We claim that memory in a minimal physical sense need not be a separate record
+of the past. It arises when contact changes the carrier itself so that the
+changed carrier conducts the next contact differently. In a prepared
+computational system we demonstrate one reproducible instance of this
+transition.
 
 ```text
-contact -> passage through existing material -> unresolved local change
-        -> action -> world return -> reentry through the changed material
-        -> changed next contact
+contact -> change of the same carrier -> action -> world return
+        -> reentry through the changed carrier -> a different next contact
 ```
 
-A compatible form should reuse the same persistent places. Only an unresolved
-part of a real passage should open new conductance. An update earns the name
-memory only after it survives return and changes a future contact. The witness
-may measure that consequence, but may not select it online, reward it, or feed
-the carrier its desired answer.
+A record, label, or external observer may describe this trace but does not own
+it. The receipt for memory is the changed future of the passage itself.
 
-### Closure, injury, and a new scale
+### A body of distinguishability and a new scale
 
-In this hypothesis, a whole is not an inventory of parts or a drawn network. It
-is a temporarily stable class of future continuations maintained by recurrent
-mutual change in the substrate. A new organizational scale is earned, not
-declared: a closure becomes a distinction at the next scale only when later
-contacts can encounter and perturb it as one whole without erasing its internal
-alternatives.
+**A distinguishable body is not a sum of differences or a bond drawn between
+them. It is a temporarily stable balance of mutually sustaining differences.**
+Changing one difference creates tension throughout the closure and makes the
+whole seek another stability: repair locally, change its form, divide, or
+collapse.
 
-Injury does not merely empty a slot in a stored blueprint. It changes that
-class of possible continuations and leaves the surviving organization with an
-unresolved continuation. Later reentry may recover a familiar response class,
-stabilize another form, support division into new wholes, or fail into collapse.
-The outcome must arise from the carrier's dynamics, not be supplied by the
-witness.
+When a closure persists, a later contact can meet it as one operative unit. It
+is then distinguishable as one whole at the scale that has formed and, at the
+same time, a new difference available to the next closure. Scale is not written as
+`level=2` or assigned by an observer. It appears when a whole actually enters
+further contacts as a whole while retaining internal differences.
 
-### Why regeneration is the biological bridge
+Injury exposes this organization. Removing a difference does not empty a slot
+in a blueprint; it disrupts mutual completion throughout the distinguishable
+body. The surviving form carries that deficit into its future contacts. Reentry
+may complete it with differences of the prior scale, incorporate another
+closure as a new part, recover a familiar form, settle into another stable form,
+produce several wholes, or end in collapse.
 
-A cut planarian is a useful challenge to object-first language. Each fragment
-is not merely a smaller copy of a completed animal. It is a living but unsettled
-organization carrying part of a distributed physiological history. The cut
-leaves not an empty blueprint slot but an unresolved continuation in that
-surviving organization. Repair may recover familiar anatomy, while perturbation
-of bioelectric state can bias another stable morphology.
+### Why a planarian repairs form
 
-On the proposed reading, regeneration is the formation of a new closure
-constrained, but not uniquely dictated, by what survived. It is not insertion
-of a stored part or necessarily a literal replay of the previous body. This is
-an interpretation of the regenerative phenomena, not a molecular explanation
-of them and not evidence that the present computational carriers are organisms.
+A cut planarian is a direct biological case of this question. Each fragment
+remains alive, but the former closure is no longer complete. Surviving
+physiological history constrains the fragment's next contacts, and the deficit
+passes through the same body that must complete it.
 
-### Two computational steps
+Regeneration is then not the reading of a hidden picture of the finished animal
+or the insertion of a missing part. It is a new closure of differences retained
+by the fragment. It often recovers familiar anatomy but need not literally
+replay the former body: changing bioelectric history can lead to another stable
+morphology.
 
-#### 1. A reproducible explicit-topology assay
+### Bubble sort is an exact small example
 
-The public `relational-closure-carrier` is the bounded predecessor. It uses one
-frozen local collision rule, file-backed records, explicit local relation
-handles, and an engineered closure affordance. A and B histories recover the
-same current extent and conductance, yet later repair differently after removal
-of the temporary surrounding records, fresh-process restart, common washout,
-and the same renewed injury.
+Zhang, Goldstein, and Levin use classical sorting algorithms as minimal models
+of morphogenesis [2]. Here the proposed principle is visible without metaphor.
+Two neighboring values are not merely different: reversed order makes a local
+imbalance distinguishable as an inversion. For an array,
 
-Relation-preserving address relabeling preserves the A/B effect. Shuffling the
-placement of the candidate return relations erases it while preserving their
-multiset, extent, and current higher-order conductance. A one-mmap control
-preserves all 2,058 events of a matched passage after hostile address
-permutation. The result shows that retained relational placement can be
-causally necessary for later repair. It does **not** show a self-born topology,
-boundary, goal, or organism.
+\[
+I(a)=\#\{(i,j):i<j,\ a_i>a_j\}.
+\]
 
-#### 2. Passage itself becomes persistent
+Every swap of an adjacent inverted pair lowers \(I\) by exactly one. No element
+stores the final sequence, yet repeated completion of local imbalance brings
+the whole to the stable condition distinguished by \(I=0\).
 
-A later PC implementation, `one to two`, moves the invariant into one writable
-file-backed mmap body conducted by a local Metal law. Exact forms enter the same
-persistent place without an embedding search; three distinct events conduct
-through the same sixteen material relations. A mismatched world return changes
-their common relation `R*`; the next matched and mismatched passages diverge,
-and the effect persists after closing and reopening the body. A severed
-conducting relation can grow a new incarnation from surviving context.
+In Levin's distributed cell-view variants, elements act from local contact;
+damage changes the sorting trajectory, and mixed algorithms produce unexpected
+clustering of their types. Sorting therefore shows how local differences form
+whole-scale order. The next question belongs to the carrier: in an algorithm,
+adjacency, comparison, and the swap rule are supplied by the programmer; can a
+substrate's physical history itself form, retain, and change the available
+contacts?
 
-This is stronger software evidence for `contact -> return -> changed future`,
-but its physical meaning remains bounded. `ORoute`, `OForm`, `OSynapse`, and
-`ORef` still express a programmed topology, and ordinary PC memory does not
-route a signal by its content—the CPU, GPU, operating system, and memory
-controller do. The result is a causal software carrier, not yet a material
-demonstration that the substrate itself owns the path. Its frozen public proof
-bundle remains to be released; the fully reproducible result in this repository
-is the first assay above.
+### Two working computational steps
 
-### The physical test and its falsifier
+#### 1. History changes renewed repair
 
-The next honest carrier is not another address calculation but a
-history-dependent material: for example, a random memristive nanowire or
-atomic-switch network whose conductance, heating, and hysteresis alter the
-paths available to later boundary pulses.
+The public `relational-closure-carrier` conducts A and B histories through one
+local law and retains them in a prepared carrier. After temporary-surrounding
+deletion, restart, common washout, and the same renewed injury, the two lines
+have the same current extent and large-scale conductance yet close differently.
+Relation-preserving address relabeling preserves the effect; shuffling the
+placement of survived return erases it. Future repair is therefore causally
+dependent on history retained in the carrier itself.
 
-The experiment fixes parameters on a calibration set A, freezes the protocol,
-and predicts a held-out set B without refitting. After damage and selective
-reentry, the `live` material must show a more stable change in a hidden next
-boundary contact than three matched controls: `freeze` (below switching
-threshold), `blocked` (the alternate physical path removed), and `shuffle`
-(equal exposure with contact order broken).
+#### 2. Passage itself becomes memory
 
-The hypothesis loses if the live advantage does not survive held-out testing,
-power removal, and reentry; if it is no larger than the controls; if only a log
-but not the next contact changes; or if an external algorithm still has to
-choose the successful route.
+In the later `one to two` PC carrier, one writable mmap tissue is conducted by a
+local Metal law. Three events pass through the same sixteen physical relations.
+A mismatched world return changes their shared `R*`; subsequent matched and
+mismatched contacts diverge, and the change survives closing and reopening the
+tissue. Severed conductance can grow a new incarnation from surviving context.
 
-### What this program currently supports
+Both steps follow one causal line:
 
-The computational work establishes a bounded causal fact: in engineered
-carriers, retained history can survive restart and renewed injury, remain
-invariant under irrelevant address relabeling, and change a later passage. It
-also exposes the next missing owner—the physical law by which matter itself,
-rather than software references, chooses and changes the path.
+```text
+difference -> contact -> distinguishability -> carrier trace
+           -> return -> changed future -> possibility of a new closure
+```
 
-It does not yet establish a self-maintaining boundary, self-born organizational
-scales, endogenous goals, biological relevance, basal cognition, or a new
-physical theory. Claims about matter, particles, space, time, light, or gravity
-remain open hypotheses outside this assay. The current formal result is an
-operational research principle and a sequence of falsifiable carrier tests.
+### A physical experiment in which the hypothesis can lose
 
-### Question for biological interpretation
+The next carrier must not calculate a path by addresses; it must change that
+path physically. A suitable candidate is a random memristive network whose
+conductance, heating, and hysteresis are simultaneously state, memory, and the
+condition of the next contact.
+
+Parameters are fixed on experiment A. Without refitting, the network predicts a
+held-out experiment B. After damage and selective reentry, live material must
+change the next hidden boundary contact more reliably than three controls:
+`freeze` prevents switching, `blocked` physically removes the alternate path,
+and `shuffle` preserves exposure while breaking contact history.
+
+The hypothesis loses if the `live` advantage disappears on held-out B, fails to
+survive power loss and reentry, does not exceed the controls, or exists only
+because an external algorithm selected the successful path.
+
+### What is claimed now
+
+The working picture is this: differences precede distinguishability; contact
+makes them part of one physical fate; persistent closure becomes form and can
+act as a difference at the next scale; memory and repair arise when history
+changes the same carrier through which the future arrives.
+
+Computationally, a bounded but causal slice of this picture already works:
+survived contact is retained in a carrier and changes later repair. The first
+carrier is publicly reproducible; the second strengthens passage ownership and
+requires its own open proof bundle.
+
+The decisive unfinished test is to give matter itself ownership of contact,
+path, and reconfiguration. Until that test succeeds, this is a strong and
+falsifiable carrier-physics program rather than a completed fundamental theory
+of matter.
+
+### Question for biology
 
 > Given two tissues matched in present anatomy and immediate behavior but
-> differing only in their causal repair history, what perturbation would best
-> distinguish a distributed homeostatic target from ordinary path-dependent
+> differing only in repair history, what perturbation would best show that
+> their future form is held by a closure of differences rather than ordinary
 > hysteresis—without supplying the desired anatomy from outside?
 
 ### References
 
 1. Levin M. [Technological Approach to Mind Everywhere](https://doi.org/10.3389/fnsys.2022.768201). *Frontiers in Systems Neuroscience*. 2022.
-2. Durant F, et al. [Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients](https://pubmed.ncbi.nlm.nih.gov/28538159/). *Biophysical Journal*. 2017.
-3. Emmons-Bell M, et al. [Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies in Genetically Wild-Type *Girardia dorotocephala* Flatworms](https://doi.org/10.3390/ijms161126065). *International Journal of Molecular Sciences*. 2015.
-4. Manicka S, Levin M. [Modeling somatic computation with non-neural bioelectric networks](https://doi.org/10.1038/s41598-019-54859-8). *Scientific Reports*. 2019.
-5. Levin M. [Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind](https://doi.org/10.1007/s10071-023-01780-3). *Animal Cognition*. 2023.
-6. Schlosshauer M. [Decoherence, the measurement problem, and interpretations of quantum mechanics](https://doi.org/10.1103/RevModPhys.76.1267). *Reviews of Modern Physics*. 2005.
+2. Zhang T, Goldstein A, Levin M. [Classical sorting algorithms as a model of morphogenesis: Self-sorting arrays reveal unexpected competencies in a minimal model of basal intelligence](https://doi.org/10.1177/10597123241269740). *Adaptive Behavior*. 2025;33(1):25–54.
+3. Durant F, et al. [Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients](https://pubmed.ncbi.nlm.nih.gov/28538159/). *Biophysical Journal*. 2017.
+4. Emmons-Bell M, et al. [Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies in Genetically Wild-Type *Girardia dorotocephala* Flatworms](https://doi.org/10.3390/ijms161126065). *International Journal of Molecular Sciences*. 2015.
+5. Manicka S, Levin M. [Modeling somatic computation with non-neural bioelectric networks](https://doi.org/10.1038/s41598-019-54859-8). *Scientific Reports*. 2019.
+6. Levin M. [Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind](https://doi.org/10.1007/s10071-023-01780-3). *Animal Cognition*. 2023.
+7. Schlosshauer M. [Decoherence, the measurement problem, and interpretations of quantum mechanics](https://doi.org/10.1103/RevModPhys.76.1267). *Reviews of Modern Physics*. 2005.

@@ -1,12 +1,11 @@
 # Relational Closure Carrier
 
-This repository is the first reproducible computational step in a broader
-question: when does a difference exposed by contact become persistent memory in
-the same non-neural substrate that later conducts repair? The public abstract
-places this explicit-topology assay beside the later passage-based PC carrier
-and the still-open physical carrier test. The code here remains deliberately
-bounded: it tests whether retained relational placement can change later repair
-without a complete-body target register, reward, or online external selection.
+This repository implements the first reproducible computational step of a
+broader claim: differences become distinguishability through contact, and
+memory begins when contact changes the same carrier that later conducts a
+different future. The experiment asks whether survived contact can change
+renewed repair without a complete-body target register, reward, or online
+external selection.
 
 ## Start here
 
@@ -17,24 +16,31 @@ without a complete-body target register, reward, or online external selection.
 - **[Evidence boundary](EVIDENCE.md)** — exact result, interventions, controls, and hashes.
 - **[Reproduce](REPRODUCE.md)** — clean commands for tests and both experiments.
 
-## Operational criterion and carrier hypothesis
+## Differences, distinguishability, and memory
 
-An unexposed difference is not yet an experimentally established distinction.
-Within a declared continuation domain, two retained histories count as
-physically distinguishable only when substituting one for the other changes an
-admissible later contact. The formal `D+` witness reads that consequence; it is
-not a scheduler, memory selector, or routing law.
+A difference may exist before one contact makes it distinguishable. Within a
+declared continuation domain, two retained histories are physically
+distinguishable when substituting one for the other changes an admissible later
+contact. The formal `D+` witness measures that future difference.
 
-The carrier hypothesis is stricter:
+The carrier claim is material:
 
-> **A useful distinction becomes memory only when contact changes the same
+> **A distinguishability becomes memory when contact changes the same
 > substrate that later conducts a changed continuation.**
 
-In the broader hypothesis, a whole is a temporarily stable class of future
-continuations, not an inventory of parts or a declared diagram. A new scale is
-earned only when later contact encounters that closure as one whole. Injury
-opens an unresolved continuation; repair may recover the previous class,
-stabilize another, support new wholes, or fail into collapse.
+In the broader hypothesis, a whole is a temporarily stable balance of mutually
+sustaining differences. When later contact encounters that closure as one
+operative unit, it becomes distinguishable as one whole at its scale and a new
+difference at the next. Injury opens a deficit in that balance; reclosure may restore the
+previous form, stabilize another, support new wholes, or end in collapse.
+
+Zhang, Goldstein, and Levin's [minimal morphogenesis
+model](https://doi.org/10.1177/10597123241269740) makes the transition visible
+in bubble sort. An adjacent compare–swap resolves one inversion, so repeated
+local completion drives the global inversion count to zero without any element
+storing the final permutation. This repository takes the next step: whether the
+same conducting substrate can retain contact history and thereby change a later
+closure, rather than receiving every useful contact from the programmer.
 
 ## Reproducible claim of this repository
 
@@ -45,13 +51,10 @@ address relabeling preserves the A/B distinction, while shuffling the placement
 of the candidate return-relation class erases it. The placement of that relation
 class is therefore interventionally necessary for the observed A/B difference.
 
-This is a bounded intervention result for history-dependent material memory in
-an engineered arena. It is **not** presented as evidence of basal cognition, a
-biological model, or a proof that morphogenesis lacks target states.
-
-The open biological question is how to distinguish a distributed homeostatic
-target from ordinary path-dependent hysteresis when present anatomy and
-immediate behavior are matched but causal repair history differs.
+This establishes one causal slice of history-dependent material memory in an
+engineered arena. The biological and basal-cognition claim belongs to the next
+comparison: whether matched present tissues with different repair histories
+close differently under a perturbation that does not supply the target form.
 
 The graph, an explicit empty upper slot, the A/B return routes, injury, and readout are engineered. The higher-order conducting relation itself is not pre-installed: it appears only after the lower route actually closes, disappears under targeted ablation, and is restored by a new traversal of surviving material. A/B identity is assigned by the harness through one of the prepared routes.
 

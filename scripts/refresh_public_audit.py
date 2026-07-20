@@ -41,7 +41,7 @@ def main() -> None:
     }
     audit["publication"].update(
         {
-            "narrative": "difference_contact_return_reentry_changed_future",
+            "narrative": "differences_contact_distinguishability_closure_memory_form",
             "current_pc_carrier_evidence": "locally_verified_public_bundle_pending",
         }
     )

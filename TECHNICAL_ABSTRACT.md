@@ -6,38 +6,50 @@
 **20 July 2026**<br>
 **Materials:** [github.com/AmirTlinov/relational-closure-carrier](https://github.com/AmirTlinov/relational-closure-carrier)
 
-### Biological boundary
+### Claim and biological question
 
-Work on anatomical homeostasis and basal cognition treats morphogenesis as a form of collective problem-solving in morphospace: a body can reach or recover large-scale organization despite perturbation, while physiological networks retain information that is not reducible to current anatomy alone [1–4]. I am exploring a narrow mechanistic question inside that program:
+The starting physical claim is that differences precede distinguishability. A
+difference may exist before one contact makes it operative in a shared outcome;
+absence of distinguishability in that contact is therefore not absence of
+differences. Operationally, retained histories A and B become physically
+distinguishable when substituting one for the other changes an admissible later
+contact. `D+` measures the strongest such future difference over the declared
+continuation domain.
 
-> Can target-like repair arise from history retained in the relational organization of the same substrate that later conducts repair, without a separate complete-body target model, global controller, reward signal, or online external selection inside the modeled loop?
+The material claim is:
 
-The operational criterion is narrower than an ontology: two retained histories
-count as physically distinguishable within a declared experimental domain only
-when substituting one for the other changes an admissible later contact. A
-difference hidden from one probe may still matter after another continuation.
-The formal `D+` witness reads that future consequence; it does not choose a
-route or create the carrier's memory.
+> **Distinguishability becomes memory when contact changes the same substrate
+> that later conducts a changed continuation.**
 
-The motivating carrier hypothesis is stricter:
+A whole is then a temporarily stable balance of mutually sustaining
+differences. When later contact meets that closure as one operative unit, it is
+distinguishable as one whole at its scale and a new difference at the next.
+Injury opens a deficit in the balance; reclosure can restore the prior form, stabilize
+another, divide into new wholes, or collapse.
 
-> **A useful distinction becomes memory only when contact changes the same
-> substrate that later conducts a changed continuation.**
+Work on anatomical homeostasis and basal cognition makes this a direct
+biological question [1–4]:
 
-In this hypothesis, a whole is neither an inventory of parts nor a drawn graph.
-It is a temporarily stable class of future continuations maintained by
-recurrent mutual change in the substrate. A new scale is earned only when such
-a closure later enters contact as one operative unit without erasing its
-internal alternatives. Injury changes that continuation class rather than
-merely emptying a blueprint slot. Repair may recover the prior class, stabilize
-another, support division into new wholes, or fail into collapse; the witness
-may read the outcome but must not choose it.
+> Can target-like repair arise from history retained in the same substrate
+> that later conducts repair, without a separate complete-body target model,
+> global controller, reward signal, or online external selection?
 
-This technical note covers the public explicit-topology predecessor only. It is
-an experimental heuristic, not a demonstrated account of biological
-regeneration or a claim about fundamental physics. The address-relabel
-intervention below tests storage-label invariance in a prepared graph—not
-spacetime symmetry, relativity, or a self-born material topology.
+### Exact small case: bubble sort
+
+Zhang, Goldstein, and Levin use distributed sorting algorithms as minimal
+models of morphogenesis [5]. Bubble sort isolates the scale transition. If
+
+\[
+I(a)=\#\{(i,j):i<j,\ a_i>a_j\}
+\]
+
+is the inversion count, every swap of an adjacent inverted pair lowers \(I\) by
+exactly one; \(I=0\) is the sorted fixed condition. No element stores the final
+permutation, yet local completion produces global order. The cell-view variants
+add damage tolerance and unexpected algotype clustering. The carrier experiment
+continues from the exact assumption sorting leaves outside itself: can retained
+substrate history change a later contact? Carrier-owned formation of the
+contacts themselves is the next material test.
 
 ### Minimal carrier
 
@@ -143,3 +155,4 @@ My main question is:
 2. Durant F, Morokuma J, Fields C, Williams K, Adams DS, Levin M. [Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients](https://pubmed.ncbi.nlm.nih.gov/28538159/). *Biophysical Journal*. 2017.
 3. Manicka S, Levin M. [Modeling somatic computation with non-neural bioelectric networks](https://doi.org/10.1038/s41598-019-54859-8). *Scientific Reports*. 2019.
 4. Levin M. [Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind](https://doi.org/10.1007/s10071-023-01780-3). *Animal Cognition*. 2023.
+5. Zhang T, Goldstein A, Levin M. [Classical sorting algorithms as a model of morphogenesis: Self-sorting arrays reveal unexpected competencies in a minimal model of basal intelligence](https://doi.org/10.1177/10597123241269740). *Adaptive Behavior*. 2025;33(1):25–54.

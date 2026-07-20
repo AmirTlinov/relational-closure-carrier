@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
-  <title id="title">A difference becomes memory through contact, return, and changed future passage</title>
-  <desc id="desc">A causal sequence begins with an alternative not exposed by the present contact. Contact enters an existing material passage, a local mismatch changes conductance, world return reenters the changed material, and the next contact diverges. Freeze and shuffle controls interrupt the same sequence.</desc>
+  <title id="title">Contact closes differences into distinguishability and changed reentry makes memory</title>
+  <desc id="desc">Differences enter one contact and close into a shared material passage. An unresolved difference changes the carrier, world return reenters the changed closure, and the next contact becomes different. Freeze and shuffle controls interrupt the same sequence.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#647381"/>
@@ -23,18 +23,18 @@
     </style>
   </defs>
 
-  <text x="44" y="38" class="section">A DIFFERENCE BECOMES MEMORY ONLY AFTER IT CHANGES A FUTURE CONTACT</text>
+  <text x="44" y="38" class="section">CONTACT CLOSES DIFFERENCES INTO DISTINGUISHABILITY; REENTRY MAKES IT MEMORY</text>
 
   <g transform="translate(44 66)">
     <rect class="panel" width="208" height="190" rx="5.33"/>
-    <text x="18" y="30" class="label" font-weight="600">Unexposed alternative</text>
+    <text x="18" y="30" class="label" font-weight="600">Differences +A / −A</text>
     <circle cx="74" cy="92" r="25" class="neutral"/>
     <circle cx="136" cy="92" r="25" class="neutral"/>
-    <text x="68" y="99" class="label">A</text>
-    <text x="130" y="99" class="label">B</text>
+    <text x="68" y="99" class="label">+</text>
+    <text x="130" y="99" class="label">−</text>
     <path d="M99 92 H111" class="line" stroke-dasharray="3 5"/>
-    <text x="18" y="145" class="small">this contact is blind</text>
-    <text x="18" y="168" class="micro">difference may still exist</text>
+    <text x="18" y="145" class="small">not yet one outcome</text>
+    <text x="18" y="168" class="micro">example: mutual completion</text>
   </g>
 
   <path d="M263 160 H305" class="line" marker-end="url(#arrow)"/>
@@ -42,31 +42,31 @@
 
   <g transform="translate(320 66)">
     <rect class="panel" width="246" height="190" rx="5.33"/>
-    <text x="18" y="30" class="label" font-weight="600">Shared material passage</text>
+    <text x="18" y="30" class="label" font-weight="600">Contact forms a closure</text>
     <path d="M28 101 C64 59 102 59 130 101 S191 144 218 101" class="blueLine"/>
     <circle cx="35" cy="94" r="15" class="node"/>
     <circle cx="87" cy="73" r="15" class="node"/>
     <circle cx="139" cy="111" r="15" class="node"/>
     <circle cx="190" cy="129" r="15" class="node"/>
     <circle cx="218" cy="101" r="15" class="node"/>
-    <text x="18" y="160" class="small">same form reuses same places</text>
-    <text x="18" y="181" class="micro">passage = read + possible change</text>
+    <text x="18" y="160" class="small">differences enter one passage</text>
+    <text x="18" y="181" class="micro">meeting changes what follows</text>
   </g>
 
   <path d="M577 160 H618" class="line" marker-end="url(#arrow)"/>
-  <text x="580" y="140" class="small">residue</text>
+  <text x="580" y="140" class="small">deficit</text>
 
   <g transform="translate(633 66)">
     <rect class="panel" width="220" height="190" rx="5.33"/>
-    <text x="18" y="30" class="label" font-weight="600">Local conductance changes</text>
+    <text x="18" y="30" class="label" font-weight="600">Carrier keeps the change</text>
     <path d="M28 101 H190" class="blueLine"/>
     <circle cx="42" cy="101" r="15" class="node"/>
     <circle cx="92" cy="101" r="15" class="node"/>
     <circle cx="142" cy="101" r="23" class="changed"/>
     <circle cx="190" cy="101" r="15" class="node"/>
     <path d="M130 89 L154 113 M154 89 L130 113" stroke="#a95b2d" stroke-width="3" stroke-linecap="round"/>
-    <text x="18" y="157" class="small">only the unresolved part opens</text>
-    <text x="18" y="179" class="micro">no reward or target answer</text>
+    <text x="18" y="157" class="small">deficit reshapes the whole</text>
+    <text x="18" y="179" class="micro">trace lives in conduct</text>
   </g>
 
   <path d="M864 160 H906" class="line" marker-end="url(#arrow)"/>
@@ -74,17 +74,17 @@
 
   <g transform="translate(921 66)">
     <rect class="panel" width="235" height="190" rx="5.33"/>
-    <text x="18" y="30" class="label" font-weight="600">Future contact diverges</text>
+    <text x="18" y="30" class="label" font-weight="600">Closure acts as one</text>
     <path d="M28 96 H95 C125 96 128 65 161 65 H207" class="blueLine" marker-end="url(#arrowBlue)"/>
     <path d="M95 96 C125 96 128 132 161 132 H207" class="orangeLine" marker-end="url(#arrow)"/>
     <circle cx="96" cy="96" r="16" class="changed"/>
-    <text x="167" y="52" class="small">matched</text>
-    <text x="167" y="153" class="small">mismatched</text>
-    <text x="18" y="179" class="micro">the changed future is the receipt</text>
+    <text x="167" y="52" class="small">familiar</text>
+    <text x="167" y="153" class="small">new</text>
+    <text x="18" y="179" class="micro">changed contact = memory</text>
   </g>
 
   <path d="M1040 270 C1010 328 734 337 718 267" class="blueLine" marker-end="url(#arrowBlue)"/>
-  <text x="760" y="296" class="small">action changes world · world returns through the same body</text>
+  <text x="760" y="296" class="small">action changes world · return tests the same closure</text>
 
   <line x1="44" y1="350" x2="1156" y2="350" stroke="#d7dee3" stroke-width="1.5"/>
 
