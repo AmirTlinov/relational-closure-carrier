@@ -112,9 +112,15 @@ try {
       if (!sheet.querySelector('.mast h2')) errors.push(`${label}: отсутствует тезис h2`);
       if (!sheet.querySelector('.verdict')) errors.push(`${label}: отсутствует .verdict`);
       const illustration = sheet.querySelector('.drawing .story-image');
-      if (!illustration) errors.push(`${label}: отсутствует растровая причинная иллюстрация`);
+      const mechanism = sheet.querySelector('.drawing .causal-mechanism[role="img"]');
+      if (!illustration && !mechanism) {
+        errors.push(`${label}: отсутствует причинная сцена или точный HTML-механизм`);
+      }
       if (illustration && !illustration.getAttribute('alt')?.trim()) {
-        errors.push(`${label}: иллюстрация не имеет alt`);
+        errors.push(`${label}: растровая сцена не имеет alt`);
+      }
+      if (mechanism && !mechanism.getAttribute('aria-label')?.trim()) {
+        errors.push(`${label}: HTML-механизм не имеет aria-label`);
       }
       if (!sheet.querySelector('.folio-note')) errors.push(`${label}: отсутствует .folio-note`);
     });

@@ -11,7 +11,7 @@ external selection.
 
 - **[Public visual abstract](https://amirtlinov.github.io/relational-closure-carrier/)** — the two-page research argument from difference through contact, reentry, and repair.
 - **[A Theory of Useful Differences](THEORY.pdf)** — the separate nine-page axiomatic companion: closure, injury, iterative continuation, useful difference, charge, measurement, and the open derivations.
-- **[Theory source](theory/source-brief.md)** / **[editable visual document](theory/atlas.html)** / **[illustration sources](theory/illustrations/README.md)** — claims, print owner, and the author-derived raster language.
+- **[Theory source](theory/source-brief.md)** / **[editable visual document](theory/atlas.html)** / **[illustration sources](theory/illustrations/README.md)** — claims, print owner, and the author-derived visual language.
 - **[Русское зеркало](https://amirtlinov.github.io/relational-closure-carrier/ru/)** — тот же компактный абстракт, схема и отдельный двухстраничный PDF на русском.
 - **[Two-page PDF](ABSTRACT.pdf)** / **[English text](ABSTRACT.md)** / **[Russian meaning mirror](ABSTRACT_RU.md)**.
 - **[Technical extended abstract](TECHNICAL_ABSTRACT.md)** — the denser Relational Distinguishability account and full controls narrative.
