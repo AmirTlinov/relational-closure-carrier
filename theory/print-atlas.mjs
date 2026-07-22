@@ -79,6 +79,15 @@ try {
   await page.goto(pathToFileURL(htmlPath).href, { waitUntil: 'networkidle' });
   await page.emulateMedia({ media: 'print' });
   await page.evaluate(() => document.fonts.ready);
+  await page.evaluate(async () => {
+    await Promise.all([...document.images].map((img) => {
+      if (img.complete && img.naturalWidth > 0) return undefined;
+      return new Promise((resolve, reject) => {
+        img.addEventListener('load', resolve, { once: true });
+        img.addEventListener('error', () => reject(new Error(`Image failed: ${img.src}`)), { once: true });
+      });
+    }));
+  });
 
   const contract = await page.evaluate(() => {
     const tolerance = 1;
@@ -89,6 +98,9 @@ try {
 
     if (covers.length !== 1) errors.push(`ожидалась одна обложка, найдено ${covers.length}`);
     if (chapters.length < 1) errors.push('нужна хотя бы одна содержательная глава');
+    if (!covers[0]?.querySelector('.cover-illustration[alt]')) {
+      errors.push('обложка не имеет растровой причинной иллюстрации с alt');
+    }
     if (sheets.length !== covers.length + chapters.length) {
       errors.push('каждый .sheet должен быть .cover или .chapter');
     }
@@ -99,9 +111,11 @@ try {
       if (entries < 2 || entries > 4) errors.push(`${label}: смысловых шагов ${entries}, ожидалось 2–4`);
       if (!sheet.querySelector('.mast h2')) errors.push(`${label}: отсутствует тезис h2`);
       if (!sheet.querySelector('.verdict')) errors.push(`${label}: отсутствует .verdict`);
-      const svg = sheet.querySelector('.drawing svg');
-      if (!svg) errors.push(`${label}: отсутствует причинная SVG-сцена`);
-      if (svg && !svg.getAttribute('aria-label')) errors.push(`${label}: SVG не имеет aria-label`);
+      const illustration = sheet.querySelector('.drawing .story-image');
+      if (!illustration) errors.push(`${label}: отсутствует растровая причинная иллюстрация`);
+      if (illustration && !illustration.getAttribute('alt')?.trim()) {
+        errors.push(`${label}: иллюстрация не имеет alt`);
+      }
       if (!sheet.querySelector('.folio-note')) errors.push(`${label}: отсутствует .folio-note`);
     });
 

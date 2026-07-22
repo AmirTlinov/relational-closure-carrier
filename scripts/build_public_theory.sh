@@ -58,7 +58,7 @@ awk '
 }
 
 pdftotext -layout "$PDF" "$text"
-grep -Fq '∂C = 0' "$text" || {
+grep -Eq '∂C ?= ?0' "$text" || {
   printf 'THEORY.pdf lost the boundary operator during printing\n' >&2
   exit 1
 }

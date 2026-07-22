@@ -4,27 +4,11 @@
   --ink2:#334147;
   --muted:#69757b;
   --line:#c3cbcc;
-  --soft:#e2e6e5;
-  --structure:#879296;
-  --surface:#fbfbf8;
-  --surface-muted:#f1f3f1;
   --blue:#315f70;
-  --blue-line:#adbec1;
-  --blue-panel:#eaf0ee;
   --amber:#8f633b;
-  --amber-line:#c9b7a3;
-  --amber-panel:#f3ece2;
   --red:#a4574d;
-  --red-line:#d2b5af;
-  --red-panel:#f4ebe8;
   --violet:#6f668e;
-  --violet-line:#c3bdd3;
-  --violet-panel:#f0eef4;
   --survival:#4f786d;
-  --survival-line:#afc1bb;
-  --survival-panel:#eaf0ed;
-  --r:2.1mm;
-  --rs:1.45mm;
   --sans:"Helvetica Neue",Arial,sans-serif;
   --serif:"Iowan Old Style","Palatino Linotype",Georgia,serif;
   --mono:Menlo,Monaco,monospace;
@@ -185,10 +169,11 @@ h1,h2,h3,p,figure { margin:0; }
   letter-spacing:.045em;
   text-transform:uppercase;
 }
-.drawing svg {
+.story-image {
   width:100%;
-  height:auto;
-  max-height:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
   min-height:0;
   display:block;
   align-self:center;
@@ -245,7 +230,15 @@ h1,h2,h3,p,figure { margin:0; }
   color:var(--ink);
   font:italic 10.4pt/1.35 var(--serif);
 }
-.cover-diagram { position:absolute; right:0; top:0; width:108mm; height:98mm; }
+.cover-illustration {
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:68mm;
+  object-fit:contain;
+  object-position:center;
+}
 .cover-bottom {
   position:absolute;
   left:17mm;
@@ -258,48 +251,6 @@ h1,h2,h3,p,figure { margin:0; }
   color:var(--muted);
   font:6.05pt/1 var(--sans);
 }
-
-svg text { fill:var(--ink); font-family:var(--sans); }
-.s-kicker { font:760 14px var(--mono); letter-spacing:.065em; }
-.s-label { font:650 17px var(--sans); }
-.s-note { fill:var(--muted); font:12.5px/1.2 var(--serif); }
-.s-small { fill:var(--muted); font:620 12px var(--mono); letter-spacing:.015em; }
-.s-tiny { fill:var(--muted); font:650 10px var(--mono); letter-spacing:.015em; }
-.s-number { font:800 12px var(--mono); }
-.formula-text { fill:var(--ink); font:650 28px var(--mono); letter-spacing:-.02em; }
-.formula-text.small { font-size:17px; }
-
-:where(svg rect:not(.square)) { rx:7px; ry:7px; }
-.panel { fill:var(--surface); stroke:var(--structure); stroke-width:1.35; rx:9px; ry:9px; }
-.panel.muted { fill:var(--surface-muted); }
-.panel.active { fill:var(--blue-panel); stroke:var(--blue-line); }
-.panel.event { fill:var(--amber-panel); stroke:var(--amber-line); }
-.panel.world { fill:var(--violet-panel); stroke:var(--violet-line); }
-.panel.danger { fill:var(--red-panel); stroke:var(--red-line); }
-.panel.survives { fill:var(--survival-panel); stroke:var(--survival-line); }
-.chip { fill:var(--surface); stroke:var(--line); stroke-width:1.15; rx:5px; ry:5px; }
-.chip.active { fill:var(--blue-panel); stroke:var(--blue-line); }
-.chip.event { fill:var(--amber-panel); stroke:var(--amber-line); }
-.chip.world { fill:var(--violet-panel); stroke:var(--violet-line); }
-.chip.survives { fill:var(--survival-panel); stroke:var(--survival-line); }
-.site { fill:var(--surface); stroke:var(--ink); stroke-width:2; }
-.site.contact { stroke:var(--blue); }
-.site.active { stroke:var(--blue); fill:var(--blue-panel); }
-.site.relation { stroke:var(--ink2); }
-.site.event { stroke:var(--amber); }
-.site.world { stroke:var(--violet); }
-.site.survives { stroke:var(--survival); }
-.fiber { fill:none; stroke:var(--ink2); stroke-width:4.2; stroke-linecap:round; stroke-linejoin:round; }
-.fiber.fine { stroke-width:2.1; }
-.input { fill:none; stroke:var(--blue); stroke-width:3.1; stroke-linecap:round; stroke-linejoin:round; }
-.flow { fill:none; stroke:var(--amber); stroke-width:3.1; stroke-linecap:round; stroke-linejoin:round; }
-.return { fill:none; stroke:var(--violet); stroke-width:3.1; stroke-linecap:round; stroke-linejoin:round; }
-.survival-flow { fill:none; stroke:var(--survival); stroke-width:3.1; stroke-linecap:round; stroke-linejoin:round; }
-.field { fill:none; stroke:var(--ink2); stroke-width:1.8; stroke-dasharray:7 6; }
-.guide { fill:none; stroke:var(--line); stroke-width:1.1; }
-.guide.dash { stroke-dasharray:5 5; }
-.cut { fill:none; stroke:var(--red); stroke-width:3.4; stroke-linecap:round; stroke-linejoin:round; }
-.num-dot { fill:var(--paper); stroke:var(--ink); stroke-width:1.4; }
 
 @media screen {
   body { padding:7mm 0; }

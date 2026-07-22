@@ -11,6 +11,10 @@ editable visual owner `theory/atlas.html`, and the released `THEORY.pdf`.
 The companion states the Theory of Useful Differences and keeps its formal
 consequences separate from derivations that remain open.
 
+The atlas uses author-derived raster scenes under `theory/illustrations/`.
+Generated images own spatial explanation only; `source-brief.md` and HTML text
+remain the sources of exact claims, formulas, captions, and evidence boundaries.
+
 It does not own the later private `one to two` carrier, a physical memristive
 experiment, or a biological model. The executable assay does not prove the
 companion's physical claims about charge, interference, or gravity.
