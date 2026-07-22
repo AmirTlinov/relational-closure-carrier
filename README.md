@@ -10,6 +10,8 @@ external selection.
 ## Start here
 
 - **[Public visual abstract](https://amirtlinov.github.io/relational-closure-carrier/)** — the two-page research argument from difference through contact, reentry, and repair.
+- **[A Theory of Useful Differences](THEORY.pdf)** — the separate eight-page axiomatic companion: closure, injury, useful difference, charge, measurement, and the open derivations.
+- **[Theory source](theory/source-brief.md)** / **[editable visual document](theory/atlas.html)** — the claim hierarchy and its print owner.
 - **[Русское зеркало](https://amirtlinov.github.io/relational-closure-carrier/ru/)** — тот же компактный абстракт, схема и отдельный двухстраничный PDF на русском.
 - **[Two-page PDF](ABSTRACT.pdf)** / **[English text](ABSTRACT.md)** / **[Russian meaning mirror](ABSTRACT_RU.md)**.
 - **[Technical extended abstract](TECHNICAL_ABSTRACT.md)** — the denser Relational Distinguishability account and full controls narrative.
@@ -106,3 +108,17 @@ the carrier has not been shown to originate its own BODY/WORLD boundary.
 - single-mmap control: 1,029 records, 2,058 matched collision events, exact final-record isomorphism;
 - current test suite: 22 passing tests;
 - world-lineage executable source SHA-256: `d3ed7438372973ef17b61b01659569372bb8c9faf61c48b334ded6bedca962e8`.
+
+## Build the public documents
+
+```bash
+./scripts/build_public_abstract.sh
+npm ci --prefix theory
+./scripts/build_public_theory.sh
+```
+
+The abstract and theory have independent print contracts: the former remains a
+two-page outreach artifact; the latter is an eight-page axiomatic companion.
+`THEORY.pdf` states the author's physical theory and marks unfinished physical
+derivations explicitly. The executable carrier assay does not by itself prove
+those physical consequences.

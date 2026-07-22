@@ -1,0 +1,9 @@
+{
+  "name": "useful-differences-theory",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Reproducible print environment for A Theory of Useful Differences",
+  "devDependencies": {
+    "playwright-core": "1.61.1"
+  }
+}

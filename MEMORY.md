@@ -6,9 +6,14 @@ This repository owns the first public, reproducible **explicit-topology**
 carrier assay. It tests whether different histories retained as relational
 placement can survive restart and renewed injury and change later repair.
 
+It also owns the public axiomatic companion `theory/source-brief.md`, its
+editable visual owner `theory/atlas.html`, and the released `THEORY.pdf`.
+The companion states the Theory of Useful Differences and keeps its formal
+consequences separate from derivations that remain open.
+
 It does not own the later private `one to two` carrier, a physical memristive
-experiment, a biological model, or a theory of matter, spacetime, light, or
-gravity.
+experiment, or a biological model. The executable assay does not prove the
+companion's physical claims about charge, interference, or gravity.
 
 ## Causal contract
 
@@ -62,6 +67,8 @@ boundary: whether substrate history can form and alter later contacts.
 
 ```bash
 ./scripts/build_public_abstract.sh
+npm ci --prefix theory
+./scripts/build_public_theory.sh
 uv run pytest -q
 uv run ruff check .
 ./scripts/refresh_public_audit.py
