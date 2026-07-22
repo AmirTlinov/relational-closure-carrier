@@ -373,6 +373,19 @@
     .scope h3 { color: var(--blue); }
     .scope.no h3 { color: var(--orange); }
     .scope p:last-child { margin-bottom: 0; }
+    .regeneration-scope img {
+      display: block;
+      width: 100%;
+      max-width: 65mm;
+      height: auto;
+      margin: 1.5mm auto;
+      mix-blend-mode: multiply;
+    }
+    .regeneration-scope p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 7.8pt;
+      line-height: 1.3;
+    }
     .question {
       display: grid;
       grid-template-columns: 36mm 1fr;
@@ -525,7 +538,7 @@
       </figure>
       <figure class="scale-figure">
         <img data-figure="recursive-two-to-one" src="theory/illustrations/author-recursive-two-to-one.png" alt="Eight positions alternate plus and minus along one line. Arcs group neighboring pairs, then pairs of pairs, and finally the whole; every scale is marked two to one.">
-        <figcaption><strong>Figure 3.</strong> Each <code>2:1</code> closure becomes one side at the next scale without erasing the distinctions held inside it.</figcaption>
+        <figcaption><strong>Figure 3.</strong> A whole organism is a balance of relations at their shared scale of form. The lower-scale <code>2:1</code> closures remain inside it.</figcaption>
       </figure>
     </section>
   </article>
@@ -561,9 +574,10 @@
     </section>
 
     <section class="scope-grid">
-      <div class="scope yes">
-        <h3>Why regeneration follows</h3>
-        <p>A planarian cut does not leave an empty blueprint slot; it makes a living closure incomplete. Surviving physiological differences carry the deficit into the fragment’s next contacts. Reentry seeks a stable balance through the same body: familiar anatomy, another stable morphology, several new wholes, or collapse. Regeneration forms a newly distinguishable whole constrained by what survived—not by insertion of a stored part.</p>
+      <div class="scope yes regeneration-scope">
+        <h3>Regeneration restores whole-scale balance</h3>
+        <img data-figure="restoration-without-replay" src="theory/illustrations/abstract-restoration-without-replay.png" alt="Four alternating signed positions remain after loss. Nested two-to-one arcs describe the prior closure, question marks open its continuation, and several return arrows show possible repairs that can restore whole-scale balance without recreating identical local placement.">
+        <p>Loss opens the closure. Different returns can restore whole-scale balance without replaying the prior local placement; imbalance may remain elsewhere.</p>
       </div>
       <div class="scope no">
         <h3>The material test</h3>

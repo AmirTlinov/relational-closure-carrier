@@ -6,15 +6,20 @@ sparse black notebook lines, open circular nodes, relation-local `+` / `-`
 orientations, and large fields of unclaimed space. The exact two-history source
 is retained as
 [`author-relational-history-source.png`](author-relational-history-source.png).
-The public abstract retains three further exact author sources:
+The public abstract retains four further exact author sources:
 [`author-difference-to-distinguishability.png`](author-difference-to-distinguishability.png),
-[`author-closure-by-admission.png`](author-closure-by-admission.png), and
-[`author-recursive-two-to-one.png`](author-recursive-two-to-one.png). Their
+[`author-closure-by-admission.png`](author-closure-by-admission.png),
+[`author-recursive-two-to-one.png`](author-recursive-two-to-one.png), and
+[`author-restoration-without-replay.png`](author-restoration-without-replay.png). Their
 localized captions and interpretations remain in the abstract HTML.
 [`abstract-difference-to-distinguishability.png`](abstract-difference-to-distinguishability.png)
 is the label-free Imagegen edit consumed by both localizations. It preserves
 the author's two separate signed gestures, rightward contact, and final held
 relation; Imagegen owns only removal of the English prose from the pixels.
+[`abstract-restoration-without-replay.png`](abstract-restoration-without-replay.png)
+is the corresponding label-free edit of the author's injury-and-restoration
+scene. Its signed positions, nested `2:1` closures, open continuation, question
+marks, and return paths remain fixed by the source diagram.
 
 ## Ownership boundary
 

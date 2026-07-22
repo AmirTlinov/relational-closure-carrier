@@ -373,6 +373,19 @@
     .scope h3 { color: var(--blue); }
     .scope.no h3 { color: var(--orange); }
     .scope p:last-child { margin-bottom: 0; }
+    .regeneration-scope img {
+      display: block;
+      width: 100%;
+      max-width: 65mm;
+      height: auto;
+      margin: 1.3mm auto;
+      mix-blend-mode: multiply;
+    }
+    .regeneration-scope p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 7.35pt;
+      line-height: 1.25;
+    }
     .question {
       display: grid;
       grid-template-columns: 36mm 1fr;
@@ -528,7 +541,7 @@
       </figure>
       <figure class="scale-figure">
         <img data-figure="recursive-two-to-one" src="../theory/illustrations/author-recursive-two-to-one.png" alt="Восемь позиций чередуют плюс и минус вдоль одной линии. Дуги объединяют соседние пары, затем пары пар и наконец всё целое; каждый масштаб обозначен как два к одному.">
-        <figcaption><strong>Рисунок 3.</strong> Каждое замыкание <code>2:1</code> становится одной стороной следующего масштаба, не стирая удержанные внутри различия.</figcaption>
+        <figcaption><strong>Рисунок 3.</strong> Целый организм — баланс отношений на общем уровне формы. Замыкания <code>2:1</code> меньшего масштаба сохраняются внутри него.</figcaption>
       </figure>
     </section>
   </article>
@@ -564,9 +577,10 @@
     </section>
 
     <section class="scope-grid">
-      <div class="scope yes">
-        <h3>Почему из этого следует регенерация</h3>
-        <p>Разрез планарии не оставляет пустую ячейку чертежа; он делает живое замыкание незавершённым. Уцелевшие физиологические различия проводят недостаток в следующие контакты фрагмента. Повторный вход ищет устойчивый баланс через то же тело: знакомую анатомию, другую морфологию, несколько новых целых или распад. Регенерация — образование новой различимости, ограниченной тем, что пережило разрез, а не вставка сохранённой детали.</p>
+      <div class="scope yes regeneration-scope">
+        <h3>Регенерация восстанавливает баланс целого</h3>
+        <img data-figure="restoration-without-replay" src="../theory/illustrations/abstract-restoration-without-replay.png" alt="После утраты остаются четыре позиции с чередующимися знаками. Вложенные дуги два к одному показывают прежнее замыкание, знаки вопроса открывают его продолжение, а несколько стрелок возврата показывают возможные починки, способные восстановить баланс целого без точного воспроизведения прежнего локального размещения.">
+        <p>Утрата открывает замыкание. Разные возвраты могут восстановить баланс целого без повтора прежнего локального размещения; дисбаланс может остаться в другом месте.</p>
       </div>
       <div class="scope no">
         <h3>Материальная проверка</h3>

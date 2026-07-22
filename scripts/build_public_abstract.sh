@@ -150,6 +150,7 @@ expected_figures = [
     "difference-to-distinguishability",
     "closure-by-admission",
     "recursive-two-to-one",
+    "restoration-without-replay",
 ]
 if [name for name, _, _ in parser.author_figures] != expected_figures:
     raise SystemExit(
