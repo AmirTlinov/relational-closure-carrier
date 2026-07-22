@@ -13,11 +13,22 @@ cognition.
 > differences. A balance of differences does not erase them; it produces a new
 > distinguishability at the next scale.
 
-`+A` and `-A` are orientations of a difference, not independent substances.
-When they meet and mutually complete a relation, they may continue as a new body
-`B`. This is the meaning of `1:2`: two distinguishable sides continue as one new
-difference without losing their internal difference. The formed whole can enter
-a later relation as one side, with no final scale assumed.
+`+A` and `-A` are opposite roles within a relation, not labels attached to
+self-contained things. The same body may participate as `+` in one encounter
+and as `-` in another. At isolated contact, complementary roles may establish a
+held relation. A `-/-` encounter is resonant conflict: that collision alone does
+not produce a bond.
+
+This is not a pointwise checkerboard law. A closed body may retain locally
+like-oriented regions because other relations carry the resulting balance
+across its whole history. The resulting balance matters more than any isolated
+local imbalance. The companion's separated rows are only a toy limit of ideal
+distinguishability, not a prescribed microstructure; real closures may
+distribute orientation very differently. When differences mutually complete a
+relation, they may continue as a new body `B`. This is the meaning of `1:2`:
+two distinguishable sides continue as one new difference without losing their
+internal difference. The formed whole can enter a later relation as either
+side, with no final scale assumed.
 
 ## Chain core
 

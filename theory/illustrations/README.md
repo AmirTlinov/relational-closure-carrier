@@ -2,14 +2,22 @@
 
 The raster scenes carry the spatial explanation of the theory. Their visual
 language comes from [`author-style-reference.png`](author-style-reference.png):
-sparse black notebook lines, open circular nodes, `+` / `-` orientations, and
-large fields of unclaimed space.
+sparse black notebook lines, open circular nodes, relation-local `+` / `-`
+orientations, and large fields of unclaimed space. The exact two-history source
+is retained as
+[`author-relational-history-source.png`](author-relational-history-source.png).
 
 ## Ownership boundary
 
 - `source-brief.md` owns the claims and their scientific boundary;
 - `atlas.html` owns chapter order, prose, captions, formulas, and image alt text;
-- these PNGs own gesture, spatial causality, and visual continuity only;
+- the author diagrams own exact topology and relational history;
+- generated PNGs own gesture, spatial causality, and visual continuity only;
+- `+` and `-` belong to a visible relation or history, never intrinsically to a
+  node or body;
+- a local `-/-` collision does not close by itself, but a closed whole may carry
+  locally like-oriented regions when its resulting balance is sustained by the
+  rest of the history;
 - generated pixels never own exact terminology or mathematical notation.
 
 The publication therefore keeps prose out of the generated images. Imagegen was
@@ -17,13 +25,15 @@ allowed only the glyphs required by a scene (`+`, `-`, and occasionally `?`).
 
 ## Prompt set
 
-Every image used the author drawing as a style reference and the first accepted
-continuation scene as the consistency anchor.
+The first two publication assets are exact crops of the author's relational
+history source; their prose is supplied in HTML. The remaining scenes used the
+author drawing as a style reference and the first accepted continuation scene
+as the consistency anchor.
 
 | Asset | Causal request |
 |---|---|
-| `00-cover-recursion.png` | oriented pair -> closed square -> whole entering a new relation |
-| `01-primitive-outcomes.png` | one encounter -> pass / break / held body |
+| `00-two-relational-histories.png` | two mirrored histories -> distinct closures -> opposite roles at the next scale |
+| `01-resulting-balance.png` | local one-sided rows -> cross-relations -> one resulting balance |
 | `02-scale-recursion.png` | relation -> square -> volume -> next-scale side |
 | `03-wound-repair.png` | closed body -> open edge -> equivalent repair or stable separation |
 | `04-iterative-continuation.png` | two open places -> retained partial fillings -> closure -> larger tissue |
