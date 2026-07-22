@@ -125,15 +125,103 @@
     .lead p { margin-bottom: 0; }
     .figure {
       margin: 0 0 4mm;
-      padding: 2.5mm;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: #f7f9fa;
+      padding: 2.6mm 0 2mm;
+      border-top: .3mm solid var(--ink);
+      border-bottom: .2mm solid #c3cbcc;
     }
-    .figure img {
+    .carrier-mechanism {
+      --mechanism-line: #c3cbcc;
+      --mechanism-muted: #69757b;
+      --mechanism-blue: #315f70;
+      --mechanism-amber: #8f633b;
+      --mechanism-red: #a4574d;
+      --mechanism-violet: #6f668e;
+      --mechanism-survival: #4f786d;
+      display: flex;
+      flex-direction: column;
+      gap: 2mm;
+      min-width: 0;
+    }
+    .mechanism-title {
+      margin: 0;
+      color: var(--mechanism-muted);
+      font: 650 5.7pt/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .055em;
+      text-transform: uppercase;
+    }
+    .causal-sequence {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr);
+      align-items: stretch;
+      gap: 1.1mm;
+    }
+    .causal-step {
+      min-width: 0;
+      min-height: 17mm;
+      padding: 1.6mm 1.25mm;
+      border: .2mm solid var(--mechanism-line);
+      background: rgba(255, 255, 255, .3);
+      text-align: center;
+    }
+    .causal-step[data-stage="contact"] { border-color: var(--mechanism-blue); }
+    .causal-step[data-stage="retained-change"] { border-color: var(--mechanism-survival); }
+    .causal-step[data-stage="world-return"],
+    .causal-step[data-stage="reentry"] { border-color: var(--mechanism-violet); }
+    .causal-step[data-stage="changed-contact"] { border-color: var(--mechanism-survival); }
+    .causal-step span,
+    .control-case span {
       display: block;
-      width: 100%;
-      height: auto;
+      margin-bottom: .8mm;
+      color: var(--mechanism-muted);
+      font: 650 4.65pt/1.15 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .045em;
+      text-transform: uppercase;
+    }
+    .causal-step strong,
+    .control-case strong {
+      display: block;
+      color: var(--ink);
+      font-size: 6.35pt;
+      line-height: 1.15;
+      font-weight: 650;
+    }
+    .causal-step small,
+    .control-case small {
+      display: block;
+      margin-top: .65mm;
+      color: #334147;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 5.55pt;
+      line-height: 1.2;
+    }
+    .causal-arrow {
+      align-self: center;
+      color: var(--mechanism-blue);
+      font: 650 7pt/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      text-align: center;
+    }
+    .control-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3mm;
+      padding-top: 1.7mm;
+      border-top: .2mm solid var(--mechanism-line);
+    }
+    .control-case {
+      min-width: 0;
+      padding-left: 2mm;
+      border-left: .45mm solid var(--mechanism-line);
+    }
+    .control-case[data-control="live"] { border-left-color: var(--mechanism-survival); }
+    .control-case[data-control="freeze"] { border-left-color: var(--mechanism-amber); }
+    .control-case[data-control="shuffle"] { border-left-color: var(--mechanism-red); }
+    .control-case span { margin-bottom: .45mm; }
+    .control-case strong { font-size: 6.1pt; }
+    .control-case small { margin-top: .35mm; }
+    .mechanism-witness {
+      margin: 0;
+      color: var(--mechanism-muted);
+      font: italic 6.3pt/1.25 Georgia, "Times New Roman", serif;
     }
     .figure-scroll-hint { display: none; }
     .figure-scroll:focus-visible {
@@ -306,7 +394,7 @@
         color: var(--muted);
         font-size: 12px;
       }
-      .figure img { min-width: 720px; }
+      .carrier-mechanism { min-width: 720px; }
       .byline a { overflow-wrap: anywhere; }
       .lang-switch { margin-left: 0; }
     }
@@ -364,7 +452,28 @@
     <figure class="figure">
       <span class="figure-scroll-hint" aria-hidden="true">Follow the loop horizontally →</span>
       <div class="figure-scroll" role="region" aria-label="Causal carrier diagram; scroll horizontally on a narrow screen" tabindex="0">
-        <img src="distinction-reentry.svg" alt="Contact closes differences into a shared passage, the change remains in the carrier, world return reenters the changed whole, and the next contact becomes different. Freeze and shuffle controls interrupt the same causal loop.">
+        <div class="carrier-mechanism" role="img" aria-label="Different histories meet in contact; contact changes the same carrier; world return reenters through that changed carrier; and the next contact changes. Live, freeze, and shuffle test that causal chain.">
+          <p class="mechanism-title">Exact causal mechanism · reentry passes through the same changed carrier</p>
+          <div class="causal-sequence">
+            <div class="causal-step" data-stage="differences"><span>01 / differences</span><strong>different histories</strong><small>not yet one outcome</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="contact"><span>02 / contact</span><strong>one physical passage</strong><small>differences act together</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="retained-change"><span>03 / retained change</span><strong>the same carrier changes</strong><small>the passage keeps the consequence</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="world-return"><span>04 / world return</span><strong>action receives a consequence</strong><small>the result comes back</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="reentry"><span>05 / reentry</span><strong>through the changed carrier</strong><small>not through an external record</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="changed-contact"><span>06 / next contact</span><strong>continuation differs</strong><small>the future now separates</small></div>
+          </div>
+          <div class="control-grid" aria-label="Causal controls">
+            <div class="control-case" data-control="live"><span>Live</span><strong>material rewrite survives</strong><small>the next passage changes</small></div>
+            <div class="control-case" data-control="freeze"><span>Freeze</span><strong>same exposure, no rewrite</strong><small>the next passage remains unchanged</small></div>
+            <div class="control-case" data-control="shuffle"><span>Shuffle</span><strong>placement history is broken</strong><small>the effect disappears</small></div>
+          </div>
+          <p class="mechanism-witness"><code>D+</code> is an external witness of the changed future; it does not select a path.</p>
+        </div>
       </div>
       <figcaption><strong>Figure 1.</strong> Contact makes differences operative together. Memory begins when the resulting change remains in the carrier, survives world return, and conducts a different future contact.</figcaption>
     </figure>

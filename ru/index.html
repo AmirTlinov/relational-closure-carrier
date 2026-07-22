@@ -125,15 +125,103 @@
     .lead p { margin-bottom: 0; }
     .figure {
       margin: 0 0 4mm;
-      padding: 2.5mm;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: #f7f9fa;
+      padding: 2.6mm 0 2mm;
+      border-top: .3mm solid var(--ink);
+      border-bottom: .2mm solid #c3cbcc;
     }
-    .figure img {
+    .carrier-mechanism {
+      --mechanism-line: #c3cbcc;
+      --mechanism-muted: #69757b;
+      --mechanism-blue: #315f70;
+      --mechanism-amber: #8f633b;
+      --mechanism-red: #a4574d;
+      --mechanism-violet: #6f668e;
+      --mechanism-survival: #4f786d;
+      display: flex;
+      flex-direction: column;
+      gap: 2mm;
+      min-width: 0;
+    }
+    .mechanism-title {
+      margin: 0;
+      color: var(--mechanism-muted);
+      font: 650 5.7pt/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .055em;
+      text-transform: uppercase;
+    }
+    .causal-sequence {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr);
+      align-items: stretch;
+      gap: 1.1mm;
+    }
+    .causal-step {
+      min-width: 0;
+      min-height: 17mm;
+      padding: 1.6mm 1.25mm;
+      border: .2mm solid var(--mechanism-line);
+      background: rgba(255, 255, 255, .3);
+      text-align: center;
+    }
+    .causal-step[data-stage="contact"] { border-color: var(--mechanism-blue); }
+    .causal-step[data-stage="retained-change"] { border-color: var(--mechanism-survival); }
+    .causal-step[data-stage="world-return"],
+    .causal-step[data-stage="reentry"] { border-color: var(--mechanism-violet); }
+    .causal-step[data-stage="changed-contact"] { border-color: var(--mechanism-survival); }
+    .causal-step span,
+    .control-case span {
       display: block;
-      width: 100%;
-      height: auto;
+      margin-bottom: .8mm;
+      color: var(--mechanism-muted);
+      font: 650 4.5pt/1.15 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .035em;
+      text-transform: uppercase;
+    }
+    .causal-step strong,
+    .control-case strong {
+      display: block;
+      color: var(--ink);
+      font-size: 6.15pt;
+      line-height: 1.15;
+      font-weight: 650;
+    }
+    .causal-step small,
+    .control-case small {
+      display: block;
+      margin-top: .65mm;
+      color: #334147;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 5.35pt;
+      line-height: 1.18;
+    }
+    .causal-arrow {
+      align-self: center;
+      color: var(--mechanism-blue);
+      font: 650 7pt/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      text-align: center;
+    }
+    .control-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3mm;
+      padding-top: 1.7mm;
+      border-top: .2mm solid var(--mechanism-line);
+    }
+    .control-case {
+      min-width: 0;
+      padding-left: 2mm;
+      border-left: .45mm solid var(--mechanism-line);
+    }
+    .control-case[data-control="live"] { border-left-color: var(--mechanism-survival); }
+    .control-case[data-control="freeze"] { border-left-color: var(--mechanism-amber); }
+    .control-case[data-control="shuffle"] { border-left-color: var(--mechanism-red); }
+    .control-case span { margin-bottom: .45mm; }
+    .control-case strong { font-size: 5.9pt; }
+    .control-case small { margin-top: .35mm; }
+    .mechanism-witness {
+      margin: 0;
+      color: var(--mechanism-muted);
+      font: italic 6.15pt/1.25 Georgia, "Times New Roman", serif;
     }
     .figure-scroll-hint { display: none; }
     .figure-scroll:focus-visible {
@@ -310,7 +398,7 @@
         color: var(--muted);
         font-size: 12px;
       }
-      .figure img { min-width: 720px; }
+      .carrier-mechanism { min-width: 720px; }
       .byline a { overflow-wrap: anywhere; }
       .lang-switch { margin-left: 0; }
     }
@@ -367,7 +455,28 @@
     <figure class="figure">
       <span class="figure-scroll-hint" aria-hidden="true">Проследите петлю по горизонтали →</span>
       <div class="figure-scroll" role="region" aria-label="Схема причинной петли носителя; на узком экране прокручивается по горизонтали" tabindex="0">
-        <img src="distinction-reentry.svg" alt="Контакт замыкает различия в общий проход, изменение остаётся в носителе, возврат мира снова входит в изменённое целое, и следующий контакт становится другим. Контроли freeze и shuffle разрывают ту же причинную петлю.">
+        <div class="carrier-mechanism" role="img" aria-label="Различные истории встречаются в контакте; контакт меняет тот же носитель; возврат мира повторно входит через изменённый носитель; следующий контакт становится другим. Live, freeze и shuffle проверяют эту причинную цепь.">
+          <p class="mechanism-title">Точный причинный механизм · повторный вход идёт через тот же изменённый носитель</p>
+          <div class="causal-sequence">
+            <div class="causal-step" data-stage="differences"><span>01 / различия</span><strong>разные истории</strong><small>до общего исхода</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="contact"><span>02 / контакт</span><strong>один физический проход</strong><small>различия действуют вместе</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="retained-change"><span>03 / удержанное изменение</span><strong>меняется тот же носитель</strong><small>проход хранит следствие</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="world-return"><span>04 / возврат мира</span><strong>действие получает ответ</strong><small>результат возвращается</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="reentry"><span>05 / повторный вход</span><strong>через изменённый носитель</strong><small>не через внешнюю запись</small></div>
+            <span class="causal-arrow" aria-hidden="true">→</span>
+            <div class="causal-step" data-stage="changed-contact"><span>06 / следующий контакт</span><strong>продолжение отличается</strong><small>будущее теперь разделяется</small></div>
+          </div>
+          <div class="control-grid" aria-label="Причинные контроли">
+            <div class="control-case" data-control="live"><span>Live</span><strong>материальная перезапись сохраняется</strong><small>следующий проход меняется</small></div>
+            <div class="control-case" data-control="freeze"><span>Freeze</span><strong>та же встреча, без перезаписи</strong><small>следующий проход не меняется</small></div>
+            <div class="control-case" data-control="shuffle"><span>Shuffle</span><strong>история размещения разрушена</strong><small>эффект исчезает</small></div>
+          </div>
+          <p class="mechanism-witness"><code>D+</code> — внешний свидетель изменившегося будущего; он не выбирает путь.</p>
+        </div>
       </div>
       <figcaption><strong>Рисунок 1.</strong> Контакт делает различия совместно действующими. Память начинается, когда возникшее изменение остаётся в носителе, переживает возврат мира и проводит другой будущий контакт.</figcaption>
     </figure>

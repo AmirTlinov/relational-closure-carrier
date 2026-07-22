@@ -94,8 +94,60 @@ PY
   trap - RETURN
 }
 
-xmllint --noout "$ROOT/distinction-reentry.svg"
-xmllint --noout "$ROOT/ru/distinction-reentry.svg"
+validate_mechanism() {
+  local source="$1"
+  python3 - "$source" <<'PY'
+from html.parser import HTMLParser
+from pathlib import Path
+import sys
+
+
+class MechanismContract(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.images = []
+        self.stages = []
+        self.controls = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        classes = set(attrs.get("class", "").split())
+        if "carrier-mechanism" in classes and attrs.get("role") == "img":
+            self.images.append(attrs.get("aria-label", "").strip())
+        if "data-stage" in attrs:
+            self.stages.append(attrs["data-stage"])
+        if "data-control" in attrs:
+            self.controls.append(attrs["data-control"])
+
+
+source = Path(sys.argv[1])
+text = source.read_text(encoding="utf-8")
+parser = MechanismContract()
+parser.feed(text)
+
+expected_stages = [
+    "differences",
+    "contact",
+    "retained-change",
+    "world-return",
+    "reentry",
+    "changed-contact",
+]
+expected_controls = ["live", "freeze", "shuffle"]
+
+if len(parser.images) != 1 or not parser.images[0]:
+    raise SystemExit(f"{source}: expected one labelled carrier mechanism")
+if parser.stages != expected_stages:
+    raise SystemExit(f"{source}: causal stages are {parser.stages}, expected {expected_stages}")
+if parser.controls != expected_controls:
+    raise SystemExit(f"{source}: controls are {parser.controls}, expected {expected_controls}")
+if "distinction-reentry.svg" in text:
+    raise SystemExit(f"{source}: retired SVG illustration is still referenced")
+PY
+}
+
+validate_mechanism "$ROOT/index.html"
+validate_mechanism "$ROOT/ru/index.html"
 
 build_one "$ROOT/index.html" "$ROOT/ABSTRACT.pdf" "$ROOT/preview-page-1.png"
 build_one "$ROOT/ru/index.html" "$ROOT/ru/ABSTRACT.pdf" "$ROOT/ru/preview-page-1.png"
