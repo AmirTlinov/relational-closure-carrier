@@ -269,28 +269,21 @@
       border-top: 1px solid var(--line);
     }
     .criteria-intro { color: var(--muted); }
-    .closure-figure { margin: 0; }
-    .closure-figure img {
+    .closure-figure,
+    .scale-figure { margin: 0; }
+    .closure-figure img,
+    .scale-figure img {
       display: block;
       width: 100%;
       height: auto;
       mix-blend-mode: multiply;
     }
-    .closure-figure figcaption {
+    .closure-figure figcaption,
+    .scale-figure figcaption {
       margin-top: 1.2mm;
       font-size: 6.15pt;
       line-height: 1.24;
     }
-    .criteria ol {
-      display: grid;
-      grid-template-columns: 1fr;
-      row-gap: .55mm;
-      margin: 0;
-      padding-left: 4mm;
-      font-size: 7.05pt;
-      line-height: 1.23;
-    }
-    .criteria li { padding-left: 1mm; }
     .note {
       margin-top: 2mm;
       color: var(--muted);
@@ -427,7 +420,7 @@
       }
       .sheet::after { display: none; }
       .lead, .criteria, .page-two-head, .experiments, .scope-grid, .question, .refs { grid-template-columns: 1fr; }
-      .criteria ol, .metrics { grid-template-columns: 1fr; }
+      .metrics { grid-template-columns: 1fr; }
       h1 { font-size: 34px; }
       .figure { margin-left: -10px; margin-right: -10px; }
       .figure-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
@@ -533,13 +526,10 @@
         <img data-figure="closure-by-admission" src="../theory/illustrations/author-closure-by-admission.png" alt="Открытая система из шести позиций встречает плюс-ориентированное различие сверху и минус-ориентированное различие снизу; после контакта те же шесть позиций замыкаются в целое два на три с дополнительными поперечными отношениями.">
         <figcaption><strong>Рисунок 2.</strong> Новые различия удерживаются, когда их контакт усиливает группу, замыкая отношения, которые она способна поддерживать. Знаки обозначают роли в этой встрече.</figcaption>
       </figure>
-      <ol>
-        <li>Различия существуют до контакта, при котором способны стать различимыми.</li>
-        <li>Контакт замыкает различия в общее физическое следствие.</li>
-        <li>Устойчивое замыкание — различимость одного масштаба.</li>
-        <li>Действуя как целое, оно становится различием следующего масштаба.</li>
-        <li>Повреждение открывает недостаток; новое замыкание восстанавливает, меняет, разделяет или схлопывает форму.</li>
-      </ol>
+      <figure class="scale-figure">
+        <img data-figure="recursive-two-to-one" src="../theory/illustrations/author-recursive-two-to-one.png" alt="Восемь позиций чередуют плюс и минус вдоль одной линии. Дуги объединяют соседние пары, затем пары пар и наконец всё целое; каждый масштаб обозначен как два к одному.">
+        <figcaption><strong>Рисунок 3.</strong> Каждое замыкание <code>2:1</code> становится одной стороной следующего масштаба, не стирая удержанные внутри различия.</figcaption>
+      </figure>
     </section>
   </article>
 

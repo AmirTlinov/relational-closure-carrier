@@ -146,7 +146,11 @@ if parser.stages != expected_stages:
     raise SystemExit(f"{source}: causal stages are {parser.stages}, expected {expected_stages}")
 if parser.controls != expected_controls:
     raise SystemExit(f"{source}: controls are {parser.controls}, expected {expected_controls}")
-expected_figures = ["difference-to-distinguishability", "closure-by-admission"]
+expected_figures = [
+    "difference-to-distinguishability",
+    "closure-by-admission",
+    "recursive-two-to-one",
+]
 if [name for name, _, _ in parser.author_figures] != expected_figures:
     raise SystemExit(
         f"{source}: author figures are {parser.author_figures}, expected {expected_figures}"

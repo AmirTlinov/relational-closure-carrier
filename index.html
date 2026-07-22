@@ -269,28 +269,21 @@
       border-top: 1px solid var(--line);
     }
     .criteria-intro { color: var(--muted); }
-    .closure-figure { margin: 0; }
-    .closure-figure img {
+    .closure-figure,
+    .scale-figure { margin: 0; }
+    .closure-figure img,
+    .scale-figure img {
       display: block;
       width: 100%;
       height: auto;
       mix-blend-mode: multiply;
     }
-    .closure-figure figcaption {
+    .closure-figure figcaption,
+    .scale-figure figcaption {
       margin-top: 1.2mm;
       font-size: 6.4pt;
       line-height: 1.28;
     }
-    .criteria ol {
-      display: grid;
-      grid-template-columns: 1fr;
-      row-gap: .7mm;
-      margin: 0;
-      padding-left: 4mm;
-      font-size: 7.35pt;
-      line-height: 1.28;
-    }
-    .criteria li { padding-left: 1mm; }
     .note {
       margin-top: 2mm;
       color: var(--muted);
@@ -423,7 +416,7 @@
       }
       .sheet::after { display: none; }
       .lead, .criteria, .page-two-head, .experiments, .scope-grid, .question, .refs { grid-template-columns: 1fr; }
-      .criteria ol, .metrics { grid-template-columns: 1fr; }
+      .metrics { grid-template-columns: 1fr; }
       h1 { font-size: 34px; }
       .figure { margin-left: -10px; margin-right: -10px; }
       .figure-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
@@ -530,13 +523,10 @@
         <img data-figure="closure-by-admission" src="theory/illustrations/author-closure-by-admission.png" alt="An open six-position relational arrangement meets a plus-oriented difference from above and a minus-oriented difference from below; the same six positions then close into a two-by-three whole with additional lateral relations.">
         <figcaption><strong>Figure 2.</strong> New differences are retained when their contact strengthens the group by closing relations it can sustain. The signs mark roles in this encounter.</figcaption>
       </figure>
-      <ol>
-        <li>Differences exist before a contact in which they can become distinguishable.</li>
-        <li>Contact closes differences into a shared physical consequence.</li>
-        <li>A stable closure is distinguishable as one whole at one scale.</li>
-        <li>Acting as one whole makes it a difference at the next scale.</li>
-        <li>Injury opens a deficit; reclosure restores, transforms, divides, or collapses.</li>
-      </ol>
+      <figure class="scale-figure">
+        <img data-figure="recursive-two-to-one" src="theory/illustrations/author-recursive-two-to-one.png" alt="Eight positions alternate plus and minus along one line. Arcs group neighboring pairs, then pairs of pairs, and finally the whole; every scale is marked two to one.">
+        <figcaption><strong>Figure 3.</strong> Each <code>2:1</code> closure becomes one side at the next scale without erasing the distinctions held inside it.</figcaption>
+      </figure>
     </section>
   </article>
 
