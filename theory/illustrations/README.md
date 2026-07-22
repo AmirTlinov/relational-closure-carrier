@@ -33,7 +33,7 @@ as the consistency anchor.
 | Asset | Causal request |
 |---|---|
 | `00-two-relational-histories.png` | two mirrored histories -> distinct closures -> opposite roles at the next scale |
-| `01-resulting-balance.png` | local one-sided rows -> cross-relations -> one resulting balance |
+| `01-resulting-balance.png` | local one-sided rows -> tolerated imbalance -> one resulting balance, not yet an organism |
 | `02-scale-recursion.png` | relation -> square -> volume -> next-scale side |
 | `03-wound-repair.png` | closed body -> open edge -> equivalent repair or stable separation |
 | `04-iterative-continuation.png` | two open places -> retained partial fillings -> closure -> larger tissue |

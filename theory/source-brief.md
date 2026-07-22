@@ -30,6 +30,15 @@ two distinguishable sides continue as one new difference without losing their
 internal difference. The formed whole can enter a later relation as either
 side, with no final scale assumed.
 
+Resulting balance is necessary for a body but insufficient for an organism. A
+simple material phase may extend the same organization across an enormous
+volume without accumulating a differentiated history; more air or water does
+not become an organism merely by continuing the same form. Inside a more
+complex closure, however, such material can participate in a higher whole.
+Organismic growth begins when further useful differences require earlier local
+imbalances to be retained, revisited, and repaired into balance at the next
+scale.
+
 ## Chain core
 
 Represent a body as an oriented integral chain `C`. Closure is:
@@ -77,11 +86,12 @@ D_(t+1) = D_t + ∂d_t
 ```
 
 Thus `Ω(C_(t+1))` is contained in `Ω(C_t)` and is strictly smaller whenever
-the new relation excludes at least one formerly possible continuation. The
-organism can continue itself gradually: each retained completion either
-reduces the open boundary or makes the remaining seam more specific. When
-`D_n=0`, the closure
-can enter another relation as one difference at the next scale.
+the new relation excludes at least one formerly possible continuation. Merely
+extending one already stable closure is persistence, not organismic growth. An
+organism continues itself when each retained completion repairs or further
+specifies an earlier local imbalance, making the remaining seam more
+determinate. When `D_n=0`, the repaired history closes as one balance and can
+enter another relation as one difference at the next scale.
 
 This also suggests a multiscale persistent-carrier architecture. Relational
 signatures can be retained from fine mmap regions into coarser wholes. A coarse
@@ -102,7 +112,9 @@ corrective growth:  G_next = close(G - r + d)
 
 A useful difference therefore either supports a live closure or exposes a false
 closure. A later witness reads the result; it does not assign usefulness in
-advance.
+advance. Repeated addition that leaves later continuations unchanged is simple
+extension, not accumulated usefulness. Organismic growth retains or repairs a
+historical distinction so that the body's future conduct changes.
 
 ## Regeneration and cognition
 
