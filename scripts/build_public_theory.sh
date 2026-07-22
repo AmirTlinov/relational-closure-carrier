@@ -22,10 +22,10 @@ text="$(mktemp)"
 sheet_dir="$(mktemp -d)"
 trap 'rm -f "$info" "$fonts" "$text"; rm -rf "$sheet_dir"' EXIT
 
-pdfinfo -f 1 -l 8 "$PDF" >"$info"
+pdfinfo -f 1 -l 9 "$PDF" >"$info"
 pages="$(awk '/^Pages:/ { print $2; exit }' "$info")"
-[[ "$pages" == "8" ]] || {
-  printf 'THEORY.pdf produced %s pages, expected 8\n' "$pages" >&2
+[[ "$pages" == "9" ]] || {
+  printf 'THEORY.pdf produced %s pages, expected 9\n' "$pages" >&2
   exit 1
 }
 
@@ -35,9 +35,9 @@ awk '
     found++
   }
   /^Page[[:space:]]+[0-9]+[[:space:]]+rot:/ { if ($4 != 0) exit 1 }
-  END { if (found != 8) exit 1 }
+  END { if (found != 9) exit 1 }
 ' "$info" || {
-  printf 'THEORY.pdf is not eight A4 portrait sheets\n' >&2
+  printf 'THEORY.pdf is not nine A4 portrait sheets\n' >&2
   exit 1
 }
 
@@ -82,9 +82,10 @@ make_row() {
   magick "${args[@]}" +append "$output"
 }
 
-make_row "$sheet_dir/row-1.png" "$PAGES"/page-{01..04}.png
-make_row "$sheet_dir/row-2.png" "$PAGES"/page-{05..08}.png
-magick "$sheet_dir/row-1.png" "$sheet_dir/row-2.png" -append -quality 88 \
+make_row "$sheet_dir/row-1.png" "$PAGES"/page-{01..03}.png
+make_row "$sheet_dir/row-2.png" "$PAGES"/page-{04..06}.png
+make_row "$sheet_dir/row-3.png" "$PAGES"/page-{07..09}.png
+magick "$sheet_dir/row-1.png" "$sheet_dir/row-2.png" "$sheet_dir/row-3.png" -append -quality 88 \
   "$PAGES/contact-sheet.jpg"
 
-printf 'PASS public theory: 8 pages A4, tagged, embedded Unicode fonts, %s dpi previews\n' "$DPI"
+printf 'PASS public theory: 9 pages A4, tagged, embedded Unicode fonts, %s dpi previews\n' "$DPI"

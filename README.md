@@ -10,7 +10,7 @@ external selection.
 ## Start here
 
 - **[Public visual abstract](https://amirtlinov.github.io/relational-closure-carrier/)** — the two-page research argument from difference through contact, reentry, and repair.
-- **[A Theory of Useful Differences](THEORY.pdf)** — the separate eight-page axiomatic companion: closure, injury, useful difference, charge, measurement, and the open derivations.
+- **[A Theory of Useful Differences](THEORY.pdf)** — the separate nine-page axiomatic companion: closure, injury, iterative continuation, useful difference, charge, measurement, and the open derivations.
 - **[Theory source](theory/source-brief.md)** / **[editable visual document](theory/atlas.html)** — the claim hierarchy and its print owner.
 - **[Русское зеркало](https://amirtlinov.github.io/relational-closure-carrier/ru/)** — тот же компактный абстракт, схема и отдельный двухстраничный PDF на русском.
 - **[Two-page PDF](ABSTRACT.pdf)** / **[English text](ABSTRACT.md)** / **[Russian meaning mirror](ABSTRACT_RU.md)**.
@@ -118,7 +118,7 @@ npm ci --prefix theory
 ```
 
 The abstract and theory have independent print contracts: the former remains a
-two-page outreach artifact; the latter is an eight-page axiomatic companion.
+two-page outreach artifact; the latter is a nine-page axiomatic companion.
 `THEORY.pdf` states the author's physical theory and marks unfinished physical
 derivations explicitly. The executable carrier assay does not by itself prove
 those physical consequences.

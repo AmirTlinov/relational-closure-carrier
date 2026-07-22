@@ -46,6 +46,39 @@ The completion need not copy the removed material. It must occupy an equivalent
 causal role in the new whole. If no admissible completion exists, the body
 changes form, divides, or decays toward the nearest stable closures.
 
+## Iterative continuation
+
+An organism does not need a complete target form before it can repair. Let the
+currently exposed boundary be:
+
+```text
+D_t = ∂C_t
+```
+
+and let `Ω(C_t)` be the set of full continuations that can still close the body
+from its retained state. A locally compatible step `d_t` may fill only part of
+the deficit:
+
+```text
+C_(t+1) = C_t + d_t
+D_(t+1) = D_t + ∂d_t
+Ω(C_(t+1)) = {F in Ω(C_t) | d_t is retained in F}
+```
+
+Thus `Ω(C_(t+1))` is contained in `Ω(C_t)` and is strictly smaller whenever
+the new relation excludes at least one formerly possible continuation. The
+organism can continue itself gradually: each retained completion either
+reduces the open boundary or makes the remaining seam more specific. When
+`D_n=0`, the closure
+can enter another relation as one difference at the next scale.
+
+This also suggests a multiscale persistent-carrier architecture. Relational
+signatures can be retained from fine mmap regions into coarser wholes. A coarse
+mismatch says that some lower relation no longer closes; descending only the
+affected branch localizes the broken seam without replaying the entire stored
+form. This hierarchy is a proposed computational consequence, not an
+implemented result of the present explicit-topology assay.
+
 ## Useful difference
 
 A difference is useful only relative to a body, a contact, and a future
@@ -141,5 +174,7 @@ dynamics, coherent fillings, and physical experiments. The immediate order is:
 
 1. integral chains and local homology of charge;
 2. complex-valued fillings of a shared boundary;
-3. an experiment distinguishing causal-role completion from replay of a stored
+3. a persistent multiscale carrier that can descend from a coarse mismatch to
+   the exact open relation;
+4. an experiment distinguishing causal-role completion from replay of a stored
    target form.

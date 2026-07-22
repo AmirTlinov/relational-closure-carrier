@@ -43,10 +43,13 @@ conduct retained by the changed carrier; a stable closure is distinguishability
 at one scale and a new difference at the next. A distinguishable body is a
 temporarily stable balance of mutually sustaining differences, not an inventory
 or drawn network. Injury opens a deficit whose reclosure can restore, transform,
-divide, or collapse form. Planarian regeneration and measurement are developed
-from this thesis. The scientific boundary appears once, at the end: the public
-assay proves one causal computational slice, while carrier-owned physical
-contact remains the decisive falsifiable test.
+divide, or collapse form. Regeneration does not replay a finished target: each
+retained compatible completion narrows the continuations that can still close
+the body, and a local closure becomes a difference at the next scale. Planarian
+regeneration and measurement are developed from this thesis. The scientific
+boundary appears once, at the end: the public assay proves one causal
+computational slice, while carrier-owned physical contact remains the decisive
+falsifiable test.
 
 ## Sorting analogy boundary
 
