@@ -149,6 +149,32 @@
       letter-spacing: .055em;
       text-transform: uppercase;
     }
+    .author-contact-scene {
+      display: grid;
+      grid-template-columns: 103mm minmax(0, 1fr);
+      gap: 7mm;
+      align-items: center;
+      padding-bottom: 2mm;
+      border-bottom: .2mm solid var(--mechanism-line);
+    }
+    .author-contact-scene img {
+      display: block;
+      width: 100%;
+      height: 20mm;
+      object-fit: cover;
+      object-position: center;
+      mix-blend-mode: multiply;
+    }
+    .author-contact-scene h3 {
+      margin: 0 0 1mm;
+      font-size: 8.2pt;
+      line-height: 1.22;
+    }
+    .author-contact-scene p {
+      margin: 0;
+      color: var(--mechanism-muted);
+      font: 7pt/1.3 Georgia, "Times New Roman", serif;
+    }
     .causal-sequence {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr);
@@ -236,20 +262,33 @@
     }
     .criteria {
       display: grid;
-      grid-template-columns: 39mm 1fr;
-      gap: 6mm;
+      grid-template-columns: 32mm 75mm minmax(0, 1fr);
+      gap: 5mm;
       align-items: start;
       padding-top: 4mm;
       border-top: 1px solid var(--line);
     }
     .criteria-intro { color: var(--muted); }
+    .closure-figure { margin: 0; }
+    .closure-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+    .closure-figure figcaption {
+      margin-top: 1.2mm;
+      font-size: 6.4pt;
+      line-height: 1.28;
+    }
     .criteria ol {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 7mm;
-      row-gap: 1.4mm;
+      grid-template-columns: 1fr;
+      row-gap: .7mm;
       margin: 0;
-      padding-left: 5mm;
+      padding-left: 4mm;
+      font-size: 7.35pt;
+      line-height: 1.28;
     }
     .criteria li { padding-left: 1mm; }
     .note {
@@ -453,6 +492,10 @@
       <span class="figure-scroll-hint" aria-hidden="true">Follow the loop horizontally →</span>
       <div class="figure-scroll" role="region" aria-label="Causal carrier diagram; scroll horizontally on a narrow screen" tabindex="0">
         <div class="carrier-mechanism" role="img" aria-label="Different histories meet in contact; contact changes the same carrier; world return reenters through that changed carrier; and the next contact changes. Live, freeze, and shuffle test that causal chain.">
+          <div class="author-contact-scene">
+            <img data-figure="difference-to-distinguishability" src="theory/illustrations/abstract-difference-to-distinguishability.png" alt="A plus-oriented difference and a minus-oriented difference remain separate until contact holds them in one relation, where they become jointly distinguishable.">
+            <div><h3>Difference becomes distinguishability in a held relation.</h3><p><code>+A</code> and <code>−A</code> are gestures in this encounter, not permanent properties of two objects.</p></div>
+          </div>
           <p class="mechanism-title">Exact causal mechanism · reentry passes through the same changed carrier</p>
           <div class="causal-sequence">
             <div class="causal-step" data-stage="differences"><span>01 / differences</span><strong>different histories</strong><small>not yet one outcome</small></div>
@@ -483,6 +526,10 @@
         <h2>From contact to form</h2>
         <p class="criteria-intro"><strong>Memory is a changed future carried by the changed body itself.</strong></p>
       </div>
+      <figure class="closure-figure">
+        <img data-figure="closure-by-admission" src="theory/illustrations/author-closure-by-admission.png" alt="An open six-position relational arrangement meets a plus-oriented difference from above and a minus-oriented difference from below; the same six positions then close into a two-by-three whole with additional lateral relations.">
+        <figcaption><strong>Figure 2.</strong> New differences are retained when their contact strengthens the group by closing relations it can sustain. The signs mark roles in this encounter.</figcaption>
+      </figure>
       <ol>
         <li>Differences exist before a contact in which they can become distinguishable.</li>
         <li>Contact closes differences into a shared physical consequence.</li>

@@ -108,6 +108,7 @@ class MechanismContract(HTMLParser):
         self.images = []
         self.stages = []
         self.controls = []
+        self.author_figures = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -118,6 +119,10 @@ class MechanismContract(HTMLParser):
             self.stages.append(attrs["data-stage"])
         if "data-control" in attrs:
             self.controls.append(attrs["data-control"])
+        if "data-figure" in attrs:
+            self.author_figures.append(
+                (attrs["data-figure"], attrs.get("src", ""), attrs.get("alt", "").strip())
+            )
 
 
 source = Path(sys.argv[1])
@@ -141,6 +146,16 @@ if parser.stages != expected_stages:
     raise SystemExit(f"{source}: causal stages are {parser.stages}, expected {expected_stages}")
 if parser.controls != expected_controls:
     raise SystemExit(f"{source}: controls are {parser.controls}, expected {expected_controls}")
+expected_figures = ["difference-to-distinguishability", "closure-by-admission"]
+if [name for name, _, _ in parser.author_figures] != expected_figures:
+    raise SystemExit(
+        f"{source}: author figures are {parser.author_figures}, expected {expected_figures}"
+    )
+for name, figure_src, figure_alt in parser.author_figures:
+    if not figure_alt:
+        raise SystemExit(f"{source}: {name} needs localized alt text")
+    if not (source.parent / figure_src).resolve().is_file():
+        raise SystemExit(f"{source}: {name} asset is missing: {figure_src}")
 if "distinction-reentry.svg" in text:
     raise SystemExit(f"{source}: retired SVG illustration is still referenced")
 PY

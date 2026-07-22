@@ -149,6 +149,32 @@
       letter-spacing: .055em;
       text-transform: uppercase;
     }
+    .author-contact-scene {
+      display: grid;
+      grid-template-columns: 103mm minmax(0, 1fr);
+      gap: 7mm;
+      align-items: center;
+      padding-bottom: 2mm;
+      border-bottom: .2mm solid var(--mechanism-line);
+    }
+    .author-contact-scene img {
+      display: block;
+      width: 100%;
+      height: 20mm;
+      object-fit: cover;
+      object-position: center;
+      mix-blend-mode: multiply;
+    }
+    .author-contact-scene h3 {
+      margin: 0 0 1mm;
+      font-size: 8pt;
+      line-height: 1.22;
+    }
+    .author-contact-scene p {
+      margin: 0;
+      color: var(--mechanism-muted);
+      font: 6.8pt/1.28 Georgia, "Times New Roman", serif;
+    }
     .causal-sequence {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr) 3mm minmax(0, 1fr);
@@ -236,20 +262,33 @@
     }
     .criteria {
       display: grid;
-      grid-template-columns: 39mm 1fr;
-      gap: 6mm;
+      grid-template-columns: 32mm 75mm minmax(0, 1fr);
+      gap: 5mm;
       align-items: start;
       padding-top: 4mm;
       border-top: 1px solid var(--line);
     }
     .criteria-intro { color: var(--muted); }
+    .closure-figure { margin: 0; }
+    .closure-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+    .closure-figure figcaption {
+      margin-top: 1.2mm;
+      font-size: 6.15pt;
+      line-height: 1.24;
+    }
     .criteria ol {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 7mm;
-      row-gap: 1.3mm;
+      grid-template-columns: 1fr;
+      row-gap: .55mm;
       margin: 0;
-      padding-left: 5mm;
+      padding-left: 4mm;
+      font-size: 7.05pt;
+      line-height: 1.23;
     }
     .criteria li { padding-left: 1mm; }
     .note {
@@ -456,6 +495,10 @@
       <span class="figure-scroll-hint" aria-hidden="true">Проследите петлю по горизонтали →</span>
       <div class="figure-scroll" role="region" aria-label="Схема причинной петли носителя; на узком экране прокручивается по горизонтали" tabindex="0">
         <div class="carrier-mechanism" role="img" aria-label="Различные истории встречаются в контакте; контакт меняет тот же носитель; возврат мира повторно входит через изменённый носитель; следующий контакт становится другим. Live, freeze и shuffle проверяют эту причинную цепь.">
+          <div class="author-contact-scene">
+            <img data-figure="difference-to-distinguishability" src="../theory/illustrations/abstract-difference-to-distinguishability.png" alt="Плюс-ориентированное различие и минус-ориентированное различие остаются раздельными, пока контакт не удерживает их в одном отношении, где они становятся совместно различимыми.">
+            <div><h3>Различие становится различимостью в удержанном отношении.</h3><p><code>+A</code> и <code>−A</code> — жесты в этой встрече, а не постоянные свойства двух объектов.</p></div>
+          </div>
           <p class="mechanism-title">Точный причинный механизм · повторный вход идёт через тот же изменённый носитель</p>
           <div class="causal-sequence">
             <div class="causal-step" data-stage="differences"><span>01 / различия</span><strong>разные истории</strong><small>до общего исхода</small></div>
@@ -486,6 +529,10 @@
         <h2>От контакта к форме</h2>
         <p class="criteria-intro"><strong>Память — это изменившееся будущее, которое несёт само изменённое тело.</strong></p>
       </div>
+      <figure class="closure-figure">
+        <img data-figure="closure-by-admission" src="../theory/illustrations/author-closure-by-admission.png" alt="Открытая система из шести позиций встречает плюс-ориентированное различие сверху и минус-ориентированное различие снизу; после контакта те же шесть позиций замыкаются в целое два на три с дополнительными поперечными отношениями.">
+        <figcaption><strong>Рисунок 2.</strong> Новые различия удерживаются, когда их контакт усиливает группу, замыкая отношения, которые она способна поддерживать. Знаки обозначают роли в этой встрече.</figcaption>
+      </figure>
       <ol>
         <li>Различия существуют до контакта, при котором способны стать различимыми.</li>
         <li>Контакт замыкает различия в общее физическое следствие.</li>

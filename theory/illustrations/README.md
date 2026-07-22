@@ -6,6 +6,14 @@ sparse black notebook lines, open circular nodes, relation-local `+` / `-`
 orientations, and large fields of unclaimed space. The exact two-history source
 is retained as
 [`author-relational-history-source.png`](author-relational-history-source.png).
+The public abstract retains two further exact author sources:
+[`author-difference-to-distinguishability.png`](author-difference-to-distinguishability.png)
+and [`author-closure-by-admission.png`](author-closure-by-admission.png). Their
+localized captions and interpretations remain in the abstract HTML.
+[`abstract-difference-to-distinguishability.png`](abstract-difference-to-distinguishability.png)
+is the label-free Imagegen edit consumed by both localizations. It preserves
+the author's two separate signed gestures, rightward contact, and final held
+relation; Imagegen owns only removal of the English prose from the pixels.
 
 ## Ownership boundary
 
